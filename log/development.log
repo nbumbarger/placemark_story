@@ -1666,3 +1666,2675 @@ Completed 200 OK in 187ms (Views: 186.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/jquery2.self-0664d02dcbfb008e715c754b00b9af29d6f1796828c03610aee4265bdfc6afff.js?body=1" for ::1 at 2015-05-08 23:21:54 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 00:03:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 202ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-7c7e80e16d46431906000a0430b91e37425eee294bc3d6e7ffa52e071d502bbf.css?body=1" for ::1 at 2015-05-09 00:03:36 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 00:03:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:03:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:04:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:04:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-6d5c13b1d2e35f8dde59ecffb00cc96e40fecc8d969970443e965b82e8db3682.css?body=1" for ::1 at 2015-05-09 00:04:52 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 00:07:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:10:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007f882a9ac298>:0x007f882f54eb60>):
+    1: <%= link_to '<span class="icon-pencil"></span>'.html_safe, welcome_path(category) %>
+  app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2692937867520784585_70111443184740'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (85.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (204.1ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:11:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_path' for #<#<Class:0x007f882a9ac298>:0x007f882d6bd638>):
+    1: <%= link_to '<span class="icon-pencil"></span>'.html_safe, welcome_path %>
+  app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2692937867520784585_70111429712740'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (145.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:11:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-34a8bf1c5c801b07d2b65885ad14496b841c015d7ab2be34e8259af8db19fa0e.css?body=1" for ::1 at 2015-05-09 00:11:26 -0400
+
+
+Started GET "/assets/fonts/icomoon.woff?-8e83qx" for ::1 at 2015-05-09 00:11:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.4ms)
+
+
+Started GET "/assets/fonts/icomoon.ttf?-8e83qx" for ::1 at 2015-05-09 00:11:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (63.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (143.3ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-09 00:11:31 -0400
+
+ActionController::RoutingError (uninitialized constant StoriesController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-09 00:11:32 -0400
+
+ActionController::RoutingError (uninitialized constant StoriesController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (145.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:11:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:11:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:11:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:12:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:12:29 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( link_to "<span class="icon-pencil">dasdadadas</span>", ...
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:1: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...k_to "<span class="icon-pencil">dasdadadas</span>", "/" );@o...
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+...con-pencil">dasdadadas</span>", "/" );@output_buffer.to_s
+...                               ^):
+  app/views/welcome/index.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/welcome/index.html.erb:1: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (144.1ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:14:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( link_to "<span class="icon-pencil">dasdadadas</span>".h...
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:1: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...k_to "<span class="icon-pencil">dasdadadas</span>".html_safe...
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting :: or '[' or '.'
+...adadas</span>".html_safe, "/" );@output_buffer.to_s
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:2: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:4: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/welcome/index.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/welcome/index.html.erb:1: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting :: or '[' or '.'
+  app/views/welcome/index.html.erb:2: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/welcome/index.html.erb:4: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (135.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:14:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-e6f64459dacc2f6de05a574133e362b0795485e3415a1a75105de991b4045f4e.css?body=1" for ::1 at 2015-05-09 00:14:35 -0400
+
+
+Started GET "/assets/icomoon.woff?-8e83qx" for ::1 at 2015-05-09 00:14:35 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 00:14:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:15:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 440ms (Views: 439.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 00:15:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 204ms (Views: 202.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:23:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 540ms (Views: 531.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-cb38a254fce1a976475cfb266c8cf6f5a51ba926728e5c10cc31151b538db1af.css?body=1" for ::1 at 2015-05-09 01:23:57 -0400
+
+
+Started GET "/assets/fonts/icomoon.woff" for ::1 at 2015-05-09 01:23:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (178.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (97.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (205.8ms)
+
+
+Started GET "/assets/fonts/icomoon.ttf" for ::1 at 2015-05-09 01:23:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (77.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (165.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:24:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 157ms (Views: 153.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fonts/icomoon.woff" for ::1 at 2015-05-09 01:24:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (212.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (108.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (215.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:26:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b2af3da721bd8e3e88c2437daf14cb7be5e6f3be0d86361c2983ead6cb78283a.css?body=1" for ::1 at 2015-05-09 01:26:03 -0400
+
+
+Started GET "/assets/fonts/icomoon.woff" for ::1 at 2015-05-09 01:26:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (153.3ms)
+
+
+Started GET "/assets/fonts/icomoon.ttf" for ::1 at 2015-05-09 01:26:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.7ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:26:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 144ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-163cdeab5269936a95ef5f0fe9c63c08ea764835cb7686b1123e8b6fc63bc139.css?body=1" for ::1 at 2015-05-09 01:26:20 -0400
+
+
+Started GET "/assets/fonts/icomoon.woff" for ::1 at 2015-05-09 01:26:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (70.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (162.5ms)
+
+
+Started GET "/assets/fonts/icomoon.ttf" for ::1 at 2015-05-09 01:26:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (150.2ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:26:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-34e701849dfb9284c115129be5277a86ecbac44288211b93d2d5fa898b1e27a2.css?body=1" for ::1 at 2015-05-09 01:26:30 -0400
+
+
+Started GET "/assets/fonts/icomoon.woff?-8e83qx" for ::1 at 2015-05-09 01:26:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (77.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (160.9ms)
+
+
+Started GET "/assets/fonts/icomoon.ttf?-8e83qx" for ::1 at 2015-05-09 01:26:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (152.3ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:26:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:26:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:26:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:27:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fonts/icomoon.woff?-8e83qx" for ::1 at 2015-05-09 01:27:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (114.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (152.0ms)
+
+
+Started GET "/assets/fonts/icomoon.ttf?-8e83qx" for ::1 at 2015-05-09 01:27:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icomoon.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (76.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (154.1ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:27:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:27:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:28:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 128ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-beb7fabf1d1116d8b94bddfbd14ac7f71afb715d60cf3d47b30d673a0995b8da.css?body=1" for ::1 at 2015-05-09 01:28:34 -0400
+
+
+Started GET "/assets/icomoon.woff" for ::1 at 2015-05-09 01:28:34 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:29:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 267ms (Views: 266.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:29:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:30:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 401ms (Views: 400.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0155b6a395f90e12fb13aae6604e9174a1968810eafdfe5144948486eec3d161.css?body=1" for ::1 at 2015-05-09 01:30:20 -0400
+
+
+Started GET "/assets/icomoon.woff" for ::1 at 2015-05-09 01:30:21 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:31:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 173ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:31:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:32:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:33:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:34:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:36:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:36:31 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:36:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:36:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:37:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 147ms (Views: 145.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3047e1a8771bbf9c38cfb9786e649bc0a60e79336aca6463f4071ce38c121d4e.css?body=1" for ::1 at 2015-05-09 01:37:17 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:38:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:38:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:39:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 293ms (Views: 291.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:39:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 171ms (Views: 169.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:42:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 335ms (Views: 333.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-90a8a8bd936b300acc2193d7e3d2d55952de37c14467647e061ef352fe3e3233.css?body=1" for ::1 at 2015-05-09 01:42:49 -0400
+
+
+Started GET "/assets/icomoon.woff" for ::1 at 2015-05-09 01:42:49 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:43:05 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:43:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:43:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-8ae6124f54d4465aa8e0d42e05d22d947040578bc50e24447e2ac0c49e1dd305.css?body=1" for ::1 at 2015-05-09 01:43:41 -0400
+
+
+Started GET "/assets/icomoon.woff" for ::1 at 2015-05-09 01:43:41 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:52:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 171ms (Views: 169.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/icomoon.woff" for ::1 at 2015-05-09 01:52:17 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:53:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:2: unterminated string meets end of file
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:2: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/welcome/index.html.erb:2: unterminated string meets end of file
+  app/views/welcome/index.html.erb:2: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (137.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (98.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (191.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:53:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:54:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:54:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:54:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:55:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 101ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3db1a3935906e4bc9c6fcd71526957c6533b528239950245645ba8e9956d3770.css?body=1" for ::1 at 2015-05-09 01:55:23 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:55:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:55:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-49bc437991e43ce16c0671f40861881ac6db036d75dceb52bc1c2bd74f052840.css?body=1" for ::1 at 2015-05-09 01:55:52 -0400
+
+
+Started GET "/assets/icomoon.woff" for ::1 at 2015-05-09 01:55:52 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 01:56:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:56:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:56:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:3: unterminated string meets end of file
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/welcome/index.html.erb:3: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/welcome/index.html.erb:3: unterminated string meets end of file
+  app/views/welcome/index.html.erb:3: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (143.2ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:56:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:57:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 01:58:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:03:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 434ms (Views: 432.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-36a35112f7e751ca062ed3310ae36f9bc86b6c22692946e0f56c6c16fe16351f.css?body=1" for ::1 at 2015-05-09 02:03:28 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:04:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 858ms (Views: 855.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-aef32d0ffac2c64c2f16b529abae2ca5854e3c413d8732e298d079b5853cdb16.css?body=1" for ::1 at 2015-05-09 02:04:16 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:04:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 193ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-71db9ea6ea94366f681a8ef308ef3c6d4122d7e0a17de3ac07ac9d3d5ecb71db.css?body=1" for ::1 at 2015-05-09 02:04:47 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:04:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-04a9ff0057a616eea1c9df4a7f953a7fcad61c59c6ea88a841fb699719a3c9fa.css?body=1" for ::1 at 2015-05-09 02:04:57 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:04:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:05:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 131ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-8f123ae94e51fe1def59b824e0bc5f580dc25bdccceafcd9568144775e466e5c.css?body=1" for ::1 at 2015-05-09 02:05:08 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:05:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 260ms (Views: 259.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b763960a7980148f8e3854764e34b55fc045d4b2dd6fa75b06044ad7c71df5c0.css?body=1" for ::1 at 2015-05-09 02:05:27 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:11:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 879ms (Views: 861.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0dbe97b6cd88f862d45d792b04d8192bd0b04b273f32a48f3d7da96e879eb494.css?body=1" for ::1 at 2015-05-09 02:11:18 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:13:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1002ms (Views: 997.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-17279845703e60b30a4339125d4ba53e67b96056ebaa7fa5afd097f2cb58e414.css?body=1" for ::1 at 2015-05-09 02:13:01 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:13:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:13:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:13:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 268ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1ef83400e092dc215f5d18f7e3e99e4c9c2a6de6371d959591f01c209873761e.css?body=1" for ::1 at 2015-05-09 02:13:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:15:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 460ms (Views: 458.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f21bb12e009bc03db4fa0ee9c64932e3c33ef62fae6039682b3cd2de6a99fa2a.css?body=1" for ::1 at 2015-05-09 02:15:07 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:15:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 225ms (Views: 223.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f8d02008a049832ea899a820fb66aff3a7ba232cf2e16c0a2267d405dd60dd5d.css?body=1" for ::1 at 2015-05-09 02:15:25 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:15:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4e3b42bcef08d5579c382b62b329e1f09d261e9606e60f9e100665d9fa070397.css?body=1" for ::1 at 2015-05-09 02:15:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:20:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 503ms (Views: 493.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:27:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 871ms (Views: 860.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-cd1f858fb146f5ec0a9b24bed22455549735b9173079290892cfef33df83b6a1.css?body=1" for ::1 at 2015-05-09 02:27:49 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:27:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 189ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:28:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 359ms (Views: 356.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5175eddec8e3ec264b21a6108e62a6e4ba4db7125b57da022c729035484e5f14.css?body=1" for ::1 at 2015-05-09 02:28:56 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:29:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 249ms (Views: 247.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-58b0cd62b2af92adca623b85c35f63f185670ba444b785f82549f136d585ae7e.css?body=1" for ::1 at 2015-05-09 02:29:26 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:29:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-fe1b8db0c90c9d94b0275da521f05a6e8509cee5621cd57de68e5022712d4dc2.css?body=1" for ::1 at 2015-05-09 02:29:52 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:30:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 285ms (Views: 283.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-ced72a56f5e024b9c48fbf7a5f2a27df1b778f2110c10b40c4a79025f7defa8a.css?body=1" for ::1 at 2015-05-09 02:30:16 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:30:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 125ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-fdd6aa2bd054e8daa33e83201116a0f99cfb23cf98f941f09674a6edaa10e50f.css?body=1" for ::1 at 2015-05-09 02:30:26 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:30:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-97116c097c269250f121d3a497afdc9b78568505002b6c98388f3aac23ceccf8.css?body=1" for ::1 at 2015-05-09 02:30:41 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:41:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 391ms (Views: 389.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f42fded805110602acf8d3ab16b2af81e7d8c34feef6c38b1446db60c5bdec01.css?body=1" for ::1 at 2015-05-09 02:41:12 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:42:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 345ms (Views: 343.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-674082fd6d43b65314afb6d17d73561fc90269595be1cb94328774d628482925.css?body=1" for ::1 at 2015-05-09 02:42:33 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:42:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-38b624b610d01663d3d927d7948cfd7b54f3cc42f0f0d33ebbe0d1a412f4bb1c.css?body=1" for ::1 at 2015-05-09 02:42:43 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:42:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b5a020d3f258f2d091dd95da4a25119397637420f8fa137eeedd277c7d3f4d43.css?body=1" for ::1 at 2015-05-09 02:42:53 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:43:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-96e72fe29ff8e8493f038cf61fc2dbefd7e0d73b6ba6f4b620b55265b3424c6f.css?body=1" for ::1 at 2015-05-09 02:43:02 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:43:31 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-ff40da4d8e90a89b133128be589928d646dbef328050d5752d0c03868e543112.css?body=1" for ::1 at 2015-05-09 02:43:31 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:43:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f38736c82ec98bec31e93fd9c1a173338230dd180f9ca56eeac72d293262cc96.css?body=1" for ::1 at 2015-05-09 02:43:50 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:48:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 423ms (Views: 422.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-6f8606fea5cdc384875452e75e01be904382f2164c74b232c22b7c0ae4bd8eef.css?body=1" for ::1 at 2015-05-09 02:48:25 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:48:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-6cf3848e2823224d95cd4b9eca9f463627f76ed7c9833cbd40d29aed3dda5524.css?body=1" for ::1 at 2015-05-09 02:48:35 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:48:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 114ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d6f40da497874363b6dd83d9dfa50f8ba74755e6dbad372bce6c7c19a2ab62c5.css?body=1" for ::1 at 2015-05-09 02:48:45 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:52:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 514ms (Views: 507.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-01c9c0a6e943218200e7b68b0e1e14b66aeb9dd05735cb24847801b4002288ab.css?body=1" for ::1 at 2015-05-09 02:52:55 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:53:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 246ms (Views: 244.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4329726bc8eb557ead2c13071ce1217741a33c7007cf09663f1c27287e4a01d6.css?body=1" for ::1 at 2015-05-09 02:53:31 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:53:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 220ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-86c479f3d27fd55db3e551f98e642ddaf95327154b68e49e6419d8c83a98b0a2.css?body=1" for ::1 at 2015-05-09 02:53:58 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:54:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 174ms (Views: 172.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-e877fcc8f459616f79bd8ee9d9b86f2a9d50c820902fe54216cc37d1eff38b9b.css?body=1" for ::1 at 2015-05-09 02:54:40 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:55:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5943fe36c7f2f5112256bb5018df3ee8d328fcfecc5f6d2ba04fb175de5e8028.css?body=1" for ::1 at 2015-05-09 02:55:01 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:57:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 234ms (Views: 232.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:57:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:57:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-738c21e1d5332d1bd46dbe24aa1e477c3ae694b2e20be197bd7b0c9bd611ec67.css?body=1" for ::1 at 2015-05-09 02:57:25 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:57:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-11d462dcdfbf03e843ea546e9a5e7c6dc9af8e81b4d2840f45aa8d4b5ae88d70.css?body=1" for ::1 at 2015-05-09 02:57:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:57:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a69000b41e1a2b823d587c59d9b4268bb0457a10c0b65485d5f9560af5992fa4.css?body=1" for ::1 at 2015-05-09 02:57:59 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:58:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 214ms (Views: 213.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-315d2e660ff122bf53bc67a09fcc5301953a748b81781eb2376a8700cbf954fc.css?body=1" for ::1 at 2015-05-09 02:58:25 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:58:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-97f96728c0270ba1166cff636fae40dfe85e738415c24f1999cb3716120604df.css?body=1" for ::1 at 2015-05-09 02:58:35 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 02:59:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 98ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 02:59:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:00:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4980e893c707c2e79572b897eda98c66f399bfaa3967e8fa277cca21829f4b25.css?body=1" for ::1 at 2015-05-09 03:00:27 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:00:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 227ms (Views: 226.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3296e533ac484ac25cb2b10eee2958857e7162a91b0694a6a28097b4d783d86b.css?body=1" for ::1 at 2015-05-09 03:00:41 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:00:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 845ms (Views: 843.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3819fb7ce3a0455b8901496e4819fb7e612025e19e98c15ccfdaad0ccc2a628b.css?body=1" for ::1 at 2015-05-09 03:00:59 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:01:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 169ms (Views: 167.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:02:06 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 201ms (Views: 199.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-bdde7f03e0d4983e11ce4bde1a16c21258f06576813189cb6af8cdf9538cc2e5.css?body=1" for ::1 at 2015-05-09 03:02:06 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:02:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 216ms (Views: 214.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f75005d4fee5979000795eb860e7f959fea1b8ce56a5dba42bf73a842809429b.css?body=1" for ::1 at 2015-05-09 03:02:20 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:02:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:02:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f4cf3636d91ed93387fcd6603a991633ff57b0d04e21755b896aafcd76509db7.css?body=1" for ::1 at 2015-05-09 03:02:56 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:03:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f3dba950bd2b545d88e435fc68a51f08b539f2accede4d681336199a77e56760.css?body=1" for ::1 at 2015-05-09 03:03:19 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:03:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 153ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-8bf95f7f5766a150e1d49286af6f7e25b622bc8e9739e598b15abd1ced05a567.css?body=1" for ::1 at 2015-05-09 03:03:41 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:03:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5709ddc82e7c10d93149981bae8368ef47c70a1f8a10f3e7ffe26993cdbaec5b.css?body=1" for ::1 at 2015-05-09 03:03:50 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:04:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a1cd033c195dc1a3c60ac6885dbd7f1fcca2325920b5775375c2739b2ea6ec3a.css?body=1" for ::1 at 2015-05-09 03:04:01 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:04:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-61878e7b6f9fea78202f87949ae341b76b2c51ba6417fe3f1f599aa6b9ceec68.css?body=1" for ::1 at 2015-05-09 03:04:32 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:04:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:04:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-99a9742c3bf75df33197d25dd07e2f0c69fadb3b94bb4e5095a697d4a84d2abf.css?body=1" for ::1 at 2015-05-09 03:04:54 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:05:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f5806d41af67e650e33186437508c18ce055ac14521893e7925ae3bca37812d2.css?body=1" for ::1 at 2015-05-09 03:05:37 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:06:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 98ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d24a5997947da134d8922f5f209a60a632676ba7cdce0c7e28f7109fcc154c71.css?body=1" for ::1 at 2015-05-09 03:06:01 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:06:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 269ms (Views: 267.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:07:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 530ms (Views: 528.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:07:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 362ms (Views: 359.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-2f6d9dd2e4cab281a112c18460a2974e2b7a6b33d094642616ccce7d4cf0aa1c.css?body=1" for ::1 at 2015-05-09 03:07:44 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:07:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 244ms (Views: 241.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-cb1821171981d4d9ded37a3e461a70d74858c0c468a68e705a71b3a5a3b18dc5.css?body=1" for ::1 at 2015-05-09 03:07:52 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:08:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 158ms (Views: 156.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-eec721763912db25a178548c62a3bed22184219cf911fbe25bf5ccdf64fa3d1f.css?body=1" for ::1 at 2015-05-09 03:08:01 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:08:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-6152105f229535ee26f691d57d765c61c8cf7830822da8a8d2351263beccd1c8.css?body=1" for ::1 at 2015-05-09 03:08:12 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:08:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 115ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5b72c49d160cf5d7b4f9306e2451302b9353b7024b2d1727576cf9252b03f57d.css?body=1" for ::1 at 2015-05-09 03:08:23 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:08:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 269ms (Views: 268.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-807581225133bdcafa6b55f1b67eff415a970e5a6ff42d4f0ee283e2b75f1b9c.css?body=1" for ::1 at 2015-05-09 03:08:50 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:08:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-776c2b05d6fa01ea2cd31438bed45cbf6429481168c95e835cfb36bb7753563e.css?body=1" for ::1 at 2015-05-09 03:08:58 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:09:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 135ms (Views: 134.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-491a07cfedfc8dc4ddf104c4aa4696e4c5463f6e608225bb257b6f035c6be161.css?body=1" for ::1 at 2015-05-09 03:09:13 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:09:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0c69be4d94570864e55eecbcb7bc6760909e041da47db08c2cadcef2ae4af2e3.css?body=1" for ::1 at 2015-05-09 03:09:22 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:09:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 123ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-528214a257bb8b91760e63b9ab1e7132d27decd4df222366b28751a1ac03e48f.css?body=1" for ::1 at 2015-05-09 03:09:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:11:29 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 469ms (Views: 468.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-480cbef9fd33eba4cee456624126157b6e09e37a82bce23d86138ded4d779ab3.css?body=1" for ::1 at 2015-05-09 03:11:30 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:11:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 114ms (Views: 112.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d649fda00564754d360d11b1a95e2da8710c26f5660be1946870e0380e69c0f4.css?body=1" for ::1 at 2015-05-09 03:11:43 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:11:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-e383487374e31ec43560cb6b5b458c4c3a78646da851bb7cc3b31e5f881df7ab.css?body=1" for ::1 at 2015-05-09 03:11:57 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:12:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-07e9c64bdc6ae717ec23b8279718e0797519299a972f0fe270e80304730288f8.css?body=1" for ::1 at 2015-05-09 03:12:11 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:12:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 119ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-91646a56c4c12c4d6c82cf54a9a76879e022b8bf59d362838c281d35c0255b14.css?body=1" for ::1 at 2015-05-09 03:12:32 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:12:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:23:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 603ms (Views: 601.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-50adeb2b7c24f2420104eeb82357e014afb202daed706ee463a3e045a9248cd2.css?body=1" for ::1 at 2015-05-09 03:23:25 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:23:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 134ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-c0a0b2f90b77819156276acde0dfc17d8ed38ecfa2a87f6c61c13477779f8df0.css?body=1" for ::1 at 2015-05-09 03:23:40 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:23:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-ac6fa4a85cc5b0f7397752a856af404f394b69bd4d8c73cfbb719b600af62c50.css?body=1" for ::1 at 2015-05-09 03:23:51 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:24:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f27d0faf33e080dd7a1237be0bc8af2ead19331445a53a0a42d7932b65d305b6.css?body=1" for ::1 at 2015-05-09 03:24:18 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:24:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 160ms (Views: 158.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1eda7f1c840010502ee886a367fe55bbdcfaab3cd54c9f9f030b975cebfa9dfb.css?body=1" for ::1 at 2015-05-09 03:24:30 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:24:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 376ms (Views: 374.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a97813d02bfa22233e80c3de0a55e00466f045dc92c7b7eb1eb240cd747f869e.css?body=1" for ::1 at 2015-05-09 03:24:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:24:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5d281fcd9950de17e92750f5ac6ae4007d041ecb6ee7224c107835db9e86d3c7.css?body=1" for ::1 at 2015-05-09 03:24:47 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:25:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1833778c0ef0d28fcbfe3f3c727e0242a0b89be764eb21d600128cc63481ee2a.css?body=1" for ::1 at 2015-05-09 03:25:00 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:25:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1a01118d1b3d7b60858e4f14c62a09c3f532e34dff5ef073ecff3aba5568cecd.css?body=1" for ::1 at 2015-05-09 03:25:12 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:25:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4baa95ea3daeef06d1407b34419515201dd85a04554963e297d9e71370d1648a.css?body=1" for ::1 at 2015-05-09 03:25:23 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:26:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 680ms (Views: 677.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0d5881a31b7d9722128a835d4d523a213197cdf3d997f77df851d90e0553b505.css?body=1" for ::1 at 2015-05-09 03:26:56 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:27:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 264ms (Views: 262.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-cb7b7dcc2e655bb92446a1264b1bdd39a6aff75f2632f08eea0c8e884e3078b5.css?body=1" for ::1 at 2015-05-09 03:27:14 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:27:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 139ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-9082322afacd9e93510ee681050b206e639df4d8e58bbf95609aef2976e78eba.css?body=1" for ::1 at 2015-05-09 03:27:44 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:28:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 545ms (Views: 542.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f34c770d956821cd00f2d8e1bb5436ab26e26c039e929e93d136d24193275edb.css?body=1" for ::1 at 2015-05-09 03:28:38 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:30:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 705ms (Views: 697.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-ea107d51deb105a4dd94696a63138525368525b9b9b444361ed123ca1c805b5e.css?body=1" for ::1 at 2015-05-09 03:30:17 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:30:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 257ms (Views: 255.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1e44225697f28833e973e99016233f2dce1aa346f76664bdf936174e90a28fa3.css?body=1" for ::1 at 2015-05-09 03:30:33 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:30:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 245ms (Views: 243.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-411db894aa6d141e3a4bb71d651c16edcac37468db3e39a560781017474f5f15.css?body=1" for ::1 at 2015-05-09 03:30:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:30:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 123ms (Views: 122.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4447f736c2e56f022a1ab273039442013874bf9ed62ddfc2da5e636b0a1c9f9c.css?body=1" for ::1 at 2015-05-09 03:30:45 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:31:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 117ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-846f8a7e35599c221177903e89f644750829cf9be62313b3003404a258ad31b3.css?body=1" for ::1 at 2015-05-09 03:31:01 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:31:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5f2409c4c6953e670829b87f4d6c0986dc6fa27fe8da5d66d89660990564451f.css?body=1" for ::1 at 2015-05-09 03:31:10 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:31:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 165ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-c5324f69f11837a32471f950abc3b98e867c22d4de5cc82f2a819039a95a499a.css?body=1" for ::1 at 2015-05-09 03:31:19 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:31:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b198ef6e85b0bfd7d241843a67104841785bf22038aff6283dff3c6020dedea6.css?body=1" for ::1 at 2015-05-09 03:31:27 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:31:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 150ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d1f970c08d2dc5e68c1fe8c8ebac38249f597670c39d1acb1539d2cbc5b971d8.css?body=1" for ::1 at 2015-05-09 03:31:38 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:32:05 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 249ms (Views: 247.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-e7584673bc17bd75dc3a70b1f89c8e113101d49edf6815a76c4b851b4e9dbbce.css?body=1" for ::1 at 2015-05-09 03:32:06 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:32:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 230ms (Views: 228.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-43cc0d919952df185578c4485623787884de5eae2dfb7cac4ac04b552a8bb877.css?body=1" for ::1 at 2015-05-09 03:32:13 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:32:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 258ms (Views: 255.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0bc6e5affc398ffe670d226e0eb6f6dbac67c2aff4af182cd1402bc98be6a247.css?body=1" for ::1 at 2015-05-09 03:32:41 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:32:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 197ms (Views: 195.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-58907194da0c1e83efe1eb208aa654198a44f5e33c22be0988632b31cec47fb0.css?body=1" for ::1 at 2015-05-09 03:32:50 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:33:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 286ms (Views: 284.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-7b3acc114ac88b3c417bf89d40cef12e627f500ef6aa2589441dc5e5dccb7cc7.css?body=1" for ::1 at 2015-05-09 03:33:04 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:34:04 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 204ms (Views: 202.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:34:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 111ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-eac382ffb5a41a08977765d8f28afa2c00c3fea49458bc0446793d23c01bff4e.css?body=1" for ::1 at 2015-05-09 03:34:59 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:35:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-be31d41a3d85985f8b4079dadeddb70442dd3870afdaa9b75b3991b488e3f1e7.css?body=1" for ::1 at 2015-05-09 03:35:19 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:35:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:35:29 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:35:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:35:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:35:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1687ccb234985a5d2a8182e72064c4ba008374239baa46289b3ffd34541ea09d.css?body=1" for ::1 at 2015-05-09 03:35:59 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:36:09 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:36:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 284ms (Views: 282.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-087575f5f2037f97f5021765b04e5827076013e1aca63289ba8b6c4989f42f10.css?body=1" for ::1 at 2015-05-09 03:36:29 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:36:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-036fa0c6ff90789f9d7e9181eca7ffee9974ca3d363541cb66bc07601652bb60.css?body=1" for ::1 at 2015-05-09 03:36:39 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:39:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 758ms (Views: 755.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b8d59c1b3507f2020198f179df540db5eb7ef7ce25ae504652ddc7ad29d51bbb.css?body=1" for ::1 at 2015-05-09 03:39:45 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:40:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 110ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-971d8e410b1c211120f93ffb8d79c03b267c204e99abb1c831eb5f88cbdc41cb.css?body=1" for ::1 at 2015-05-09 03:40:00 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:40:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 595ms (Views: 593.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1d1520a02899ee5ef4ad30660a42e465d12ab6cb844565ca1cdab0326e9bc3d3.css?body=1" for ::1 at 2015-05-09 03:40:41 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:40:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 243ms (Views: 190.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:41:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 257ms (Views: 255.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-9e9ff9fb5b9ef06c4d40618f231b8e681c34c0682f33fedb68026e26da796ae3.css?body=1" for ::1 at 2015-05-09 03:41:21 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:42:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2117ms (Views: 2111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d5da62bc2f45fa82ac133993f135c83e75cb2e5d1cac8fa3e24e327e78d5ddfb.css?body=1" for ::1 at 2015-05-09 03:42:06 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:42:06 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 156ms (Views: 153.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:42:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 332ms (Views: 330.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-88729c1a711019b87679cfc0ac92146edbae4125b34637e0fb5d3e9f179e6ad7.css?body=1" for ::1 at 2015-05-09 03:42:29 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:42:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 246ms (Views: 244.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-ae66d2786bcab7e48af67b2f16f3e885fe1c32be639c477a98017f9064bce392.css?body=1" for ::1 at 2015-05-09 03:42:57 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:43:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 955ms (Views: 944.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-eaf4acc1b6fe73cde95a2a268aee8ab009abc819f2e64ac2067f2c701e434bc4.css?body=1" for ::1 at 2015-05-09 03:43:46 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:43:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 252ms (Views: 250.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:44:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 202ms (Views: 199.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:44:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 88ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:44:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 168ms (Views: 167.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-43eb543bf80154c21612dea230a742feb938df913bc6b120dda799ffc1ed828c.css?body=1" for ::1 at 2015-05-09 03:44:58 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:45:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-cb92d5d4b9495118b2a835998214b805e89c13d9bb947b9fe458bf2877c28607.css?body=1" for ::1 at 2015-05-09 03:45:07 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:45:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3c4600e3bb26356509d328bd670b9dd94aa5c17d7bb082ca0a7c5356f6465a0e.css?body=1" for ::1 at 2015-05-09 03:45:24 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:46:04 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1c15eca921d8f77d42a8b585c02f39d7ee0b311db142c12789349ff8fd047ce7.css?body=1" for ::1 at 2015-05-09 03:46:04 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:46:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 122ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-91bd0c1acfee6cf71d2604e42809cffea92b83d25ac5edfa3e5a618b7df2ad65.css?body=1" for ::1 at 2015-05-09 03:46:14 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:46:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 222ms (Views: 220.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-7aae2747c133405dc05bc3376e50f0dac81dbdba27d7badc2de6ce7686a2a4b3.css?body=1" for ::1 at 2015-05-09 03:46:34 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:47:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 778ms (Views: 759.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0ed9daff3d39fbf704d9d3d6030c161b13bcc034b68cad2976229f8657b3ef5a.css?body=1" for ::1 at 2015-05-09 03:47:14 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:48:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1009ms (Views: 1004.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-159fcdc75a798dbe46b86f0988963c857b7f66d93334a0c98ae52094091e2c93.css?body=1" for ::1 at 2015-05-09 03:48:15 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:48:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:48:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:48:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 245ms (Views: 244.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-18e47085a88b5632daf36b61662e106ee1db4b75f9e12b1af6b019d1d1a8b507.css?body=1" for ::1 at 2015-05-09 03:48:38 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:49:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 915ms (Views: 907.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-dd97a435b33d03e338ca1828eac293d8b9b61cf1335f13c68b35a2cf3252ad01.css?body=1" for ::1 at 2015-05-09 03:49:28 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:49:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 215ms (Views: 213.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-18b69f685ca2ac6022ecc2fa34171b8b5369c2e7aabe81c976f6cd8caca7718c.css?body=1" for ::1 at 2015-05-09 03:49:45 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:52:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 918ms (Views: 904.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a61192356a4d6420f7457fd98dfb495bc160c702d225934574888552f5a08de8.css?body=1" for ::1 at 2015-05-09 03:52:54 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 03:52:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 03:53:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1120ms (Views: 1111.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-e958f82f2fc620ce36b5eaeb4727ca48a474a57661c8658888c708d9383baebb.css?body=1" for ::1 at 2015-05-09 03:53:34 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:01:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 846ms (Views: 837.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d264b53f65955999318e3bef4d266b44d99392661d4ca2e9cefc1b43fb4aeba4.css?body=1" for ::1 at 2015-05-09 04:01:31 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:02:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-55464a2ef58b01e6129c92d4d5eafe01627a37c30a07663ff6b90b3f4bb25282.css?body=1" for ::1 at 2015-05-09 04:02:23 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:02:31 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-09 04:03:04 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 202ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-17d3366396e4bab3b0d9312d9763df559e5be7ab3e6626dd98e962c9f69d0a7b.css?body=1" for ::1 at 2015-05-09 04:03:04 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:04:06 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-78faeb8086a5d78fcfb41bda06d8262fe1a2d9222295e2a9aac5d90a135de6e5.css?body=1" for ::1 at 2015-05-09 04:04:06 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:04:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 120ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-9ec89b153905cf8b6a3082c2ed81a72c243a4bf91f30574fac0d56c75839360c.css?body=1" for ::1 at 2015-05-09 04:04:49 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:04:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0ef616b328945851d2c13810bc14d010249209bc6163a9b076389ab294432fb3.css?body=1" for ::1 at 2015-05-09 04:04:56 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:05:05 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 113ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a8dd1df60ede74a655ae695d5c464c839e40a690ba6107828bdfd2039059040c.css?body=1" for ::1 at 2015-05-09 04:05:06 -0400
+
+
+Started GET "/" for ::1 at 2015-05-09 04:07:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3dd4ef40c5a833de191e96e66e7d065e7aecf6a011c55d1f8399a76baa9395aa.css?body=1" for ::1 at 2015-05-09 04:07:50 -0400
