@@ -1,13 +1,14 @@
 Planned Models:
 
 User has many Story
+	name; string
 	deleted_at; datetime
 
 	Story has many Placemark; belongs to User
 		deleted_at; datetime
 
 		Placemark has many images; belongs to Story
-			title; string
+			name; string
 			synopsis; text
 			full_text; text
 			lat; decimal
