@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Listing markers in view</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css" rel="stylesheet" />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:relative; top:0; bottom:0; width:400px; height:300px; }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+L.mapbox.accessToken = "pk.eyJ1IjoibmJ1bWJhcmdlciIsImEiOiIwdlI1ZnlzIn0.XLgYFawoWHOeHLWnzuqQuw";
+var map = L.mapbox.map("map", "mapbox.streets");
+
+// Initialize the geocoder control and add it to the map.
+var geocoderControl = L.mapbox.geocoderControl("mapbox.places", {
+	position: "topright",
+    keepOpen: true
+  })
+geocoderControl.addTo(map);
+
+var coordinates = document.getElementById("coordinates");
+var marker = L.marker([0, 0], {
+    icon: L.mapbox.marker.icon({
+      "marker-color": "#f86767"
+    }),
+    draggable: true
+}).addTo(map);
+
+// Listen for the `found` result and parse out the first result coordinates. 
+geocoderControl.on("found", function(res) {
+	map_center_coords = res.results.features[0].center
+	marker.setLatLng({lat: map_center_coords[1], lng: map_center_coords[0]});
+	get_marker_position();
+});
+
+// every time the marker is dragged, update the coordinates container
+marker.on("dragend", get_marker_position);
+// Set the initial marker coordinate on load.
+get_marker_position();
+function get_marker_position() {
+    var m = marker.getLatLng();
+    console.log("Marker Center: ", m.lat, m.lng)
+}
+</script>
+</body>
+</html>
