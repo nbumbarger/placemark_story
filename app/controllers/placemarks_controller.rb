@@ -28,7 +28,7 @@ class PlacemarksController < ApplicationController
     @placemark = @story.placemarks.find(params[:id])
     @placemark.destroy
     redirect_to @story
-  endd
+  end
 
   private
   def placemark_params

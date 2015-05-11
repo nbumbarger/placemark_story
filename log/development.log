@@ -10449,3 +10449,1007 @@ Started GET "/" for ::1 at 2015-05-11 12:24:45 -0400
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (2.8ms)
 Completed 200 OK in 179ms (Views: 174.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-11 12:47:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2823ms (Views: 2785.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-11 12:47:19 -0400
+
+
+Started GET "/assets/jquery2.self-0664d02dcbfb008e715c754b00b9af29d6f1796828c03610aee4265bdfc6afff.js?body=1" for ::1 at 2015-05-11 12:47:20 -0400
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-05-11 12:47:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-11 12:47:20 -0400
+
+
+Started GET "/assets/normalize-rails.self-a68f33e378fbde2d06429d57942e1ba9426a3c062f19f2e18cf089b6c36df51d.css?body=1" for ::1 at 2015-05-11 12:47:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-11 12:47:20 -0400
+
+
+Started GET "/assets/style.self-bd8ddaefcf77c65180666ef40e0ec2fc844473ba46c2d8b29108e9f7d17bdcaa.css?body=1" for ::1 at 2015-05-11 12:47:20 -0400
+
+
+Started GET "/" for ::1 at 2015-05-11 13:03:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:03:25 -0400
+Processing by StoriesController#index as HTML
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template stories/index, application/index with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nbumbarger/ga/projects/rails/placemark_story/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (136.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (97.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (236.9ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:03:26 -0400
+Processing by StoriesController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template stories/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nbumbarger/ga/projects/rails/placemark_story/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (79.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.5ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:05:26 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (96.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (117.7ms)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 98.1ms)
+
+ActionView::Template::Error (undefined local variable or method `stories' for #<#<Class:0x007fc9fabb4c68>:0x007fc9fd91a810>):
+    1: <h2>Stories</h2>
+    2: <p><%= link_to "Create New Story", new_story_path %></p>
+    3: <ul>
+    4:   <% stories.each do |story| %>
+    5:   <li><%= link_to story.name, story_path(story) %> </li>
+    6:   <% end %>
+    7: </ul>
+  app/views/stories/index.html.erb:4:in `_app_views_stories_index_html_erb__2175719962277216984_70252759651860'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (137.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:05:44 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:05:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (147.7ms)
+Completed 200 OK in 248ms (Views: 198.9ms | ActiveRecord: 43.7ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-11 13:06:00 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"evNqs3oSgXLagsrC6o+eR5Igfi/RKuY2yyb8JyANBB1ICorpESPf7ZS0ESTgHnr/7C3qErNzehofLTWia92dXQ==", "story"=>{"name"=>"My Story"}, "commit"=>"Create Story"}
+  [1m[35m (46.1ms)[0m  BEGIN
+  [1m[36mSQL (64.3ms)[0m  [1mINSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "My Story"]]
+  [1m[35m (29.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/1
+Completed 302 Found in 221ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/stories/1" for ::1 at 2015-05-11 13:06:00 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered stories/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `title' for #<Story id: 1, name: "My Story", deleted_at: nil>):
+    1: <h2><%= @story.title %></h2>
+    2: <p><%= link_to "Delete Story", story_path(@story), method: :delete %></p>
+    3: 
+    4: <% @story.placemarks.each do |placemark| %>
+  app/views/stories/show.html.erb:1:in `_app_views_stories_show_html_erb___395849186873965141_70252760878220'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (147.1ms)
+
+
+Started GET "/stories/1" for ::1 at 2015-05-11 13:06:23 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStory Load (0.6ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPlacemark Load (13.4ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 1]]
+  Rendered stories/show.html.erb within layouts/application (107.0ms)
+Completed 200 OK in 163ms (Views: 145.3ms | ActiveRecord: 15.7ms)
+
+
+Started DELETE "/stories/1" for ::1 at 2015-05-11 13:06:50 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NeQdP0fALT2V7wQ2k2KuQeEhVODzOpQ2AnAbwAZWDnsHHf1lLPFzotvZ39CZ80r5nyzA3ZFjCBrWe9JFTYaXOw==", "id"=>"1"}
+  [1m[35mStory Load (0.7ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "stories" WHERE "stories"."id" = $1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:06:50 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:06:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-11 13:06:56 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IP7cYIKH05MRdfgVypmTOz/pbNXrL2pR6zTltxvKWgoSBzw66baNDF9DI/PACHeDQeT46Il29n0/PywyUBrDSg==", "story"=>{"name"=>"My story"}, "commit"=>"Create Story"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"  [["name", "My story"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/2
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:06:56 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.4ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:08:43 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.6ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:08:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:08:54 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:08:55 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.7ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:09:39 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:09:42 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:10:15 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:10:25 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:10:27 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:10:41 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:10:50 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.6ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:11:13 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.6ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:12:15 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.4ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:12:26 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:12:36 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.4ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:13:00 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.4ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:13:03 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:13:37 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-11 13:13:42 -0400
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/controllers/placemarks_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/placemarks_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (63.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.1ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-11 13:13:43 -0400
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/controllers/placemarks_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/placemarks_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.9ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-11 13:14:15 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.2ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 105ms (Views: 77.7ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/stories/2/placemarks" for ::1 at 2015-05-11 13:15:14 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nw8AKlbjykoIm2d1bkVs4VhpfnWba7wjz2k0mcj5Ep2t9uBwPdKU1UatvJNk1IhZJmTqSPkyIA8bYv0cgymL3Q==", "placemark"=>{"name"=>"my placemark", "synopsis"=>"ffdfds", "full_text"=>"fsdfsdf", "lat"=>"0.45", "lon"=>"2.87"}, "commit"=>"Create Placemark", "story_id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (25.1ms)[0m  INSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "my placemark"], ["synopsis", "ffdfds"], ["full_text", "fsdfsdf"], ["lat", "0.45"], ["lon", "2.87"], ["story_id", 2]]
+  [1m[36m (11.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/2
+Completed 302 Found in 80ms (ActiveRecord: 36.8ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:15:14 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.3ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined local variable or method `answer' for #<#<Class:0x007fca00063188>:0x007fca00062788>):
+    14:       <li><%= placemark.lat %></li>
+    15:       <li><%= placemark.lon %></li>
+    16: 	</ul>
+    17:     <p><%= link_to "Delete", question_answer_path(@question, answer), method: :delete %></p>
+    18:   </div>
+    19: <% end %>
+  app/views/stories/show.html.erb:17:in `block in _app_views_stories_show_html_erb___395849186873965141_70252760832100'
+  app/views/stories/show.html.erb:8:in `_app_views_stories_show_html_erb___395849186873965141_70252760832100'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.4ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:15:58 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.4ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 61ms (Views: 57.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-11 13:16:07 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:17:03 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/stories/2/placemarks/1" for ::1 at 2015-05-11 13:17:05 -0400
+Processing by PlacemarksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YfQJfwL1pitFLUCDm2pLdSvSHlAIEqUMze+mW8eqeWBTDeklacT4tAsbm2WR+6/NVd+KbWpLOSAZ5G/ejHrgIA==", "story_id"=>"2", "id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.5ms)[0m  SELECT  "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1 AND "placemarks"."id" = $2 LIMIT 1  [["story_id", 2], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "placemarks" WHERE "placemarks"."id" = $1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/2
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:17:05 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.3ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-11 13:17:07 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories/2/placemarks" for ::1 at 2015-05-11 13:17:15 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fD8fyOWiJuhmXSR4kUPqbExjWWnVhDLKYTqljesn0IROxv+SjpN4dyhr/56b0g7UMm7NVLfdrua1MWwIoPdJxA==", "placemark"=>{"name"=>"asdasd", "synopsis"=>"dasdasd", "full_text"=>"dsads", "lat"=>"0.22", "lon"=>"3.55"}, "commit"=>"Create Placemark", "story_id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "asdasd"], ["synopsis", "dasdasd"], ["full_text", "dsads"], ["lat", "0.22"], ["lon", "3.55"], ["story_id", 2]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/2
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:17:15 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.4ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-11 13:17:19 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/stories/2/placemarks" for ::1 at 2015-05-11 13:17:25 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y7E4/MA472dkKqQzCXZHY2uPh0OZHnMUMurTgU+Jy4b5SNimqwmx+Cocf9UD56PbFYITfvtH7zjm4RoEBFlSxg==", "placemark"=>{"name"=>"sadad", "synopsis"=>"dasdas", "full_text"=>"dsadsa", "lat"=>"saddsa", "lon"=>"dasdsad"}, "commit"=>"Create Placemark", "story_id"=>"2"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "sadad"], ["synopsis", "dasdas"], ["full_text", "dsadsa"], ["lat", "0.0"], ["lon", "0.0"], ["story_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/2
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:17:25 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.4ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-11 13:17:47 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.3ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/stories/2" for ::1 at 2015-05-11 13:17:48 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kG4mH4bwpWVDGa+OtiQcRV0dXlH9XZfVcufw6JnFtz2il8ZF7cH7+g0vdGi8tfj9IxDKbJ8EC/mm7Dlt0hUufQ==", "id"=>"2"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "stories" WHERE "stories"."id" = $1  [["id", 2]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:17:48 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:17:51 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:17:52 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:17:54 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:17:57 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:17:59 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:17:59 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:01 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:02 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:04 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:06 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:08 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:08 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-11 13:18:10 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zyXoyY2wzHvaH5OiCsFV45FMtiaBiUMqjDoIe/6S/6793AiT5oGS5JQpSEQAULFb70EiG+PQ3wZYMcH+tUJm7g==", "story"=>{"name"=>"asdads"}, "commit"=>"Create Story"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "asdads"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/3
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/stories/3" for ::1 at 2015-05-11 13:18:10 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPlacemark Load (0.4ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 3]]
+  Rendered stories/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/stories/3" for ::1 at 2015-05-11 13:18:17 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DajSkaVWU2MgvL2aAK31ykmb+Uxt5pk/2SioVvg1ExU/UTLLzmcN/G6KZnwKPBFyN5ZtcQ+/BRMNI2HTs+WKVQ==", "id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stories" WHERE "stories"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:17 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:19 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:20 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:21 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:21 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:22 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:23 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:24 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:29 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:18:31 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 13:18:32 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-11 13:18:35 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L4cQ57B0xT3iJzxrSAwLiF8AdDHhZMBg5IKckE2U0NUdfvC920WboqwR541Cne8wIQ3gDIM9XEwwiVUVBkRJlQ==", "story"=>{"name"=>"mystory"}, "commit"=>"Create Story"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"  [["name", "mystory"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/4
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/stories/4" for ::1 at 2015-05-11 13:18:35 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPlacemark Load (0.3ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 4]]
+  Rendered stories/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/4/placemarks/new" for ::1 at 2015-05-11 13:18:37 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"4"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered placemarks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories/4/placemarks" for ::1 at 2015-05-11 13:18:45 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c0Fm3Ar+NbDy+uFug8aCdWRwwFKrxFkkP9Db5CHpNkpBuIaGYc9rL7zMOoiJV2bNGn1Ub8mdxQjr2xJhajmvCg==", "placemark"=>{"name"=>"dsadd", "synopsis"=>"dasdas", "full_text"=>"dadsaad", "lat"=>"0.33", "lon"=>"0.44"}, "commit"=>"Create Placemark", "story_id"=>"4"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "dsadd"], ["synopsis", "dasdas"], ["full_text", "dadsaad"], ["lat", "0.33"], ["lon", "0.44"], ["story_id", 4]]
+  [1m[35m (3.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/4
+Completed 302 Found in 12ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/stories/4" for ::1 at 2015-05-11 13:18:45 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 4]]
+  Rendered stories/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.7ms)

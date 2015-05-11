@@ -22,8 +22,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# use normalize.css base style
+
+
+# Add normalize.css base css style to asset pipeline
 gem 'normalize-rails'
+# Add mapbox javascript and css library to asset pipeline
+gem 'mapbox-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
