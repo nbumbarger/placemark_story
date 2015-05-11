@@ -6,25 +6,26 @@
   <meta name="description" content="Shows in Search Engine Results">
   <meta name="keywords" content="Key, Words, For, Search, Engines">
   <meta name="author" content="Nick Bumbarger">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-  <h1>
-    <span class="title-word1">Placemark</span><span class="title-word2">Story</span>
-  </h1>
-</header>
-<nav>
-  <ul>
-    <li><%= link_to "New Project", new_story_path %></li>
-    <li><%= link_to "My Projects", stories_path %></li>
-    <li><%= link_to "About", new_story_path %></li>
-  </ul>
-</nav>
-
-<%= yield %>
-
+<div class="left-logo"></div>
+<div class="right-content">
+  <header>
+    <h1>
+      <span class="title-word1">Placemark</span><span class="title-word2">Story</span>
+    </h1>
+  </header>
+  <nav>
+    <ul>
+      <li><%= link_to "About", root_path, class: "current_page" %></li>
+      <li><%= link_to "New Map Story", new_story_path %></li>
+      <li><%= link_to "View Map Stories", stories_path %></li>
+    </ul>
+  </nav>
+  <%= yield %>
+</div>
 </body>
 </html>

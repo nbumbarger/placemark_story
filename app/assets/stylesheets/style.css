@@ -24,55 +24,101 @@
 }
 
 /*Content Styles*/
-html {
-  font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-size:12px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 12px;
 }
 
 body {
-  max-width:70%;
-  margin:5rem auto;
-  font-size:1rem;
+  display: table;
+  width: 70%;
+  clear: both;
+  margin: 6rem auto 0 auto;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.left-logo {
+  /*background-color: green;*/
+
+  display: table-cell;
+  width: 100px;
+  height: 100%;
+  background-image: url("http://dl.dropboxusercontent.com/u/7989543/logos/resized/electric.png");
+  background-position: top right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+.right-content {
+  /*background-color: red;*/
+
+  display: table-cell;
+  padding: .5rem 0 0 2.25rem;
 }
 
 header h1 {
-  margin:0;
-  font-size:3rem;
+  font-size: 4.15rem;
+  margin: 0;
 }
 
 header h1 .title-word1 {
-  font-weight:400;
-  letter-spacing:.1rem;
-  text-transform:lowercase;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
+  text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
 }
 
 header h1 .title-word2 {
-  margin:0 0 0 .25rem;
-  font-weight:100;
-  letter-spacing:0.17rem;
-  text-transform:uppercase;
+  margin: 0 0 0 .25rem;
+  font-weight: 100;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
 }
 
-ul {
-  margin:0;
-  padding:0;
-  font-size:1.09rem;
-  font-weight:600;
-  color:#f00;
-  list-style-type:none;
-  text-transform:uppercase;
+nav {
+  padding: 0 0 1rem 0;
 }
 
-ul a {
-  color:#000;
-  text-decoration:none;
+nav ul {
+  color: #000;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: .14rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
 }
 
-li {
-    display:inline;
+nav li {
+    display: inline;
 }
 
-li + li::before {
-  padding:0 0.5rem 0 0.5rem;
-  content:" | ";
+nav li + li::before {
+  content: " | ";
+}
+
+nav li a {
+  margin: 0 .25rem 0 0.25rem;
+  color: #000;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+nav li a.current_page{
+  /*text-decoration:underline;*/
+  text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
+}
+
+p {
+  margin: 1rem 0 0 .25rem;
 }
