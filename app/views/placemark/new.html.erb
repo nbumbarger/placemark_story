@@ -1,0 +1,21 @@
+<% if @placemark.errors.any? %>
+<ul>
+  <% placemark.errors.full_messages.each do |err| %>
+  <li><%= err %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for [@story, @placemark] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :synopsis %>
+  <%= f.text_field :synopsis %>
+  <%= f.label :full_text %>
+  <%= f.text_field :full_text %>
+  <%= f.label :lat %>
+  <%= f.text_field :lat %>
+  <%= f.label :lon %>
+  <%= f.text_field :lon %>
+  <%= f.submit %>
+<% end %>d

@@ -9,6 +9,7 @@ class PlacemarksController < ApplicationController
   end
 
   def new
+    @story = Story.find(params[:story_id])
     @placemark = Placemark.new
   end
 

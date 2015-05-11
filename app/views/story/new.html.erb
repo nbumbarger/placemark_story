@@ -1,0 +1,13 @@
+<% if @story.errors.any? %>
+<ul>
+  <% story.errors.full_messages.each do |err| %>
+  <li><%= err %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for @story do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
