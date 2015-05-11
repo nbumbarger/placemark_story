@@ -11453,3 +11453,560 @@ Processing by StoriesController#show as HTML
   [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 4]]
   Rendered stories/show.html.erb within layouts/application (2.7ms)
 Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/4" for ::1 at 2015-05-11 13:30:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mStory Load (0.8ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPlacemark Load (1.3ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 4]]
+  Rendered stories/show.html.erb within layouts/application (149.3ms)
+Completed 500 Internal Server Error in 1082ms (ActiveRecord: 11.1ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__728891793027616480_70357269745160'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (98.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (225.9ms)
+
+
+Started DELETE "/stories/4" for ::1 at 2015-05-11 13:30:26 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yqLL7N9/rZRHNMUXEhGSpgXfemxmXB4+6RWxP8hxHwz4Wyu2tE7zCwkCHvEYgHYee9LuUQQFghI9Hni6g6GGTA==", "id"=>"4"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stories" WHERE "stories"."id" = $1  [["id", 4]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:30:26 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__728891793027616480_70357269745160'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (17.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (63.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (156.5ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:45:27 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.9ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__728891793027616480_70357269745160'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (34.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (135.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (120.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (222.8ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:46:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 534ms (ActiveRecord: 2.7ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3902050948032505818_70148239535720'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (123.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (98.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (257.8ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:47:47 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3902050948032505818_70148239535720'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.1ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:49:44 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.6ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3902050948032505818_70148239535720'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (107.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (267.2ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:51:09 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3902050948032505818_70148239535720'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (96.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (204.4ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:51:33 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.6ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-000000.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3902050948032505818_70148239535720'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (131.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (268.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:52:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 692ms (ActiveRecord: 2.8ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( icons-ffffff.png )` to `config/initializers/assets.rb` and restart your server):
+     6:   <meta name="description" content="Shows in Search Engine Results">
+     7:   <meta name="keywords" content="Key, Words, For, Search, Engines">
+     8:   <meta name="author" content="Nick Bumbarger">
+     9:   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    10:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3060408861716214275_70168424712440'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (137.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (109.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (279.3ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 13:55:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 3143ms (Views: 3056.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/mapbox.self-32a647372d267735cac0093dca7e03030420c2c35e469e8e7a89f0ae1df0c767.css?body=1" for ::1 at 2015-05-11 13:55:37 -0400
+
+
+Started GET "/assets/mapbox.self-b37c2a3a08ff5ad40680023b1831942fd7ce194eb91d5e4087727dda906f6d8c.js?body=1" for ::1 at 2015-05-11 13:55:37 -0400
+
+
+Started GET "/assets/application.self-4f22ee513bff51c07ddbacea6716b3bb025259c40c0c44f68b3b024ed0ff7a2c.css?body=1" for ::1 at 2015-05-11 13:55:37 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-11 13:55:37 -0400
+
+
+Started GET "/" for ::1 at 2015-05-11 14:11:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 692ms (Views: 667.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 14:11:09 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (171.6ms)
+Completed 200 OK in 429ms (Views: 337.3ms | ActiveRecord: 38.2ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 14:11:10 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.3ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 151ms (Views: 147.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 14:11:11 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 14:11:13 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 84ms (Views: 81.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 14:11:14 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 108ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-11 14:11:17 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J+yeJ6Siv2R7Q6UPtWX88aNA9gPx9b/rK7ZFLKwKw5wVFX59z5Ph+zV1fum/9BhJ3U1iPpOsI8f/vYyp59pa3A==", "story"=>{"name"=>"new story"}, "commit"=>"Create Story"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "new story"]]
+  [1m[35m (25.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 59ms (ActiveRecord: 26.9ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:17 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPlacemark Load (0.7ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (97.7ms)
+Completed 200 OK in 276ms (Views: 202.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/stories/5/placemarks/new" for ::1 at 2015-05-11 14:11:21 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"5"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered placemarks/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 138ms (Views: 127.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/stories/5/placemarks" for ::1 at 2015-05-11 14:11:27 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwC/Db9qS6/uAMgCRn32s5cmAs2gxeGKpsTiMcBKhS65+V9X1FsVMKA2E+RM7BIL6SuW8MKcfaZyzyu0i5ocbg==", "placemark"=>{"name"=>"sadas", "synopsis"=>"dasdsa", "full_text"=>"dsads", "lat"=>"dsa", "lon"=>"dasd"}, "commit"=>"Create Placemark", "story_id"=>"5"}
+  [1m[35mStory Load (0.6ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "sadas"], ["synopsis", "dasdsa"], ["full_text", "dsads"], ["lat", "0.0"], ["lon", "0.0"], ["story_id", 5]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 39ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:27 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mPlacemark Load (0.4ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 77ms (Views: 74.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/stories/5/placemarks/5" for ::1 at 2015-05-11 14:11:33 -0400
+Processing by PlacemarksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"upSonFGuFRJcCvTU0avmNEgif6lYkVZkCC5iEwlnEvSIbUjGOp9LjRI8LzLbOgKMNi/rlDrIykjcJauWQreLtA==", "story_id"=>"5", "id"=>"5"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mPlacemark Load (0.4ms)[0m  [1mSELECT  "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1 AND "placemarks"."id" = $2 LIMIT 1[0m  [["story_id", 5], ["id", 5]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "placemarks" WHERE "placemarks"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:33 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPlacemark Load (0.5ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/5/placemarks/new" for ::1 at 2015-05-11 14:11:33 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"5"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered placemarks/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/stories/5/placemarks" for ::1 at 2015-05-11 14:11:40 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ERxQMf2usrI4Tz95kzL/qKEHHtJXT+m7krRLiOcp5lkj5bBrlp/sLXZ55J+ZoxsQ3wqK7zUWdZdGv4INrPl/GQ==", "placemark"=>{"name"=>"dsadas", "synopsis"=>"asdasd", "full_text"=>"dasddas", "lat"=>"213123", "lon"=>"3213123"}, "commit"=>"Create Placemark", "story_id"=>"5"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "dsadas"], ["synopsis", "asdasd"], ["full_text", "dasddas"], ["lat", "213123.0"], ["lon", "3213123.0"], ["story_id", 5]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:40 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mPlacemark Load (0.4ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 70ms (Views: 67.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/5/placemarks/new" for ::1 at 2015-05-11 14:11:45 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"5"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered placemarks/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stories/5/placemarks" for ::1 at 2015-05-11 14:11:52 -0400
+Processing by PlacemarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rY6uCRvDdUaFfgRrutaRA1zYBeMka77qZrV0E/jGoBafd05TcPIr2ctI342wR3W7ItWR3kYyIsayvr2WsxY5Vg==", "placemark"=>{"name"=>"sadsa", "synopsis"=>"dasds", "full_text"=>"sadads", "lat"=>"3.4", "lon"=>"343."}, "commit"=>"Create Placemark", "story_id"=>"5"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "placemarks" ("name", "synopsis", "full_text", "lat", "lon", "story_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "sadsa"], ["synopsis", "dasds"], ["full_text", "sadads"], ["lat", "3.4"], ["lon", "343.0"], ["story_id", 5]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:52 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPlacemark Load (0.5ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/stories/5/placemarks/6" for ::1 at 2015-05-11 14:11:55 -0400
+Processing by PlacemarksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LjWCcBISEXbanAzjswC96wX7mTSxDlFsscR6QQbbneMczGIqeSNP6ZSq1wW5kVlTe/YNCdNXzUBlz7PETQsEow==", "story_id"=>"5", "id"=>"6"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPlacemark Load (0.6ms)[0m  SELECT  "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1 AND "placemarks"."id" = $2 LIMIT 1  [["story_id", 5], ["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "placemarks" WHERE "placemarks"."id" = $1  [["id", 6]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:55 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/stories/5/placemarks/7" for ::1 at 2015-05-11 14:11:56 -0400
+Processing by PlacemarksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CFtIkRRK/c7xCAA+Df5pBpO2WFwhZQLAfWAmrSTv4Xg6oqjLf3ujUb8+29gHb42+7bvMYUM8nuypa+8obz94OA==", "story_id"=>"5", "id"=>"7"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mPlacemark Load (0.7ms)[0m  [1mSELECT  "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1 AND "placemarks"."id" = $2 LIMIT 1[0m  [["story_id", 5], ["id", 7]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "placemarks" WHERE "placemarks"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/5
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/stories/5" for ::1 at 2015-05-11 14:11:56 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPlacemark Load (0.3ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 5]]
+  Rendered stories/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/stories/5" for ::1 at 2015-05-11 14:11:57 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8Bbd1zqbxHKJPXllxL/eXacAgujejtfilLADVBPXLqTC7z2NUaqa7ccLooPOLjrl2Q0W1bzXS85Au8rRWAe35A==", "id"=>"5"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stories" WHERE "stories"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 14:11:57 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 14:11:58 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 14:11:59 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-11 14:12:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.0ms)
