@@ -13,14 +13,26 @@ class PlacemarksController < ApplicationController
     @placemark = Placemark.new
   end
 
- def create
+  def create
     @story = Story.find(params[:story_id])
     @placemark = @story.placemarks.new(placemark_params)
-    if @placemark.save
-      redirect_to @story
-    else
-      render :new
+    if params[:commit] === "Add Next Placemark"
+      puts "\n\n\nadd next\n\n\n"
+      if @placemark.save
+        redirect_to new_story_placemark_path
+      else
+        render :new
+      end
+
+    elsif params[:commit] == "Finish Story"
+      if @placemark.save
+        redirect_to @story
+      else
+        render :new
+      end
+
     end
+
   end
 
   def destroy

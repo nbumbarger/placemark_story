@@ -1,13 +1,12 @@
 <% if @story.errors.any? %>
 <ul>
-  <% story.errors.full_messages.each do |err| %>
+  <% @story.errors.full_messages.each do |err| %>
   <li><%= err %></li>
   <% end %>
 </ul>
 <% end %>
 
 <%= form_for @story do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, :placeholder=> "Enter new story name", :autofocus=> true , :autocomplete=> :off %>
   <%= f.submit %>
 <% end %>

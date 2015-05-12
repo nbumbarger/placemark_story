@@ -41,24 +41,43 @@ body {
   margin: 6rem auto 0 auto;
 }
 
+.right-content {
+  /*background-color: red;*/
+
+  display: table-cell;
+  padding: .5rem 0 0 2.25rem;
+}
+
+p {
+  margin: 1rem 0 0 .25rem;
+}
+
+#map {
+  position: relative;
+  width: 50rem;
+  height: 30rem;
+}
+
+.placemarks ul {
+  padding: 0 0 0 2rem;
+}
+}
+.placemarks>ul>li {
+  margin: 0 0 0 3rem;
+}
+
+/*Logo/Header Styles*/
 .left-logo {
   /*background-color: green;*/
 
   display: table-cell;
   width: 100px;
   height: 100%;
-  background-image: url("http://dl.dropboxusercontent.com/u/7989543/logos/resized/electric.png");
+  background-image: url("electric.png");
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
   background-origin: content-box;
-}
-
-.right-content {
-  /*background-color: red;*/
-
-  display: table-cell;
-  padding: .5rem 0 0 2.25rem;
 }
 
 header h1 {
@@ -81,6 +100,7 @@ header h1 .title-word2 {
   text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
 }
 
+/*Nav Styles*/
 nav {
   padding: 0 0 1rem 0;
 }
@@ -118,6 +138,60 @@ nav li a.current_page{
   text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
 }
 
-p {
-  margin: 1rem 0 0 .25rem;
+#about nav li .about > a {
+  pointer-events: none;
+  cursor: default;
+}
+
+/*Form Styles*/
+label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 1.5em 0 0.75em 0;
+}
+
+input {
+  float:left;
+  width: 30.55rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+input:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+input[type="submit"] {
+  float:left;
+  color: #555555;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width:auto;
+  padding: .5rem 1rem .5rem 1rem;
+  margin: 0 0 0 0.5rem;
+}
+
+input[type="submit"]:hover {
+  border-color: #5a5a5a;
+}
+
+/*Map Styles*/
+pre.ui-coordinates {
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  padding:5px 10px;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  font-size:11px;
+  line-height:18px;
+  border-radius:3px;
+  z-index:999;
 }

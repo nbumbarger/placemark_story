@@ -7,15 +7,19 @@
 <%= link_to "Create new placemark", new_story_placemark_path(@story) %>
 <% @story.placemarks.each do |placemark| %>
   <div class="placemark">
-    <h3>
-      <span><%= placemark.name %></span>
-      <span><%= link_to "(delete)", story_placemark_path(@story, placemark), method: :delete %></span>
+  <ul class="placemarks">
+    <li>
+      <h3>
+        <span><%= placemark.name %></span>
+        <span><%= link_to "(delete)", story_placemark_path(@story, placemark), method: :delete %></span>
       </h3>
-    <ul>    
+    </li>
+    <ul>
       <li><%= placemark.synopsis %></li>
       <li><%= placemark.full_text %></li>
       <li><%= placemark.lat %></li>
       <li><%= placemark.lon %></li>
-	</ul>
+    </ul>
+  </ul>
   </div>
 <% end %>

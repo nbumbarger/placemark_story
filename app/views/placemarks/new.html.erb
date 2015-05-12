@@ -1,21 +1,64 @@
 <% if @placemark.errors.any? %>
 <ul>
-  <% placemark.errors.full_messages.each do |err| %>
+  <% @placemark.errors.full_messages.each do |err| %>
   <li><%= err %></li>
   <% end %>
 </ul>
 <% end %>
 
+<h2><%= @story.name %>, part #1</h2>
 <%= form_for [@story, @placemark] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :synopsis %>
-  <%= f.text_field :synopsis %>
+  <%= f.text_area :synopsis %>
   <%= f.label :full_text %>
-  <%= f.text_field :full_text %>
-  <%= f.label :lat %>
-  <%= f.text_field :lat %>
-  <%= f.label :lon %>
-  <%= f.text_field :lon %>
-  <%= f.submit %>
+  <%= f.text_area :full_text %>
+  <%= f.hidden_field :lat %>
+  <%= f.hidden_field :lon %>
+  <%= f.submit "Add Next Placemark" %>
+  <%= f.submit "Finish Story" %>
 <% end %>
+
+<h2>Select Item Location</h2>
+<div id="map"><pre id='coordinates' class='ui-coordinates'></pre></div>
+
+<script>
+// Initialize the map.
+L.mapbox.accessToken = "<%= Rails.application.secrets.mapbox_token %>";
+var map = L.mapbox.map("map", "mapbox.streets");
+
+// Initialize the geocoder control and add it to the map
+var geocoderControl = L.mapbox.geocoderControl("mapbox.places", {
+  position: "topright",
+  keepOpen: true
+  });
+geocoderControl.addTo(map);
+
+// Initialize the draggable map marker and add it to the map
+var marker = L.marker([0, 0], {
+  icon: L.mapbox.marker.icon({"marker-color": "#f86767"}),
+  draggable: true
+  });
+marker.addTo(map);
+
+// Listen for the geocoder's "found" result, and move the map marker to the first result's coordinates
+geocoderControl.on("found", function(res) {
+  map_center_coords = res.results.features[0].center
+  marker.setLatLng({lat: map_center_coords[1], lng: map_center_coords[0]});
+  get_marker_position();
+});
+
+// When the map marker is dragged, update the hidden lat/lon form fields and the coordinate inset
+marker.on("dragend", get_marker_position);
+// Set the the hidden lat/lon form fields to the map marker's coordinates, and the coordinate inset.
+function get_marker_position() {
+  var m = marker.getLatLng();
+  $("#placemark_lat").val(m.lat);
+  $("#placemark_lon").val(m.lng);
+  coordinates.innerHTML = "Pointer Coords:<br />Lat: " + Number((m.lat).toFixed(4)) + "<br />Lon: " + Number((m.lng).toFixed(4));
+}
+
+// Set the initial map marker position on load.
+get_marker_position();
+</script>

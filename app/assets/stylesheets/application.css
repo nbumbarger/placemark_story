@@ -12,7 +12,6 @@
  *
 
 *= require normalize-rails
-*= require mapbox
 *= require_self
 *= require_tree .
  */
