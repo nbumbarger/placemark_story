@@ -8,20 +8,21 @@
 
 <h2><%= @story.name %>, part #1</h2>
 <%= form_for [@story, @placemark] do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :synopsis %>
-  <%= f.text_area :synopsis %>
-  <%= f.label :full_text %>
-  <%= f.text_area :full_text %>
+  <%= f.text_field :name,
+                   :placeholder=> "Enter your story fragment's title",
+                   :autofocus=> true,
+                   :autocomplete=> :off %>
+  <%= f.text_area  :full_text,
+                   :placeholder=> "Enter the main text for this part of the story",
+                   :autocomplete=> :off %>
+  <div id="map"><pre id='coordinates' class='ui-coordinates'></pre></div>
+
   <%= f.hidden_field :lat %>
   <%= f.hidden_field :lon %>
-  <%= f.submit "Add Next Placemark" %>
+  <%= f.hidden_field :image_data %>
+  <%= f.submit "Add Next Placemark", class: "next_placemark" %>
   <%= f.submit "Finish Story" %>
 <% end %>
-
-<h2>Select Item Location</h2>
-<div id="map"><pre id='coordinates' class='ui-coordinates'></pre></div>
 
 <script>
 // Initialize the map.
@@ -56,9 +57,10 @@ function get_marker_position() {
   var m = marker.getLatLng();
   $("#placemark_lat").val(m.lat);
   $("#placemark_lon").val(m.lng);
-  coordinates.innerHTML = "Pointer Coords:<br />Lat: " + Number((m.lat).toFixed(4)) + "<br />Lon: " + Number((m.lng).toFixed(4));
+  coordinates.innerHTML = "Coordinates:<br />Lat: " + Number((m.lat).toFixed(3)) + "<br />Lon: " + Number((m.lng).toFixed(3));
 }
 
 // Set the initial map marker position on load.
 get_marker_position();
 </script>
+

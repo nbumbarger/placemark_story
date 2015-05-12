@@ -52,12 +52,6 @@ p {
   margin: 1rem 0 0 .25rem;
 }
 
-#map {
-  position: relative;
-  width: 50rem;
-  height: 30rem;
-}
-
 .placemarks ul {
   padding: 0 0 0 2rem;
 }
@@ -158,12 +152,28 @@ input {
   background-color: #ffffff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
-  padding: .5rem 1rem .5rem 1rem;
+  padding: .75rem 1rem .75rem 1rem;
 }
 
 input:focus {
   border: 1px solid #33C3F0;
   outline: 0;
+}
+
+textarea {
+  clear:left;
+  float:left;
+  width: 30.55rem;
+  height: 10rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  padding: .75rem 1rem .75rem 1rem;
+  margin:.5rem 1rem 1rem 0;
+
+    resize: none;
+
 }
 
 input[type="submit"] {
@@ -174,15 +184,38 @@ input[type="submit"] {
   text-transform: uppercase;
   text-align: center;
   width:auto;
-  padding: .5rem 1rem .5rem 1rem;
-  margin: 0 0 0 0.5rem;
+  padding: .75rem 1rem .75rem 1rem;
+  margin: .5rem 0 .5rem 0;
 }
 
 input[type="submit"]:hover {
   border-color: #5a5a5a;
 }
 
+.new_story input {
+
+}
+.new_story input[type="submit"] {
+
+  margin: 0 0 0 .5rem;
+}
+
+
+/*.next_placemark{
+  clear:left;
+}*/
+
+
 /*Map Styles*/
+#map {
+  
+  position: relative;
+  width: 32.55rem;
+  height: 15rem;
+  margin:0;
+
+}
+
 pre.ui-coordinates {
   position:absolute;
   bottom:10px;
@@ -194,4 +227,50 @@ pre.ui-coordinates {
   line-height:18px;
   border-radius:3px;
   z-index:999;
+}
+
+/*Image Upload Styles*/
+.cropit-image-preview {
+  background-color: #f8f8f8;
+  background-size: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 7px;
+  width: 150px;
+  height: 100px;
+  cursor: move;
+}
+.cropit-image-background {
+  opacity: .2;
+  cursor: auto;
+}
+.image-size-label {
+  margin-top: 10px;
+}
+input {
+  display: block;
+}
+button[type="submit"] {
+  margin-top: 10px;
+}
+#result {
+  margin-top: 10px;
+  width: 400px;
+}
+#result-data {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+/* Hide default file input button if you want to use a custom button */
+/*input.cropit-image-input {
+  visibility: hidden;
+}*/
+
+/* Gray out zoom slider when the image cannot be zoomed */
+.cropit-image-zoom-input[disabled] {
+  opacity: .2;
 }

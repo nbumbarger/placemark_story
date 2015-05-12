@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20150508234538) do
     t.text     "full_text"
     t.decimal  "lat",        null: false
     t.decimal  "lon",        null: false
+    t.binary   "image_data", null: false
+    t.string   "image_alt",  null: false
     t.datetime "deleted_at"
   end
 

@@ -7,6 +7,8 @@ class CreatePlacemarks < ActiveRecord::Migration
       t.text :full_text
       t.decimal :lat, :null=> false
       t.decimal :lon, :null=> false
+      t.binary :image_data, :null=> false
+      t.string :image_alt, :null=> false
       t.datetime :deleted_at
     end
   end

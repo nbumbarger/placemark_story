@@ -16105,3 +16105,3748 @@ Processing by PlacemarksController#new as HTML
   [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 26]]
   Rendered placemarks/new.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/26/placemarks/new" for ::1 at 2015-05-11 23:39:50 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"26"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered placemarks/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 2418ms (Views: 2354.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/stories/26/placemarks/new" for ::1 at 2015-05-11 23:39:53 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"26"}
+  [1m[35mStory Load (2.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered placemarks/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 177ms (Views: 169.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/stories/26/placemarks/new" for ::1 at 2015-05-11 23:40:34 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"26"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered placemarks/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 23:41:09 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 23:41:12 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 23:41:15 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-11 23:41:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 23:41:16 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-11 23:41:18 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 23:41:19 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-11 23:44:29 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 138ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-12 00:09:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 573ms (Views: 570.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 00:09:38 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 00:10:08 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 284ms (Views: 81.8ms | ActiveRecord: 176.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-12 00:10:11 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VYZGHc2+4UMPPjpjdQApPmecT/vbSKjY2MXgUVWJKq59ORRNIpC2rLvuOV+w58suWbmsJyJa0K/fTb9BKJtgyw==", "story"=>{"name"=>"dasdas"}, "commit"=>"Create Story"}
+  [1m[35m (25.6ms)[0m  BEGIN
+  [1m[36mSQL (73.5ms)[0m  [1mINSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "dasdas"]]
+  [1m[35m (50.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/29
+Completed 302 Found in 253ms (ActiveRecord: 149.2ms)
+
+
+Started GET "/stories/29" for ::1 at 2015-05-12 00:10:12 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mStory Load (0.7ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 29]]
+  [1m[35mPlacemark Load (1.2ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 29]]
+  Rendered stories/show.html.erb within layouts/application (230.2ms)
+Completed 200 OK in 327ms (Views: 307.1ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/stories/29/placemarks/new" for ::1 at 2015-05-12 00:10:14 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"29"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 29]]
+  Rendered placemarks/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 105ms (Views: 94.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 01:15:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (49.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (195.3ms)
+Completed 200 OK in 1239ms (Views: 949.7ms | ActiveRecord: 207.6ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:15:50 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 01:15:55 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 171ms (Views: 169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 01:15:56 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (49.6ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 178ms (Views: 126.1ms | ActiveRecord: 49.6ms)
+
+
+Started GET "/stories/28" for ::1 at 2015-05-12 01:15:58 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mStory Load (15.7ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 28]]
+  [1m[35mPlacemark Load (16.4ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 28]]
+  Rendered stories/show.html.erb within layouts/application (160.1ms)
+Completed 200 OK in 359ms (Views: 221.0ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/stories/28/placemarks/new" for ::1 at 2015-05-12 01:16:00 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"28"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 28]]
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/new.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 172ms (Views: 162.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:17:07 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:17:38 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:22:00 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 558ms (Views: 557.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.cropit.min.self-615da1047ccb55f95bb57329d7e8fd5962ae253b405394e0b6207ea3118067bf.js?body=1" for ::1 at 2015-05-12 01:22:01 -0400
+
+
+Started GET "/stories/28" for ::1 at 2015-05-12 01:22:22 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mStory Load (0.7ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 28]]
+  Rendered stories/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 177ms (Views: 173.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/stories/28" for ::1 at 2015-05-12 01:22:22 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 28]]
+  Rendered stories/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 75ms (Views: 72.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 01:22:23 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.3ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 109ms (Views: 105.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 01:28:11 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 144ms (Views: 142.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.self-5ef50b6fa36bca89a177a44d32b91da6d19dba0c8f11f309ad76d8245658061c.css?body=1" for ::1 at 2015-05-12 01:28:11 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:28:11 -0400
+
+
+Started GET "/stories/28" for ::1 at 2015-05-12 01:28:17 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mStory Load (0.6ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 28]]
+  Rendered stories/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 76ms (Views: 72.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/28/placemarks/new" for ::1 at 2015-05-12 01:28:19 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"28"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 28]]
+  Rendered placemarks/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 119ms (Views: 116.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:28:22 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:28:47 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3592ed52b355d8ddd913a7d6b4af0fc136ca8f0cc2a6a245d851136215596a0d.css?body=1" for ::1 at 2015-05-12 01:28:47 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:28:47 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:29:36 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-954bcc2a35bde56476d5de632848265c3ea9243ae82738e822348155435237bc.css?body=1" for ::1 at 2015-05-12 01:29:36 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:29:36 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:29:54 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 181ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:29:55 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:31:33 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 87.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:31:33 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:32:11 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:32:29 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:32:50 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:33:00 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 227ms (Views: 225.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:33:35 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.4ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:34:54 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.9ms)
+  Rendered placemarks/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 539ms (Views: 536.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:35:16 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 166ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:35:38 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.8ms)
+  Rendered placemarks/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 01:58:07 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (3.7ms)
+  Rendered placemarks/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 541ms (Views: 533.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-7ef376b684fe77a94c451e49c360d44f52b5114fa22770c9f335164fece42578.css?body=1" for ::1 at 2015-05-12 01:58:08 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 01:58:08 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:00:17 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 228ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-720e0a41707c76def213c0cc75599aefaacd80d60536809975ff9a791690e9e3.css?body=1" for ::1 at 2015-05-12 02:00:18 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:00:18 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:00:59 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 151ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-98ae7e0d040122bf4021b3117c9a1165e3072ca0895bfbc09ee395b284a18277.css?body=1" for ::1 at 2015-05-12 02:00:59 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:01:00 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:01:27 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-db485061c2c4dc8d4127ca44eb8bb37facce8d9174f9bd702d6db562229edfc1.css?body=1" for ::1 at 2015-05-12 02:01:27 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:01:27 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:04:41 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.7ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:04:41 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:04:48 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:04:56 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:05:01 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:05:17 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:05:47 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:07:13 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 118ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f854f40d8011c3bf67a7b3f9d02c981ef9af7c50e45410f1a2263729042c2617.css?body=1" for ::1 at 2015-05-12 02:07:13 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:07:13 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:07:42 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:08:23 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-af656779e6358dd82f2cf221bedac1584fcfa908a69da01c546f446fb64139d9.css?body=1" for ::1 at 2015-05-12 02:08:23 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:08:23 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:11:03 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.9ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:11:48 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 75ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:12:16 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:12:21 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:12:27 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:12:53 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:13:09 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.8ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:13:34 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:14:09 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:19:39 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (1.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:19:56 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.9ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:20:11 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:21:05 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4e3fe814951668036e612707a66e754d3b2142ed8a978f4905913471db9ccd71.css?body=1" for ::1 at 2015-05-12 02:21:05 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:21:05 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:21:35 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-6b3eac23eb56da61dbd02ab611d65122799c6c1d7d0b256735d9b326e206e8db.css?body=1" for ::1 at 2015-05-12 02:21:35 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:21:35 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:22:36 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3e6afb5cc4e43abed6542a2f40a740a212f17e7a7261258fe2444280c5f1a886.css?body=1" for ::1 at 2015-05-12 02:22:36 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:22:36 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:23:10 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 128ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-90f1babbde38339f5bbe22d6a55e72c71f991703a55aaf9abd474525fcc2d089.css?body=1" for ::1 at 2015-05-12 02:23:11 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:23:11 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:23:23 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:23:25 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:23:36 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5ee8c33698ee1bacc05362826a8f8908f8634fcca13a9907907e893ebc9a43f5.css?body=1" for ::1 at 2015-05-12 02:23:36 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:23:37 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:23:51 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 119ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-efd5a36dbf65f7f2c8d56247fb2e6b985add1c4518c934530094a95ae6722673.css?body=1" for ::1 at 2015-05-12 02:23:51 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:23:51 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:24:45 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-31a5267439f1774705ccc0587473043678edeec93c2c5d735f8ca8647380cd17.css?body=1" for ::1 at 2015-05-12 02:24:45 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:24:45 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:25:16 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 110ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-8f4603d0bda3393aac53e97c88da591ff10546989b2745cc5c022c107eb6b713.css?body=1" for ::1 at 2015-05-12 02:25:16 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:25:17 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:25:27 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:26:31 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5ad44e9fd7f386a24053d721aacea1bfecc4bcec338a66197d5dedd1c3b3356c.css?body=1" for ::1 at 2015-05-12 02:26:31 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:26:31 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:27:11 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:27:23 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-ce21278c6fd75e5b808face4a5b9e9ce275d1f57b44d599bdefdf69bab53b858.css?body=1" for ::1 at 2015-05-12 02:27:23 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:27:23 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:27:31 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-8c5d222edb731ab36dc35d7e62380bd9eebcf43bd1e57e62065e16888dca698b.css?body=1" for ::1 at 2015-05-12 02:27:31 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:27:31 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:28:19 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 116ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-52daadbae5afc834ec712d20be3b675b61882a8ee13197f480baf33ebc0b4fca.css?body=1" for ::1 at 2015-05-12 02:28:19 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:28:19 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:28:23 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:28:26 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:34:04 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:34:04 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:34:43 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1fb14f17a48158fec2f5c9c90b596a6357f1a964f486bdafdc09a0dd0fd49ccb.css?body=1" for ::1 at 2015-05-12 02:34:43 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:34:43 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:35:21 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 118ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-dc7ea249bfae5b9806bc6f39fbdaf379a892ff0c3173fe9013eb66d4a124565a.css?body=1" for ::1 at 2015-05-12 02:35:21 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:35:21 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:35:48 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-1c1ca34437894ede636bc9def0356d3fd65d86fb69caa8334c5e620586c578fa.css?body=1" for ::1 at 2015-05-12 02:35:48 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:35:48 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:36:03 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-dbfbb00aeaeb43f64a3f465b3947199d57c1375c3810f7fb4844445ffb74d0fd.css?body=1" for ::1 at 2015-05-12 02:36:03 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:36:03 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:36:36 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 153ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-bdcbbaf7b43044b714b3477e145f05ad888bd8bda5448b62c76e5ac756627018.css?body=1" for ::1 at 2015-05-12 02:36:36 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:36:36 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:36:59 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-634d26bc6556af7b918cc463c8420f639922aa82b7e6ab72465474a6d36bae0b.css?body=1" for ::1 at 2015-05-12 02:36:59 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:36:59 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:37:14 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-78f22d5abce4343e75f6442041c8b2131acebd013c14acbbc3774daf8d4714d9.css?body=1" for ::1 at 2015-05-12 02:37:14 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:37:14 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:37:26 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:37:38 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 81ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:37:55 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 81ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:38:32 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-9e0e195a14a4e269e67e38e1568b2c9b460108053192b66c9eb87cb42df35eaf.css?body=1" for ::1 at 2015-05-12 02:38:32 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:38:32 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:38:58 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.2ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-7b69bc211c5fe0aaaa0f45d6f1b3dc353450c15469e5a24ee81879c5ccc0c26c.css?body=1" for ::1 at 2015-05-12 02:38:58 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:38:59 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:39:17 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:40:00 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 129ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b4344cea17d4730282ef562e5b14529d1525d9aa9cf900cca1b7cf515c1c540c.css?body=1" for ::1 at 2015-05-12 02:40:00 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:40:00 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:40:32 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-3ffdb0d5549ed64155edf95ad2d25430818c45ad43ff9fa712c9f139c811056f.css?body=1" for ::1 at 2015-05-12 02:40:32 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:40:33 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:40:57 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:41:31 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 132ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-fc5fed770cf22149b6ce4c4dd4cb5101e9c773917c457923931732e302a31138.css?body=1" for ::1 at 2015-05-12 02:41:32 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:41:32 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:41:44 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:41:56 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:43:15 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 114ms (Views: 112.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-c7462cbf02dbc55a0ee1e3a7dadc1562e374c48ecba00d1a485ca389b1978d61.css?body=1" for ::1 at 2015-05-12 02:43:15 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:43:15 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:49:04 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (1.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-f6f91979fb6df307bc73ea399cd58125da1f3c2160be496da8c3648ed97e9183.css?body=1" for ::1 at 2015-05-12 02:49:04 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:49:04 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:49:25 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-6de8bcd34a381b88dfb4d3e9e54da9eb8be6d2ddf7f3f40c3f4893ce840b4ff3.css?body=1" for ::1 at 2015-05-12 02:49:25 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:49:25 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:51:14 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:54:57 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 95ms (Views: 93.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:56:35 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-13cb1aa8f782abc58b016da9a59dd63979eebbf505feb6c749d0928e45647783.css?body=1" for ::1 at 2015-05-12 02:56:35 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:56:35 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:56:58 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-531acb18cc50406d2c5472d3068ed4780baf3e580824d53aacc53a54d9705bc0.css?body=1" for ::1 at 2015-05-12 02:56:58 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:56:58 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:57:16 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a92335bdeaaf31138e9c441fd2bd8dc0abb959b2c1890d93d97362c4ed27619b.css?body=1" for ::1 at 2015-05-12 02:57:17 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 02:57:17 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:57:31 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 02:58:30 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 03:01:24 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 03:01:59 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.7ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 94ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 03:02:05 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 03:02:48 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-03f1bf8a8c323fd324b4b4a39c61482fad348a0eff1ecbf36797b343b2075a08.css?body=1" for ::1 at 2015-05-12 03:02:48 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 03:02:48 -0400
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 03:04:49 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/" for ::1 at 2015-05-12 03:05:20 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 122ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5969745c5591425b46b590c55813a2d9011c7e1ac8628801968c38cd9053662b.css?body=1" for ::1 at 2015-05-12 03:05:20 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 03:05:20 -0400
+
+
+Started GET "/stories/28/placemarks/?image-data=" for ::1 at 2015-05-12 03:05:31 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/28/placemarks/?image-data=" for ::1 at 2015-05-12 03:05:47 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 03:05:47 -0400
+
+
+Started GET "/stories/28/placemarks/?image-data=" for ::1 at 2015-05-12 03:06:18 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 03:06:18 -0400
+
+
+Started GET "/stories/28/placemarks/?image-data=" for ::1 at 2015-05-12 03:06:46 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"28"}
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 12:46:41 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 769ms (Views: 722.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 12:46:44 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (84.9ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (92.5ms)
+Completed 200 OK in 292ms (Views: 205.4ms | ActiveRecord: 84.9ms)
+
+
+Started DELETE "/stories/26" for ::1 at 2015-05-12 12:46:47 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aRJ5n8d5Tig4VAqtow2cmmFEjXM/sA7Nn64MVspzrudBrSvPKFcZx4yECZFm6n6KX2Fur8aidrqYJlNGt2Hkgg==", "id"=>"26"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 26]]
+  [1m[36m (17.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (55.3ms)[0m  DELETE FROM "stories" WHERE "stories"."id" = $1  [["id", 26]]
+  [1m[36m (31.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 138ms (ActiveRecord: 104.9ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 12:46:47 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.5ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 12:46:47 -0400
+
+
+Started DELETE "/stories/28" for ::1 at 2015-05-12 12:46:48 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GXO5bFOE+1OaGwXsROa+BXspakRgF1d17I6JJXdOWWUxzOs8vKqsvC7LBtCBAVwVRQyJmJkFLwLrBtY1ClwTAA==", "id"=>"28"}
+  [1m[36mStory Load (0.7ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 28]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stories" WHERE "stories"."id" = $1[0m  [["id", 28]]
+  [1m[35m (19.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 25ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 12:46:48 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 113ms (Views: 111.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/stories/29" for ::1 at 2015-05-12 12:46:49 -0400
+Processing by StoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tIisN1dlyC8onrwxsvDO+IPQm0B/LpElMpqC+EKz5tqcN/5nuEufwJxOvw13FyzovfV4nIY86VI1Et3oP6Gsvw==", "id"=>"29"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 29]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "stories" WHERE "stories"."id" = $1  [["id", 29]]
+  [1m[36m (15.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories
+Completed 302 Found in 22ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 12:46:49 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.6ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 83ms (Views: 80.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 12:46:50 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories" for ::1 at 2015-05-12 12:47:18 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 12:47:22 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-12 12:47:24 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/6tdJXiBpEUDkM/ZnVTVyGS+RhqRpoqYzNBKXIkE/+PXFA91l6/zqrdAzOVYszfYWpulxmi08u/LWBVM9Ba1hg==", "story"=>{"name"=>"fsdfsdf"}, "commit"=>"Create Story"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (92.6ms)[0m  [1mINSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "fsdfsdf"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/30
+Completed 302 Found in 101ms (ActiveRecord: 93.4ms)
+
+
+Started GET "/stories/30" for ::1 at 2015-05-12 12:47:24 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 30]]
+  [1m[35mPlacemark Load (0.6ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 30]]
+  Rendered stories/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 90ms (Views: 87.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 12:47:26 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 30]]
+  Rendered placemarks/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 109ms (Views: 105.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 12:56:47 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 30]]
+  Rendered placemarks/new.html.erb within layouts/application (49.3ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `data' for #<Placemark:0x007fc219638160>):
+    18:   <%= f.text_area :full_text %>
+    19:   <%= f.hidden_field :lat %>
+    20:   <%= f.hidden_field :lon %>
+    21:   <%= f.text_field :data, class: "hidden-image-data" %>
+    22:   <%= f.submit "Add Next Placemark" %>
+    23:   <%= f.submit "Finish Story" %>
+    24: <% end %>
+  app/views/placemarks/new.html.erb:21:in `block in _app_views_placemarks_new_html_erb__1609219897834822138_70235799860000'
+  app/views/placemarks/new.html.erb:12:in `_app_views_placemarks_new_html_erb__1609219897834822138_70235799860000'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (120.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (228.6ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 12:59:57 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 30]]
+  Rendered placemarks/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 32.8ms)
+
+ActionView::Template::Error (undefined method `data' for #<Placemark:0x007fc2139ff740>):
+    18:   <%= f.text_area :full_text %>
+    19:   <%= f.hidden_field :lat %>
+    20:   <%= f.hidden_field :lon %>
+    21:   <%= f.text_field :data, class: "hidden-image-data" %>
+    22:   <%= f.submit "Add Next Placemark" %>
+    23:   <%= f.submit "Finish Story" %>
+    24: <% end %>
+  app/views/placemarks/new.html.erb:21:in `block in _app_views_placemarks_new_html_erb__1609219897834822138_70235799860000'
+  app/views/placemarks/new.html.erb:12:in `_app_views_placemarks_new_html_erb__1609219897834822138_70235799860000'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (131.1ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 13:00:13 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 30]]
+  Rendered placemarks/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9: 
+    10: 
+    11: <h2><%= @story.name %>, part #1</h2>
+    12: <%= form_for [@story, @placemark, @image] do |f| %>
+    13:   <%= f.label :name %>
+    14:   <%= f.text_field :name %>
+    15:   <%= f.label :synopsis %>
+  app/views/placemarks/new.html.erb:12:in `_app_views_placemarks_new_html_erb__1609219897834822138_70235812697660'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (137.3ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 13:00:40 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 30]]
+  Rendered placemarks/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `data' for #<Placemark:0x007fc216608ad0>):
+    18:   <%= f.text_area :full_text %>
+    19:   <%= f.hidden_field :lat %>
+    20:   <%= f.hidden_field :lon %>
+    21:   <%= f.text_field :data, class: "hidden-image-data" %>
+    22:   <%= f.submit "Add Next Placemark" %>
+    23:   <%= f.submit "Finish Story" %>
+    24: <% end %>
+  app/views/placemarks/new.html.erb:21:in `block in _app_views_placemarks_new_html_erb__1609219897834822138_70235787826840'
+  app/views/placemarks/new.html.erb:12:in `_app_views_placemarks_new_html_erb__1609219897834822138_70235787826840'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (136.9ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 13:01:06 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 30]]
+  Rendered placemarks/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9: 
+    10: 
+    11: <h2><%= @story.name %>, part #1</h2>
+    12: <%= form_for [@story, @placemark, @image] do |f| %>
+    13:   <%= f.label :name %>
+    14:   <%= f.text_field :name %>
+    15:   <%= f.label :synopsis %>
+  app/views/placemarks/new.html.erb:12:in `_app_views_placemarks_new_html_erb__1609219897834822138_70235788664260'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (63.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (29.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'placemarks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'stories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (24.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (553.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStories (20150508234457)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (540.9ms)[0m  [1mCREATE TABLE "stories" ("id" serial primary key, "name" character varying NOT NULL, "deleted_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150508234457"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePlacemarks (20150508234521)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "placemarks" ("id" serial primary key, "story_id" integer, "name" character varying NOT NULL, "synopsis" text, "full_text" text, "lat" decimal NOT NULL, "lon" decimal NOT NULL, "image_data" bytea NOT NULL, "image_alt" character varying NOT NULL, "deleted_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150508234521"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateImages (20150508234538)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE "images" ("id" serial primary key, "placemark_id" integer, "data" bytea NOT NULL, "alt" character varying NOT NULL, "deleted_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150508234538"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'placemarks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'stories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 13:04:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[35mStory Load (0.7ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 30]]
+Completed 404 Not Found in 132ms (ActiveRecord: 7.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Story with 'id'=30):
+  app/controllers/placemarks_controller.rb:12:in `new'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (165.7ms)
+
+
+Started GET "/stories/30/placemarks/new" for ::1 at 2015-05-12 13:04:54 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"30"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 30]]
+Completed 404 Not Found in 10ms (ActiveRecord: 3.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Story with 'id'=30):
+  app/controllers/placemarks_controller.rb:12:in `new'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (60.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (136.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-12 13:05:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 477ms (Views: 475.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 13:05:14 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (81.8ms)
+Completed 200 OK in 192ms (Views: 188.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-12 13:05:16 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fEk/TCA9nFnKzTBljuX+DiWBgJgSQtQel8mMxZid9b1U9m0czxPLtn4dM1lLAhweG6RjROtQrGmQQdPV5Y+/2A==", "story"=>{"name"=>"dasda"}, "commit"=>"Create Story"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "dasda"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/stories/1
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2015-05-12 13:05:16 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlacemark Load (0.6ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 1]]
+  Rendered stories/show.html.erb within layouts/application (94.8ms)
+Completed 200 OK in 219ms (Views: 214.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:05:19 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 131ms (Views: 119.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:05:53 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (1.2ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 76ms (Views: 71.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:06:23 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:06:44 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:07:38 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:15:48 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new?image-data=" for ::1 at 2015-05-12 13:15:54 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/1/placemarks/new?image-data=" for ::1 at 2015-05-12 13:16:09 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new?image-data=" for ::1 at 2015-05-12 13:16:31 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new?image-data=" for ::1 at 2015-05-12 13:16:41 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/" for ::1 at 2015-05-12 13:17:22 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.4ms)
+  Rendered placemarks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 93ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/?image-data=" for ::1 at 2015-05-12 13:17:26 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/?image-data=" for ::1 at 2015-05-12 13:17:54 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"image-data"=>"", "story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/" for ::1 at 2015-05-12 13:18:31 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.7ms)
+  Rendered placemarks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/" for ::1 at 2015-05-12 13:18:44 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.0ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/" for ::1 at 2015-05-12 13:20:09 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:22:03 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/1/placemarks/" for ::1 at 2015-05-12 13:22:41 -0400
+Processing by PlacemarksController#index as HTML
+  Parameters: {"story_id"=>"1"}
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 13:23:06 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:23:20 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:25:21 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.7ms)
+  Rendered placemarks/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:25:22 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:25:29 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 90ms (Views: 87.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:25:45 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.8ms)
+  Rendered placemarks/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 77ms (Views: 75.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:27:00 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.7ms)
+  Rendered placemarks/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-12 13:28:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-5969745c5591425b46b590c55813a2d9011c7e1ac8628801968c38cd9053662b.css?body=1" for ::1 at 2015-05-12 13:28:25 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:28:25 -0400
+
+
+Started GET "/stories" for ::1 at 2015-05-12 13:33:34 -0400
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 96ms (Views: 94.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2015-05-12 13:34:05 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 1]]
+  Rendered stories/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:34:07 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.5ms)
+  Rendered placemarks/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:34:48 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.1ms)
+  Rendered placemarks/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:36:07 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/_img_upload.html.erb (0.6ms)
+  Rendered placemarks/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:37:41 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:38:02 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:41:24 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/placemarks/new.html.erb:17: syntax error, unexpected =>, expecting ')'
+                   :placeholder=> "Enter your story fragment",
+                                 ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/placemarks/new.html.erb:17: syntax error, unexpected ',', expecting ')'):
+  app/views/placemarks/new.html.erb:17: syntax error, unexpected =>, expecting ')'
+  app/views/placemarks/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (70.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (158.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:41:48 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/placemarks/new.html.erb:17: syntax error, unexpected tSYMBEG, expecting '('
+                   :placeholder=> "Enter your story fragment",
+                    ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/placemarks/new.html.erb:17: syntax error, unexpected ',', expecting ')'):
+  app/views/placemarks/new.html.erb:17: syntax error, unexpected tSYMBEG, expecting '('
+  app/views/placemarks/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (146.0ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:42:02 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:42:26 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:44:06 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 149ms (Views: 146.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-45d5fac8d61de9b14b9c4a4173be6df4e5a8f53945d26406cf015b5c70c626b7.css?body=1" for ::1 at 2015-05-12 13:44:06 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:44:06 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:44:28 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-3906871a4729ff4e4e68c04bddb2a166182bfaa3fa5d9c1fbde239b0e8332c46.css?body=1" for ::1 at 2015-05-12 13:44:28 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:44:28 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:45:00 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 132ms (Views: 129.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-b3cdce47db625e984139ccad2c393c3df7493499043e6f9ed81cdd0cc4f1b3ed.css?body=1" for ::1 at 2015-05-12 13:45:00 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:45:00 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:55:19 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/placemarks/new.html.erb:21: syntax error, unexpected '='
+...it "Add Next Placemark", class="next_placemark" );@output_bu...
+...                               ^):
+  app/views/placemarks/new.html.erb:21: syntax error, unexpected '='
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (54.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (132.9ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:55:37 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/placemarks/new.html.erb:21: syntax error, unexpected '='
+...it "Add Next Placemark", class="next_placemark" );@output_bu...
+...                               ^):
+  app/views/placemarks/new.html.erb:21: syntax error, unexpected '='
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (60.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (134.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:55:59 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 116ms (Views: 114.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-6caa54c10682820405de396ee8725d8c34f4f5320634de42326e5ce7fcfb6239.css?body=1" for ::1 at 2015-05-12 13:55:59 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:56:00 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:56:13 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 110ms (Views: 106.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.self-477d62ee989c17f73e980df04d111f90fbf268924b6f2d63df621d35b3454172.css?body=1" for ::1 at 2015-05-12 13:56:13 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:56:13 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:57:30 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 125ms (Views: 122.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-f624938364f13bc369ca42beb9539825a35402d74a0e17c24328c610277fece2.css?body=1" for ::1 at 2015-05-12 13:57:30 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:57:30 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:57:46 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 115ms (Views: 112.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-f25848ce7324d0a64a90f64c50aa2f50d4edd4e168fbd784de1f41e338db9264.css?body=1" for ::1 at 2015-05-12 13:57:46 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:57:46 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 13:58:05 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 118ms (Views: 115.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-fb8b17f8cca498a79ba6785b772f502dbfaea2b696ee41f305261e41611b1238.css?body=1" for ::1 at 2015-05-12 13:58:05 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 13:58:05 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:00:02 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-7b6058fc062be5f042863a3e0472a730d21ca29bd265fb3e6f41546141a5325a.css?body=1" for ::1 at 2015-05-12 14:00:02 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:00:02 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:01:03 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 116ms (Views: 114.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-ff81a6cb6e11dd2002d327adbdc2c11d3ae22ce9d511118748759f246d21010a.css?body=1" for ::1 at 2015-05-12 14:01:03 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:01:04 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:01:22 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.7ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:02:04 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 132ms (Views: 129.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-22df13a7723278a5bc6ae3812ecdcc65d9fe55f3a05371b5fb4f649e596496b1.css?body=1" for ::1 at 2015-05-12 14:02:05 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:02:05 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:02:17 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:02:29 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 244ms (Views: 241.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.self-f6a43a43d8c89de813e26889466870bc03922bf8827f363f3b5aab20e26a8c88.css?body=1" for ::1 at 2015-05-12 14:02:29 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:02:29 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:03:02 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-5323e49a19bb0ce36db88149bb457643779965c015c9f5a85df6a003ced80c86.css?body=1" for ::1 at 2015-05-12 14:03:02 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:03:02 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:04:04 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 124ms (Views: 121.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.self-ecc178f557429c03a42429af57328a172c36b126d3a72d2f0c2143e9faafbef2.css?body=1" for ::1 at 2015-05-12 14:04:04 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:04:05 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:04:31 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-62f547156291700804deed0cc5033859442ff6cefd8df955983333f49d4ca91b.css?body=1" for ::1 at 2015-05-12 14:04:31 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:04:32 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:04:39 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 122ms (Views: 119.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-0d436b75348669f636e2ff1a66061fe564a2a4ae8e57cdd3d9205d9c4f5efe73.css?body=1" for ::1 at 2015-05-12 14:04:39 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:04:39 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:04:49 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:06:14 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 119ms (Views: 117.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-46219d2608a76f75d21bbbcad439f654e8f969bb9bfec51db9718499d3301d07.css?body=1" for ::1 at 2015-05-12 14:06:15 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:06:15 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:06:30 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-c0f6ef4fb11f3211052fb5ae3321820bd80a377685fe052e2d055c7890afc30e.css?body=1" for ::1 at 2015-05-12 14:06:30 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:06:30 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:07:15 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 123ms (Views: 120.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-ad11b9a700439aed824b8f0fbe7f756ca6f42f7b90d669afec3804205382c72a.css?body=1" for ::1 at 2015-05-12 14:07:16 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:07:16 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:07:24 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 118ms (Views: 115.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.self-fb7c8ffef21a99b0693aace07469782a0fea55756a6a8ffea0b8c012cb115fb3.css?body=1" for ::1 at 2015-05-12 14:07:24 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:07:24 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:08:10 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 116ms (Views: 113.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-e6789b684e85dd72339668bbba1b65499bc687de0930e117a87f19290c9874bc.css?body=1" for ::1 at 2015-05-12 14:08:10 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:08:10 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:08:45 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 128ms (Views: 126.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-27ddedf6072eb4bf92ad602a336840dc67663c196157f765e39bb64c62887685.css?body=1" for ::1 at 2015-05-12 14:08:45 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:08:46 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:08:57 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:09:10 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 122ms (Views: 120.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-0829e2420d9020ceea2cbbfc0083cfb97277325136054ea511a30e1823c042b5.css?body=1" for ::1 at 2015-05-12 14:09:10 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:09:10 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:09:21 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 132ms (Views: 128.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-3c51dec5aac669f711240597aca4d25739fa8dbdd95934c4829f003133feacb0.css?body=1" for ::1 at 2015-05-12 14:09:21 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:09:21 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:09:55 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 113ms (Views: 110.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-498e1f5951fb255b571f38757fa0d8813b2f6972cc6a3b353650cedaca8488ee.css?body=1" for ::1 at 2015-05-12 14:09:55 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:09:55 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:10:10 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-57b04794beeea44b20e91f3c5d782890ec16ebc2d295e21645eb86914ffbfcd4.css?body=1" for ::1 at 2015-05-12 14:10:10 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:10:10 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:10:53 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:11:02 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 137ms (Views: 135.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-8a6cca9ed8d9f4f85bd505a4aa7b9499fc549347b668248f24b7c4e91bac80c8.css?body=1" for ::1 at 2015-05-12 14:11:02 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:11:02 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:11:22 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-455f941c59e040800b41de9d53f6a1e53937c90cc35103a0d596aa1b7ecfd8f9.css?body=1" for ::1 at 2015-05-12 14:11:22 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 14:11:22 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:11:41 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 84ms (Views: 80.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 14:12:34 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:31:42 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:32:26 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 117ms (Views: 115.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-c485c9116f26610be45eca62cc7a35b028118b7f2fb392c90f01beb91925b671.css?body=1" for ::1 at 2015-05-12 15:32:26 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:32:26 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:32:36 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 127ms (Views: 124.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.self-70ac7ac26ec057ad2dbffc5cd1c2e8008f1401953ad9a0a9dd78047cc8f89beb.css?body=1" for ::1 at 2015-05-12 15:32:36 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:32:36 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:33:49 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:34:19 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 101ms (Views: 98.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:34:42 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (27.4ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `there' for #<#<Class:0x007f8724401070>:0x007f8726ef4f98>):
+     8: 
+     9: <h2><%= @story.name %>, part #1</h2>
+    10: <%= form_for [@story, @placemark] do |f| %>
+    11:   <%= f.label hello there %>
+    12:   <%= f.text_field :name,
+    13:                    :placeholder=> "Placemark title",
+    14:                    :autofocus=> true,
+  app/views/placemarks/new.html.erb:11:in `block in _app_views_placemarks_new_html_erb___3464444750373822863_70109225251240'
+  app/views/placemarks/new.html.erb:10:in `_app_views_placemarks_new_html_erb___3464444750373822863_70109225251240'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (181.2ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:34:53 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.7ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:35:10 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 113ms (Views: 110.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-521dba9abed58c81238c8ec9d8b7c5d59f5c13d450ce45d19dad82a67075d87a.css?body=1" for ::1 at 2015-05-12 15:35:10 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:35:10 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:35:24 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 125ms (Views: 122.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-cd87eef0316789dfaee716ee193a2b218e243676f4aa0c2888147e8a8cc6b8ee.css?body=1" for ::1 at 2015-05-12 15:35:25 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:35:25 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:35:44 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-4f5737a775260e7dc70b54a975202995b04f83d19b1e3c4ddcf7154046d60d64.css?body=1" for ::1 at 2015-05-12 15:35:44 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:35:44 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:35:51 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 123ms (Views: 120.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-54d58b0503923760388b450ca2c56db0234b63d089c0a86f09d93b922cc33f72.css?body=1" for ::1 at 2015-05-12 15:35:52 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:35:52 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:36:01 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 144ms (Views: 141.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-a31fb06f6466aac2d28c7ff43f600cdb58f63fca0b63d9193ec867c8289c08a4.css?body=1" for ::1 at 2015-05-12 15:36:02 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:36:02 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:36:10 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 156ms (Views: 154.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-87ec8cb0c725c9208809bfc7aa8cd9e15ef7cf535d2d58d8f975cb6cd486355a.css?body=1" for ::1 at 2015-05-12 15:36:10 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:36:10 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:36:30 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:36:56 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 157ms (Views: 154.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-30df223e036b5b5ece0c525be1169e04f9cdd16d1e3be5ef309c727796a631cb.css?body=1" for ::1 at 2015-05-12 15:36:56 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:36:56 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:37:35 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (1.1ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 77ms (Views: 73.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:38:14 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:38:42 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-7cb679792f0c00a0615cedca5b34536f6b4d22cb997f5e26c25a70379ced0261.css?body=1" for ::1 at 2015-05-12 15:38:43 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:38:43 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:39:15 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-7bdc8c2469ba78e8500b11325fa1944d2278360bea20d845387fd32bfd6ba124.css?body=1" for ::1 at 2015-05-12 15:39:15 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:39:15 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:39:21 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:39:31 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 284ms (Views: 282.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-0ed54967b97d9fae6374698d481930795090a7f3545ab66c08d214e2c5a2df6f.css?body=1" for ::1 at 2015-05-12 15:39:31 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:39:31 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:39:55 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.7ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 132ms (Views: 128.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/style.self-2c68b866afd14e69f0ee5235fce16a066d7f0925131b1f94654c338886f9f4cb.css?body=1" for ::1 at 2015-05-12 15:39:55 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:39:56 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:40:48 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 116ms (Views: 114.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-085f3600615864f231e4d7590785fac7b388e746ad4744f1553ef364248fb829.css?body=1" for ::1 at 2015-05-12 15:40:48 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:40:48 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:41:25 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 116ms (Views: 114.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-ef5cb97cb4573dd20e50ac215dfb4925ed7aaabe34754e328f9ab1476683fae8.css?body=1" for ::1 at 2015-05-12 15:41:25 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:41:25 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:41:47 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 135ms (Views: 133.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-86c103bb920fd9f3c8cfd3773a8e291ca20b5cfd18c05d0159feb73ffa3ddf0f.css?body=1" for ::1 at 2015-05-12 15:41:47 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:41:47 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:42:03 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:42:42 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 116ms (Views: 114.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-83b57bab1acf5e8867c30775e0abb8c5002857cdf3fc2f439945ca22a6e024a9.css?body=1" for ::1 at 2015-05-12 15:42:42 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:42:42 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:42:50 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:42:56 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 114ms (Views: 111.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-6b2fd136a5367bdf2c0ef30a9abcfc3533ce9957c9d0d8982e22c92932fb8314.css?body=1" for ::1 at 2015-05-12 15:42:56 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:42:56 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:43:40 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-ba9faf00993f80ac6f458a6739af7ec27e0dbdeb300ade0e4ca6ab70f67cfd4f.css?body=1" for ::1 at 2015-05-12 15:43:40 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:43:40 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:43:53 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-6ecd774a8cf9c92b02e49bc289c65bf7a2e765ad8126e11cbcc041f5e0f34d3c.css?body=1" for ::1 at 2015-05-12 15:43:53 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:43:53 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:44:27 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 123ms (Views: 121.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-2088109b1b986dd490e4330becd3429e557f56802cd49d39c01009cc5050fc14.css?body=1" for ::1 at 2015-05-12 15:44:27 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:44:27 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:44:39 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 121ms (Views: 119.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-a1e900d99a089dc212e1dd55fdaf944ecd48d24db32d0ec07142478f7d5224fe.css?body=1" for ::1 at 2015-05-12 15:44:39 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:44:39 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:46:25 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 131ms (Views: 128.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-7af7f482c24ff020ce8a33971211c3dcef787113dc2bf95988f568393671cc53.css?body=1" for ::1 at 2015-05-12 15:46:26 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:46:26 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:46:43 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-e1d628c715882a861e81a6f47b002bf5304f119e87eb97fea1f7186d2ce8df9a.css?body=1" for ::1 at 2015-05-12 15:46:43 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:46:44 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:47:16 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 117ms (Views: 115.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-3c1da14711f595a22e2564bdf94c41e30249e782da52fe033e32bdf7172bc5bc.css?body=1" for ::1 at 2015-05-12 15:47:16 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:47:16 -0400
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:47:56 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 137ms (Views: 134.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-90154e98802c479572186760096eb657336997d4e4d72539ca21337da0c71ae3.css?body=1" for ::1 at 2015-05-12 15:47:57 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:47:57 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:52:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/stories" for ::1 at 2015-05-12 15:52:57 -0400
+Processing by StoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IJ7B/z4In+Rpyfwxp0/CECzgUeyGKIak5R5YR2EO9XhN5nRG0T0XHxHANkBQvHP99dd89ij8e0PaTKniB/fSbg==", "story"=>{"name"=>"my map story"}, "commit"=>"Create Story"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stories" ("name") VALUES ($1) RETURNING "id"  [["name", "my map story"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/stories/2
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-12 15:52:57 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPlacemark Load (0.5ms)[0m  [1mSELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1[0m  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:53:21 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[35mStory Load (0.6ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 90ms (Views: 86.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/1/placemarks/new" for ::1 at 2015-05-12 15:55:33 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 143ms (Views: 141.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-fae561de4a8a8f121c4c79208e643a7895f39b8649bf3f65c813aa0448bedcbf.css?body=1" for ::1 at 2015-05-12 15:55:33 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:55:33 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:55:34 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:55:37 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:55:46 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-790c43a36dc723c37b8420b44ef53faa15c5f7a2fd21ffaf25734068a71eb74b.css?body=1" for ::1 at 2015-05-12 15:55:46 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:55:46 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:55:59 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:56:41 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:14: syntax error, unexpected =>, expecting :: or '[' or '.'
+...fer.append=( f.submit, :class=> "new_story" %);@output_buffe...
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:14: syntax error, unexpected ')'
+...submit, :class=> "new_story" %);@output_buffer.safe_append='
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/stories/new.html.erb:14: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/stories/new.html.erb:14: syntax error, unexpected ')'
+  app/views/stories/new.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/stories/new.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/stories/new.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (102.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (193.7ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:56:56 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:14: syntax error, unexpected ')'
+....submit :class=> "new_story" %);@output_buffer.safe_append='
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/stories/new.html.erb:14: syntax error, unexpected ')'
+  app/views/stories/new.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/stories/new.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/stories/new.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (60.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (141.7ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:57:18 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:14: syntax error, unexpected ')'
+... f.submit class: "new_story" %);@output_buffer.safe_append='
+...                               ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/nbumbarger/ga/projects/rails/placemark_story/app/views/stories/new.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/stories/new.html.erb:14: syntax error, unexpected ')'
+  app/views/stories/new.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/stories/new.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/stories/new.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (140.2ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:57:30 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:57:44 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:58:06 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:58:14 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:58:30 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-05dc9109d6092e8b03f18e19011eb5a5ffab9141cc15d2511f5e20a0e036a380.css?body=1" for ::1 at 2015-05-12 15:58:31 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:58:31 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:58:43 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-03d4051568bcaaf75aa438a8f263c530d3f79f6ed0aba4c1695d882b881a2859.css?body=1" for ::1 at 2015-05-12 15:58:43 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:58:43 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:58:55 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-95f1831da8df2a78c87906e39b7b508bcb06d4f1acd4cb4c393928bd994a4287.css?body=1" for ::1 at 2015-05-12 15:58:55 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:58:55 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:59:06 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 115ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-b19ad85e8fa2d70d1144d4910fa7d4135fa31aaa52e6bb7b64b5c34ea7affc35.css?body=1" for ::1 at 2015-05-12 15:59:06 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:59:07 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 15:59:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-69fce0b5a60d1f504a27748402131fe72a658e56b0fc932ad4101033ec8d8b3a.css?body=1" for ::1 at 2015-05-12 15:59:52 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 15:59:52 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:00:29 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 120.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-d7423455de7aed4bc5766974d7e97496bf2d6d022d57cc1f13426801bc6d79e8.css?body=1" for ::1 at 2015-05-12 16:00:29 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:00:29 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:01:05 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-eda89a7c8a014a507582372c2e9678526494e2cf624a796ecab85148f8d74185.css?body=1" for ::1 at 2015-05-12 16:01:05 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:01:05 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:01:18 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:01:33 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:02:02 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:02:28 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 118ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-37ed0c6b169eb2b2079082253df3b7d7e13bf97baa37b54fb7d677fabe69dcc2.css?body=1" for ::1 at 2015-05-12 16:02:28 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:02:29 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:02:46 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 124ms (Views: 123.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0780c7c75da0c3aeff0da75f6a68cfaeda6b2748b2ddff5a8a5e698c0a817102.css?body=1" for ::1 at 2015-05-12 16:02:46 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:02:46 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:03:16 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-959b2ba1755170ac753ba4c767c21adabd57f481a7a325d6d45aef7d2259f004.css?body=1" for ::1 at 2015-05-12 16:03:16 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:03:16 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:03:30 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 122ms (Views: 120.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-7b1a4ef94832d5fb2235eb26de2f9e47d6484c29beea6ca94b0f80c86f583b22.css?body=1" for ::1 at 2015-05-12 16:03:30 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:03:30 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:03:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-8967601bea6c5c763c0e935735685cdd228787c816839743b95d15bbdc72ba15.css?body=1" for ::1 at 2015-05-12 16:03:52 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:03:53 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:04:01 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-a16035a74a48932f67d875675b5c5e06e06c6185f572f67e1862423595adc8a6.css?body=1" for ::1 at 2015-05-12 16:04:01 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:04:02 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:04:15 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:04:40 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 133ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0a2cf09aa059fe48d51a7b548ef987ee425c48d05576130b229f73160b051792.css?body=1" for ::1 at 2015-05-12 16:04:40 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:04:40 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:04:52 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 118ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-528f4df09b422bbacab47f74d8ef48b8ae592166ffecc31d7edc088fbc88178c.css?body=1" for ::1 at 2015-05-12 16:04:52 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:04:52 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:05:18 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-941dd29a79a90dd9bfc37e41c63a0ac51aed37b1d7fa3fcf23e294eee17697ec.css?body=1" for ::1 at 2015-05-12 16:05:19 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:05:19 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:05:31 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-0e3743c6cceb9f542670f3b32f0c272b01849f89d51b428b57461c8de5dbb5dd.css?body=1" for ::1 at 2015-05-12 16:05:31 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:05:31 -0400
+
+
+Started GET "/stories" for ::1 at 2015-05-12 16:05:44 -0400
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.6ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/2" for ::1 at 2015-05-12 16:05:46 -0400
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlacemark Load (0.5ms)[0m  SELECT "placemarks".* FROM "placemarks" WHERE "placemarks"."story_id" = $1  [["story_id", 2]]
+  Rendered stories/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:05:48 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:13:07 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 141ms (Views: 139.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-76ff937a6b011181b144dc5bda3c2d87643becad32e42758f163ef07e38bc8ea.css?body=1" for ::1 at 2015-05-12 16:13:07 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:13:07 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:13:17 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:13:21 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:13:21 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:14:28 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 140ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-9fb76368c323814f271c2acaef737e183735abda3c5d6756df45be113ed37ac8.css?body=1" for ::1 at 2015-05-12 16:14:28 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:14:28 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:14:37 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-c0d20cad063bb4683d70d68ddd8ed600a09f0d07115b1e54643d8267c072a673.css?body=1" for ::1 at 2015-05-12 16:14:37 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:14:37 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:14:39 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:14:47 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 121ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-91e836cf9c9b3afe83782e4d61e635bf928d6fbd22eb90f9ea89870e52588bb6.css?body=1" for ::1 at 2015-05-12 16:14:47 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:14:47 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:15:08 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 126ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-daa78ada3706e5dc013c1be0371ff5bf114a67718f8b64d5b025172a0c254985.css?body=1" for ::1 at 2015-05-12 16:15:08 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:15:08 -0400
+
+
+Started GET "/stories/new" for ::1 at 2015-05-12 16:15:35 -0400
+Processing by StoriesController#new as HTML
+  Rendered stories/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:15:40 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:15:40 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:16:15 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-ba323564cd355a940c6ad5d1772fc2e100a3249b0c8e129fa90948d62a76a199.css?body=1" for ::1 at 2015-05-12 16:16:15 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:16:15 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:16:32 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 117ms (Views: 114.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-969be78a4b03544c7a8aa4e363a56b58b5778f1993afd823fd4a53af8e97e2df.css?body=1" for ::1 at 2015-05-12 16:16:32 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:16:32 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:16:42 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 115ms (Views: 113.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-bb421bbc4c71e3164638ac2e77e543d4a69bc6e5992f48c9a3ee63b35292e610.css?body=1" for ::1 at 2015-05-12 16:16:42 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:16:43 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:17:12 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:17:24 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.5ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 123ms (Views: 120.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.self-4af0c43a23f3af69e90a7f353e03c55cdff633c70d1d35722c3befea2f3cb203.css?body=1" for ::1 at 2015-05-12 16:17:24 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:17:24 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:17:59 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 119.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-8923a9a9568361871beb66661cbea918626d82ac1eaf1b43244224d090cb65a5.css?body=1" for ::1 at 2015-05-12 16:17:59 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:17:59 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:18:33 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 140ms (Views: 137.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-aae26425105735a3f4ebc95a348ebbb362e48b520fb20a3910675007201c9b24.css?body=1" for ::1 at 2015-05-12 16:18:34 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:18:34 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:19:04 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.7ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/style.self-901fc9ba0592b17cb730e1a1406a61129536d5a36009a231dba7c2a1474441c3.css?body=1" for ::1 at 2015-05-12 16:19:04 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:19:04 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:19:21 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.3ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:19:38 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 138ms (Views: 136.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-17d00fec64ce073da57a66e530f4457ac802844cf4ec781fa4defb51a18edcd8.css?body=1" for ::1 at 2015-05-12 16:19:38 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:19:38 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:20:08 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[35mStory Load (0.4ms)[0m  SELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 118ms (Views: 115.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.self-ebc7e9b339ace66a64730bc79d67d590012daa4409f2eee046b56a63bb363dc5.css?body=1" for ::1 at 2015-05-12 16:20:08 -0400
+
+
+Started GET "/assets/electric.png" for ::1 at 2015-05-12 16:20:08 -0400
+
+
+Started GET "/stories/2/placemarks/new" for ::1 at 2015-05-12 16:20:23 -0400
+Processing by PlacemarksController#new as HTML
+  Parameters: {"story_id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered placemarks/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 84ms (Views: 81.4ms | ActiveRecord: 0.4ms)
