@@ -1,0 +1,44 @@
+<form action="#">
+  <div class="image-editor">
+    <h3>Optional: Upload Image</h3>
+    <div class="cropit-image-preview"></div>
+    <div class="image_controls">
+      <div class="select-image-btn">Select image</div>
+      <input type="range" class="cropit-image-zoom-input">
+      <div class="image-size-label">Zoom</div>
+      <textarea class="image_alt" placeholder="Enter image alt text" autocomplete="off" type="text" name="alt_text" id="alt_text"></textarea>
+      <button class="accept_image" type="submit">Submit</button>
+    </div>
+    <input type="file" class="cropit-image-input">
+  </div>
+</form>
+
+<script>
+$(function() {
+  $(".image-editor").cropit();
+  $("form").submit(function() {
+    // Move cropped image data and image alt text to hidden inputs
+    var imageData = $(".image-editor").cropit("export");
+    var imageAlt = $(".image_alt").val();
+    $("#placemark_image_data").val(imageData);
+    $("#placemark_image_alt").val(imageAlt);
+    // Prevent the form from actually submitting
+    return false;
+  });
+});
+
+$("#image-cropper").cropit(
+                    "export", {
+                       type: "image/jpeg",
+                       quality: .9,
+                       originalSize: false }
+);
+// Need to find out how to access the onFileChange option
+// http://scottcheng.github.io/cropit/
+// console.log($("#image-cropper").cropit($onFileChange()))
+//   var imagePath = $(".cropit-image-input").val()
+// window.alert(imagePath.substr(imagePath.lastIndexOf("\\") + 1))
+$(".select-image-btn").click(function() {
+  $(".cropit-image-input").click();
+});
+</script>

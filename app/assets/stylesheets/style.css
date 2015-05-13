@@ -36,9 +36,10 @@ html, body {
 
 body {
   display: table;
-  width: 70%;
+  width: 90%;
   clear: both;
-  margin: 6rem auto 0 auto;
+  margin: 3rem auto 0 auto;
+  padding: 0 0 0 3rem;
 }
 
 .right-content {
@@ -72,6 +73,13 @@ p {
   background-size: 100%;
   background-repeat: no-repeat;
   background-origin: content-box;
+}
+
+/*// Collapse logo when window is less than 600 pixels*/
+@media all and (max-width: 635px) {
+  .left-logo {
+    display:none;
+  }
 }
 
 header h1 {
@@ -230,45 +238,124 @@ pre.ui-coordinates {
 }
 
 /*Image Upload Styles*/
+ .image-editor{
+  margin:1rem 0 0 0;
+  padding: 0 1rem 0 1rem;
+    width:30.55rem;
+  height:18rem;
+    border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+ .image-editor h3{
+  border: 1px solid #ccc;
+  padding:.5rem .75rem .5rem .75rem;
+  margin: .75rem 0 .75rem 0;
+
+}
+
 .cropit-image-preview {
+  float:left;
+
   background-color: #f8f8f8;
   background-size: cover;
   border: 1px solid #ccc;
   border-radius: 3px;
-  margin-top: 7px;
-  width: 150px;
-  height: 100px;
+
+  width: 18rem;
+  height: 12.75rem;
   cursor: move;
 }
-.cropit-image-background {
-  opacity: .2;
-  cursor: auto;
-}
-.image-size-label {
-  margin-top: 10px;
-}
-input {
-  display: block;
-}
-button[type="submit"] {
-  margin-top: 10px;
-}
-#result {
-  margin-top: 10px;
-  width: 400px;
-}
-#result-data {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
+
+.image_controls {
+  clear:right;
+  float:right;
+  width:auto;
 }
 
+.select-image-btn {
+  color: #555555;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width:9rem;
+  margin: 0 0 .75rem 0;
+  background-color: #ffffff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  padding: .75rem 1rem .75rem 1rem;
+}
+.cropit-image-zoom-input {
+  margin:.5rem 0.75rem 0 0.1rem;
+  width:7.1rem;
+
+}
+.image-size-label {
+  font-weight:600;
+
+}
+
+.image_alt{
+
+  width: 9.5rem;
+  height: 2.35rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  padding: .75rem;
+  margin:.5rem 0 .75rem 0;
+
+    resize: none;
+}
+
+button[type="submit"] {
+  color: #555555;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width:11rem;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  padding: .75rem 1rem .75rem 1rem;
+}
+
+input[type="range"]{
+
+  height: 1px;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1);
+  padding:0;
+
+}
+
+input[type="range"]::-webkit-slider-thumb{
+   -webkit-appearance:none !important;  
+   width:17px;
+   height:13px;
+    border-radius: 4px;
+    border:1px solid black;
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 150, 150, 1);
+    background: #00c6c6;}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+   -webkit-appearance:none !important;  
+    background: #00ffff;}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+   -webkit-appearance:none !important;  
+}
+
+
+
+
+
 /* Hide default file input button if you want to use a custom button */
-/*input.cropit-image-input {
+input.cropit-image-input {
   visibility: hidden;
-}*/
+}
 
 /* Gray out zoom slider when the image cannot be zoomed */
 .cropit-image-zoom-input[disabled] {

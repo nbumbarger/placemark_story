@@ -44,7 +44,7 @@ class PlacemarksController < ApplicationController
 
   private
   def placemark_params
-    params.require(:placemark).permit(:name, :synopsis, :full_text, :lat, :lon, :image_data)
+    params.require(:placemark).permit(:name, :full_text, :lat, :lon, :image_data, :image_alt)
   end
 
 end
