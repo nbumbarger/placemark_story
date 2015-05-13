@@ -1,0 +1,8 @@
+<div class="widget">
+<h3>Story tree navigator</h3>
+ <ol>
+  <% @story.placemarks.each do |placemark| %>
+  <li><%= link_to placemark.name, edit_story_placemark_path(@story, placemark) %></li>
+  <% end %>
+ </ol>
+</div>

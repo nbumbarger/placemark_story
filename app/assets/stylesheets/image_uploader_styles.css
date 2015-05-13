@@ -1,0 +1,71 @@
+/*Image Upload Styles*/
+.cropit-image-preview {
+  float: left;
+  width: 18rem;
+  height: 13.5rem;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  margin: 0 0 1.5rem 0;
+  background-color: #f2f2f2;
+  background-size: cover;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  cursor: move;
+}
+
+.image-controls {
+  float: left;
+  margin: 0 0 0 1rem;
+}
+
+.select-image-button {
+  float: none;
+  display: block;
+  width: 11rem;
+  margin: 0 0 1rem 0;
+}  
+
+.cropit-image-zoom-input {
+  width: 6.75rem;
+  height: 1px;
+  padding:0;
+  margin: .5rem 0.75rem 0 0.25rem;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1);  
+}
+
+.cropit-image-zoom-input::-webkit-slider-thumb {
+  -webkit-appearance:none !important;  
+  width:17px;
+  height:13px;
+  border-radius: 4px;
+  border:1px solid black;
+  box-shadow: inset 0px 0px 3px 3px rgba(0, 150, 150, 1);
+  background: #00c6c6;}
+
+.cropit-image-zoom-input::-webkit-slider-thumb:hover {
+   -webkit-appearance:none !important;  
+    background: #00ffff;}
+
+.cropit-image-zoom-input::-webkit-slider-thumb:hover{
+   -webkit-appearance:none !important;  
+}
+
+.image-size-label {
+  font-weight:600;
+}
+
+.image-alt{
+  width: 9.25rem;
+  height: 3.5rem;
+  padding: .75rem;
+  margin: 1rem 0 0 0;
+  resize: none;
+}
+
+input.cropit-image-input {
+  display: none;
+}
+
+.cropit-image-zoom-input[disabled] {
+  opacity: .2;
+}

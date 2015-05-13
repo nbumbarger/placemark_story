@@ -17,8 +17,9 @@
                    :autocomplete=> :off %>
   <%= render "location_selector_widget" %>
   <%= render "image_upload_widget" %>
-  <%= f.text_field :lat %>
-  <%= f.text_field :lon %>
+
+  <%= f.hidden_field :lat %>
+  <%= f.hidden_field :lon %>
   <%= f.text_field :image_data %>
   <%= f.text_field :image_alt %>
   <%= f.submit "Add Next Placemark", class: "next_placemark" %>

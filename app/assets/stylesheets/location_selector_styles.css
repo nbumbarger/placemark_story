@@ -1,0 +1,22 @@
+/*Map Styles*/
+#map {
+  position: relative;
+  width: 32.55rem;
+  height: 14.75rem;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  margin:0;
+}
+
+pre.ui-coordinates {
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  padding:5px 10px;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  font-size:11px;
+  line-height:18px;
+  border-radius:3px;
+  z-index:999;
+}

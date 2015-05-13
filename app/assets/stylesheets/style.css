@@ -43,8 +43,6 @@ body {
 }
 
 .right-content {
-  /*background-color: red;*/
-
   display: table-cell;
   padding: .5rem 0 0 2.25rem;
 }
@@ -53,18 +51,8 @@ p {
   margin: 1rem 0 0 .25rem;
 }
 
-.placemarks ul {
-  padding: 0 0 0 2rem;
-}
-}
-.placemarks>ul>li {
-  margin: 0 0 0 3rem;
-}
-
 /*Logo/Header Styles*/
 .left-logo {
-  /*background-color: green;*/
-
   display: table-cell;
   width: 100px;
   height: 100%;
@@ -75,10 +63,9 @@ p {
   background-origin: content-box;
 }
 
-/*// Collapse logo when window is less than 600 pixels*/
 @media all and (max-width: 635px) {
   .left-logo {
-    display:none;
+    display: none;
   }
 }
 
@@ -118,7 +105,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+  display: inline;
 }
 
 nav li + li::before {
@@ -135,229 +122,67 @@ nav li a:hover {
   text-decoration: underline;
 }
 
-nav li a.current_page{
-  /*text-decoration:underline;*/
+/*nav li a.current_page{
   text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
 }
 
 #about nav li .about > a {
   pointer-events: none;
   cursor: default;
-}
+}*/
 
 /*Form Styles*/
-label {
-  display: block;
-  font-size: 0.9em;
-  font-weight: bold;
-  margin: 1.5em 0 0.75em 0;
+.widget, .widget h3,
+input, textarea, button, input[type="submit"] {
+  float: left;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  padding: .75rem 1rem .75rem 1rem;
+  font-size: 1rem;
+}
+
+.widget {
+  clear: left;
+  width: 30.55rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.widget h3{
+  float: none;
+  padding: .75rem;
+  margin: 1rem 0 1rem 0;
+  background-color: #f2f2f2;
 }
 
 input {
-  float:left;
   width: 30.55rem;
-  font-size: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  padding: .75rem 1rem .75rem 1rem;
+  background-color: #fff;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid #33C3F0;
   outline: 0;
 }
 
 textarea {
   clear:left;
-  float:left;
   width: 30.55rem;
   height: 10rem;
-  font-size: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  padding: .75rem 1rem .75rem 1rem;
   margin:.5rem 1rem 1rem 0;
-
-    resize: none;
-
+  background-color: #ffffff;
+  resize: none;
 }
 
-input[type="submit"] {
-  float:left;
-  color: #555555;
-  font-size: 1rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-align: center;
-  width:auto;
-  padding: .75rem 1rem .75rem 1rem;
+button, input[type="submit"] {
   margin: .5rem 0 .5rem 0;
+  color: #555;
+  background-color: #f2f2f2;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-input[type="submit"]:hover {
+button:hover, input[type="submit"]:hover {
+  background-color: #d8d8d8;
   border-color: #5a5a5a;
-}
-
-.new_story input {
-
-}
-.new_story input[type="submit"] {
-
-  margin: 0 0 0 .5rem;
-}
-
-
-/*.next_placemark{
-  clear:left;
-}*/
-
-
-/*Map Styles*/
-#map {
-  
-  position: relative;
-  width: 32.55rem;
-  height: 15rem;
-  margin:0;
-
-}
-
-pre.ui-coordinates {
-  position:absolute;
-  bottom:10px;
-  right:10px;
-  padding:5px 10px;
-  background:rgba(0,0,0,0.5);
-  color:#fff;
-  font-size:11px;
-  line-height:18px;
-  border-radius:3px;
-  z-index:999;
-}
-
-/*Image Upload Styles*/
- .image-editor{
-  margin:1rem 0 0 0;
-  padding: 0 1rem 0 1rem;
-    width:30.55rem;
-  height:18rem;
-    border: 1px solid #ccc;
-  border-radius: 3px;
-
-}
- .image-editor h3{
-  border: 1px solid #ccc;
-  padding:.5rem .75rem .5rem .75rem;
-  margin: .75rem 0 .75rem 0;
-
-}
-
-.cropit-image-preview {
-  float:left;
-
-  background-color: #f8f8f8;
-  background-size: cover;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-
-  width: 18rem;
-  height: 12.75rem;
-  cursor: move;
-}
-
-.image_controls {
-  clear:right;
-  float:right;
-  width:auto;
-}
-
-.select-image-btn {
-  color: #555555;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-align: center;
-  width:9rem;
-  margin: 0 0 .75rem 0;
-  background-color: #ffffff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  padding: .75rem 1rem .75rem 1rem;
-}
-.cropit-image-zoom-input {
-  margin:.5rem 0.75rem 0 0.1rem;
-  width:7.1rem;
-
-}
-.image-size-label {
-  font-weight:600;
-
-}
-
-.image_alt{
-
-  width: 9.5rem;
-  height: 2.35rem;
-  font-size: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  padding: .75rem;
-  margin:.5rem 0 .75rem 0;
-
-    resize: none;
-}
-
-button[type="submit"] {
-  color: #555555;
-  font-size: 1rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-align: center;
-  width:11rem;
-  margin: 0;
-  background-color: #ffffff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  padding: .75rem 1rem .75rem 1rem;
-}
-
-input[type="range"]{
-
-  height: 1px;
-  box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1);
-  padding:0;
-
-}
-
-input[type="range"]::-webkit-slider-thumb{
-   -webkit-appearance:none !important;  
-   width:17px;
-   height:13px;
-    border-radius: 4px;
-    border:1px solid black;
-    box-shadow: inset 0px 0px 3px 3px rgba(0, 150, 150, 1);
-    background: #00c6c6;}
-
-input[type="range"]::-webkit-slider-thumb:hover{
-   -webkit-appearance:none !important;  
-    background: #00ffff;}
-
-input[type="range"]::-webkit-slider-thumb:hover{
-   -webkit-appearance:none !important;  
-}
-
-
-
-
-
-/* Hide default file input button if you want to use a custom button */
-input.cropit-image-input {
-  visibility: hidden;
-}
-
-/* Gray out zoom slider when the image cannot be zoomed */
-.cropit-image-zoom-input[disabled] {
-  opacity: .2;
 }
