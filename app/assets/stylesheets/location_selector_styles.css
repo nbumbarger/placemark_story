@@ -1,11 +1,12 @@
-/*Map Styles*/
+/* ----- Map Styles ----- */
+
 #map {
   position: relative;
   width: 32.55rem;
   height: 14.75rem;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
-  margin:0;
+  margin: 0 0 1rem 0;
 }
 
 pre.ui-coordinates {

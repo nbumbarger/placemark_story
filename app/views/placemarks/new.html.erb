@@ -6,7 +6,8 @@
 </ul>
 <% end %>
 
-<h2><%= @story.name %>, part #1</h2>
+<h2><%= @story.name %>; New Placemark</h2>
+
 <%= form_for [@story, @placemark] do |f| %>
   <%= f.text_field :name,
                    :placeholder=> "Enter this story fragment's title",
@@ -17,11 +18,13 @@
                    :autocomplete=> :off %>
   <%= render "location_selector_widget" %>
   <%= render "image_upload_widget" %>
-
+  <%= render "story_tree_widget" %>
   <%= f.hidden_field :lat %>
   <%= f.hidden_field :lon %>
-  <%= f.text_field :image_data %>
-  <%= f.text_field :image_alt %>
-  <%= f.submit "Add Next Placemark", class: "next_placemark" %>
-  <%= f.submit "Finish Story" %>
+  <%= f.hidden_field :image_data %>
+  <%= f.hidden_field :image_alt %>
+  <div class="save-buttons">
+    <%= f.submit "Add Next Placemark" %>
+    <%= f.submit "Finish Story" %>
+  <div class="save-buttons">
 <% end %>
