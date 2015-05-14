@@ -1,3 +1,4 @@
+<h2>Create A New Map Story</h2>
 <% if @story.errors.any? %>
 <ul>
   <% @story.errors.full_messages.each do |err| %>
@@ -5,12 +6,14 @@
   <% end %>
 </ul>
 <% end %>
-
 <%= form_for @story do |f| %>
   <%= f.text_field :name,
                    :placeholder=> "Enter new story name",
                    :autofocus=> true,
+                   :autocomplete=> :off %>
+  <%= f.text_area  :synopsis,
+                   :placeholder=> "Enter a brief synopsis",
                    :autocomplete=> :off,
-                   :class=> "new_story" %>
-  <%= f.submit :class=> "new_story" %>
+                   :class=> "new-story"%>
+  <%= f.submit :class=> "new-story" %>
 <% end %>

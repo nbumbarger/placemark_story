@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150508234538) do
 
   create_table "stories", force: :cascade do |t|
     t.string   "name",       null: false
+    t.string   "synopsis"
     t.datetime "deleted_at"
   end
 

@@ -1,4 +1,4 @@
-/* ----- icon styles ----- */
+/* ----- Icon styles ----- */
 @font-face {
   font-family: 'icomoon';
   src:url('/assets/icomoon.eot');
@@ -23,6 +23,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart:before {
+  content: "\e9da";
+  color:#ff0000;
+}
+
 /* ----- Content Styles ----- */
 * {
   margin: 0;
@@ -38,7 +43,7 @@ body {
   display: table;
   width: 90%;
   clear: both;
-  margin: 2rem auto 0 5%;
+  margin: 2rem auto 0 auto;
   padding: 0 0 0 3rem;
 }
 
@@ -51,18 +56,47 @@ p {
   margin: 1rem 0 0 .25rem;
 }
 
-h2 {
-  width: 65.25rem;
-  font-size:1.5rem;
-  padding: .75rem;
+h2, footer {
+  width: 85%;
+  max-width: 85rem;
+  min-width: 64.75rem;
+  clear:left;
+  float:left;
+  color: #fff;
+  background-color: #1975e5;
+  border: 1px solid #012766;
+  border-radius: 5px;
   margin: 1rem 0 1rem 0;
-  background-color: #00b6ff;
-  text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
-  letter-spacing: .1rem;
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+h2 {
+  font-size:1.4rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
   text-transform: uppercase;
-  border: 1px solid #0076a5;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 10px 1px rgba(0, 150, 150, 1);
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+footer {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: .15rem;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+footer .icon-heart:before {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+footer a {
+  color:#fff;
+  text-decoration: none
+}
+
+footer a:hover {
+  text-decoration: underline
 }
 
 /* ----- Logo/Header Styles ----- */
@@ -75,23 +109,6 @@ h2 {
   background-size: 100%;
   background-repeat: no-repeat;
   background-origin: content-box;
-}
-
-@media all and (max-width: 1050px) {
-  h2 {
-    width: 85%;
-    min-width: 31rem;
-  }
-}
-
-@media all and (max-width: 635px) {
-  h2 {
-    font-size: 1.25rem;
-    min-width: 31rem;
-  }
-  .left-logo {
-    display: none;
-  }
 }
 
 header h1 {
@@ -112,6 +129,26 @@ header h1 .title-word2 {
   letter-spacing: 0.17rem;
   text-transform: uppercase;
   text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
+}
+
+/* ----- Responsive Styles ----- */
+@media all and (max-width: 1050px) {
+  h2, footer {
+    width: 70%;
+    min-width: 30.5rem;
+  }
+}
+
+@media all and (max-width: 675px) {
+  body {
+    margin: 2rem auto 0 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .left-logo {
+    display: none;
+  }
 }
 
 /* ----- Nav Styles ----- */
@@ -146,15 +183,6 @@ nav li a {
 nav li a:hover {
   text-decoration: underline;
 }
-
-/*nav li a.current_page{
-  text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
-}
-
-#about nav li .about > a {
-  pointer-events: none;
-  cursor: default;
-}*/
 
 /* ----- Form Styles ----- */
 .widget, .widget h3,
@@ -223,6 +251,16 @@ button:hover, input[type="submit"]:hover {
 
 .save-buttons input[type="submit"] {
   width: 15.55rem;
-  margin: 0 1.5rem 1.5rem 0;
+  margin: 0 1.5rem 0 0;
+}
 
+/* ----- New Story Styles ----- */
+ input[type="submit"].new-story {
+  width: auto;
+  clear: left;
+  margin: 1rem 0 0 0;
+}
+
+textarea.new-story {
+  margin-bottom: 0; 
 }
