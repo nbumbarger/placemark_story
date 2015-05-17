@@ -38,17 +38,35 @@
       list-style-type:none;
     }
     #marker-list li:hover {
-      background:#000;
+      background:rgb(0, 0, 0);;
     }
-    img {
+    img { 
       width: 360px;
-      height: 270px;
-
+      height: 222px;
+    }
+    .leaflet-popup-content-wrapper {
+      background:rgba(0, 0, 0, 0.75);
+      color:#fff;
+      font-size:16px;
+      line-height:24px;
+      border-radius: :20px;
+    }
+    .leaflet-popup-content-wrapper a {
+      color:rgba(255,255,255,0.5);
+    }
+    .leaflet-popup-tip-container {
+      width:30px;
+      height:15px;
+    }
+    .leaflet-popup-tip {
+      border-left:15px solid transparent;
+      border-right:15px solid transparent;
+      border-top:15px solid rgba(0, 0, 0, 0.75);;
     }
   </style>
 </head>
 <body>
-<div id="map"></div>
+<div id='map'></div>
 <ul id='marker-list'></ul>
   <script>
   L.mapbox.accessToken = "<%= Rails.application.secrets.mapbox_token %>";
@@ -96,13 +114,16 @@
       var marker = e.layer;
       var feature = marker.feature;
       // Write popup HTML
-      var content = 
-        feature.properties.name +
-        '<img src="' + feature.properties.image + '" />' +
-        feature.properties.description;
+      var content =
+        '<h2>' + feature.properties.name + '</h2>'
+        if (feature.properties.image !== '') {
+
+          content = content + '<style>.leaflet-popup-content-wrapper{width:380px};</style>' +
+          '<img src="' + feature.properties.image + '" />'
+        };
+        content = content + feature.properties.description;
         marker.bindPopup(content, {
-          closeButton: false,
-          minWidth: 380
+          closeButton: false
         });
     });
   };

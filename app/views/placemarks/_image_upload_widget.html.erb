@@ -1,41 +1,43 @@
-<div class="widget image-editor">
+<div class='widget image-editor'>
   <h3>Optional: Upload Image</h3>
-  <div class="cropit-image-preview"></div>
-  <div class="image-controls">
-    <button class="select-image-button" type="button">Select Image</button>
-    <input type="range" class="cropit-image-zoom-input">
-    <div class="image-size-label">Zoom</div>
-    <textarea class="image-alt" placeholder="Enter image alt text" autocomplete="off" type="text" name="alt_text" id="alt_text"></textarea>
+  <div class='cropit-image-preview'></div>
+  <div class='image-controls'>
+    <button class='select-image-button' type='button'>Select Image</button>
+    <input type='range' class='cropit-image-zoom-input'>
+    <div class='image-size-label'>Zoom</div>
+    <textarea class='image-alt' placeholder='Enter image alt text' autocomplete='off' type='text' name='alt_text' id='alt_text'></textarea>
   </div>
-  <input type="file" class="cropit-image-input">
+  <input type='file' class='cropit-image-input'>
 </div>
 <script>
-
-console.log('<%= @placemark.image_data %>')
 $(function() {
-  // Initialize image upload widget. On file change, set alt text to image name
-  $(".image-editor").cropit({
+  // Initialize image upload widget.
+  var imageEditor = $('.image-editor')
+  imageEditor.cropit({
     exportZoom: 3,
     imageState: { src: '<%= @placemark.image_data %>' },
+    // On file change, set alt text to image name
     onFileChange: function() {
-      var imagePath = $(".cropit-image-input").val()
-      $(".image-alt").val(imagePath.substring(imagePath.lastIndexOf('\\')+1, imagePath.lastIndexOf('.')));
+      var imagePath = $('.cropit-image-input').val()
+      $('.image-alt').val(imagePath.substring(imagePath.lastIndexOf('\\')+1, imagePath.lastIndexOf('.')));
     }
   });
-  $("form").submit(function(event) {
-    // Move cropped image data and image alt text to hidden inputs
-    var imageData = $(".image-editor").cropit("export",
-      {type: "image/jpeg",
+
+  $('form').submit(function(event) {
+  // Compress and crop the image
+    var imageData = imageEditor.cropit('export',
+      {type: 'image/jpeg',
        quality: .9,
        originalSize: false}
     );
-    var imageAlt = $(".image-alt").val();
-    $("#placemark_image_data").val(imageData);
-    $("#placemark_image_alt").val(imageAlt);
+    // Move cropped image data and image metadata to hidden fields
+    var imageAlt = $('.image-alt').val();
+    $('#placemark_image_data').val(imageData);
+    $('#placemark_image_alt').val(imageAlt);
   });
 });
 // On click of select_image button, simulate click of hidden file input widget
-$(".select-image-button").click(function() {
-  $(".cropit-image-input").click();
+$('.select-image-button').click(function() {
+  $('.cropit-image-input').click();
 });
 </script>

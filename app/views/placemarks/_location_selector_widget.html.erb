@@ -23,7 +23,6 @@ marker.addTo(map);
 
 // Update map view and marker position to include previously saved coordinates
 saved_coords = {lat: $("#placemark_lat").val(), lng: $('#placemark_lng').val()}
-console.log(saved_coords)
 if(typeof saved_coords.lat !== 'undefined' && typeof saved_coords.lng !== 'undefined') {
    marker.setLatLng({lat: saved_coords.lat, lng: saved_coords.lng});
    map.setView([saved_coords.lat, saved_coords.lng], 13);
