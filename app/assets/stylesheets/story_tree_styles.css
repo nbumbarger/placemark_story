@@ -23,7 +23,7 @@ ol > li {
   list-style: none;
 }
 
-ol a {
+ol a, ol>li.current-placemark {
   display: block;
   margin:0 0 0 2.5rem;
   padding: 5px 8px 5px 8px;
@@ -44,10 +44,20 @@ ol > li:before {
   content: counter(li);
   counter-increment: li;
   float: left;
-  padding: 5px 10px 5px 10px;
+  padding: .4rem .9rem .5rem .9rem;
   border-radius: 5px;
   background-color: #e2f8ff;
   font-weight: bold;
   text-align: center;
   box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1); 
+}
+
+ol>li.current-placemark {
+  margin: 0;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 5px 1px rgba(0, 150, 0, 1); 
+}
+
+  ol > li.current-placemark:before {
+  content: none;
 }

@@ -1,36 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <title>Placemark Story</title>
-  <meta name="description" content="Shows in Search Engine Results">
-  <meta name="keywords" content="Key, Words, For, Search, Engines">
-  <meta name="author" content="Nick Bumbarger">
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <meta name='description' content='Shows in Search Engine Results'>
+  <meta name='keywords' content='Key, Words, For, Search, Engines'>
+  <meta name='author' content='Nick Bumbarger'>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' />
 </head>
 <body>
-<div class="left-logo"></div>
-<div class="right-content">
+<div class='left-logo'></div>
+<div class='right-content'>
   <header>
     <h1>
-      <span class="title-word1">Placemark</span><span class="title-word2">Story</span>
+      <span class='title-word1'>Placemark</span><span class='title-word2'>Story</span>
     </h1>
   </header>
   <nav>
     <ul>
-      <li><%= link_to "About", root_path, class: "current_page" %></li>
-      <li><%= link_to "New Map Story", new_story_path %></li>
-      <li><%= link_to "View Map Stories", stories_path %></li>
+      <li><%= link_to 'About', root_path %></li>
+      <li><%= link_to 'New Map Story', new_story_path %></li>
+      <li><%= link_to 'View Map Stories', stories_path %></li>
     </ul>
   </nav>
   <%= yield %>
   <footer>
     <span>
-      Handcrafted with <span class="icon-heart"></span> by <a href="https://www.linkedin.com/pub/nicholas-bumbarger/b5/396/42b">Nick Bumbarger</a>
+      Handcrafted with <span class='icon-heart'></span> by <a href='https://www.linkedin.com/pub/nicholas-bumbarger/b5/396/42b'>Nick Bumbarger</a>
     </span>
   </footer>
 </div>

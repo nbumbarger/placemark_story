@@ -10,11 +10,13 @@
   <input type="file" class="cropit-image-input">
 </div>
 <script>
+
+console.log('<%= @placemark.image_data %>')
 $(function() {
   // Initialize image upload widget. On file change, set alt text to image name
   $(".image-editor").cropit({
-    // Need to find a way to load thumbail from temp fields when editing
-    // imageState: {src: $("#placemark_image_data").val},
+    exportZoom: 3,
+    imageState: { src: '<%= @placemark.image_data %>' },
     onFileChange: function() {
       var imagePath = $(".cropit-image-input").val()
       $(".image-alt").val(imagePath.substring(imagePath.lastIndexOf('\\')+1, imagePath.lastIndexOf('.')));

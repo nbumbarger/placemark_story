@@ -10,7 +10,7 @@ var map = L.mapbox.map("map", "mapbox.streets");
 // Initialize the geocoder control and add it to the map
 var geocoderControl = L.mapbox.geocoderControl("mapbox.places", {
   position: "topright",
-  keepOpen: true
+  keepOpen: false
   });
 geocoderControl.addTo(map);
 
@@ -20,6 +20,14 @@ var marker = L.marker([0, 0], {
   draggable: true
   });
 marker.addTo(map);
+
+// Update map view and marker position to include previously saved coordinates
+saved_coords = {lat: $("#placemark_lat").val(), lng: $('#placemark_lng').val()}
+console.log(saved_coords)
+if(typeof saved_coords.lat !== 'undefined' && typeof saved_coords.lng !== 'undefined') {
+   marker.setLatLng({lat: saved_coords.lat, lng: saved_coords.lng});
+   map.setView([saved_coords.lat, saved_coords.lng], 13);
+ };
 
 // Listen for the geocoder's "found" result, and move the map marker to the first result's coordinates
 geocoderControl.on("found", function(res) {
@@ -34,7 +42,7 @@ marker.on("dragend", get_marker_position);
 function get_marker_position() {
   var m = marker.getLatLng();
   $("#placemark_lat").val(m.lat);
-  $("#placemark_lon").val(m.lng);
+  $("#placemark_lng").val(m.lng);
   coordinates.innerHTML = "Coordinates:<br />Lat: " + Number((m.lat).toFixed(3)) + "<br />Lon: " + Number((m.lng).toFixed(3));
 }
 

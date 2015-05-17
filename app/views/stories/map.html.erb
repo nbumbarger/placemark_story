@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title><%= @story.name %></title>
+  <meta name='description' content='Shows in Search Engine Results'>
+  <meta name='keywords' content='Key, Words, For, Search, Engines'>
+  <meta name='author' content='Nick Bumbarger'>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' />
+  <style>
+    body { 
+      margin:0; 
+      padding:0;
+    }
+    #map {
+      position:absolute; top:0; bottom:0; width:100%;
+    }
+    #marker-list {
+      position:absolute;
+      top:0; right:0; width:200px;
+      bottom:0;
+      overflow-x:auto;
+      background-color:rgba(0, 0, 0, 0.5);
+      margin:0;
+      padding:5px;
+    }
+    #marker-list li {
+      font-family: sans-serif;
+      color:#ffffff;
+      padding:5px;
+      padding-left:15px;
+      margin:0 0 0 0;
+      letter-spacing: .2rem;
+      font-size:1rem;
+      list-style-type:none;
+    }
+    #marker-list li:hover {
+      background:#000;
+    }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<ul id='marker-list'></ul>
+  <script>
+  L.mapbox.accessToken = "<%= Rails.application.secrets.mapbox_token %>";
+  // Initialize map frame with default zoom behavior disabled
+  var map = L.mapbox.map("map", "mapbox.streets", { doubleClickZoom: false })
+    // Add custom zoom behavior (pan to center of double-click event)
+    .on('dblclick', function(e) {
+      map.setView(e.latlng, map.getZoom() + 1)
+    });
+  // Add empty feature layer to map frame
+  var featureLayer = L.mapbox.featureLayer().addTo(map)
+
+  // Build the map and table of contents
+  loadFeatures()
+  addPanOnClick()
+  addPopups()
+
+  // Load features from Rails GeoJSON server
+  function loadFeatures() {
+    $.ajax({
+      type: 'GET',
+      dataType: 'json',
+      url: "<%= story_path(@story) %>",
+      success: function (geojson) { 
+        // Load response GeoJSON into feature layer
+        featureLayer.setGeoJSON(geojson);
+        // Fit map to bounding coordinates of features
+        map.fitBounds(featureLayer.getBounds());
+        // Table of Contents must be built as features are loaded
+        buildTableOfContents();
+      }
+    });
+  };
+
+  // Add a listening event to each feature, to pan when clicked
+  function addPanOnClick() {
+    featureLayer.on('click', function(e) {
+      map.setView(e.layer.getLatLng())
+    })
+  };
+
+  // Add custom HTML popups to each feature
+  function addPopups() {
+    featureLayer.on('layeradd', function(e) {
+      var marker = e.layer;
+      var feature = marker.feature;
+      // Write popup HTML
+      var content = 
+        feature.properties.name +
+        '<img src="' + feature.properties.image + '" />' +
+        feature.properties.description;
+        marker.bindPopup(content, {
+          closeButton: false,
+          minWidth: 320
+        });
+    });
+  };
+
+  // For each feature, add an entry to the marker list, including the feature name and a click event which zooms to the feature's coordinates
+  function buildTableOfContents() {
+    var markerList = document.getElementById('marker-list');
+    featureLayer.eachLayer(function(layer) {
+      var item = markerList.appendChild(document.createElement('li'));
+      item.innerHTML = layer.toGeoJSON().properties.name;
+      item.onclick = function() {
+        map.setView(layer.getLatLng(), 14);
+        layer.openPopup();
+      };
+    });
+  };
+  </script>
+</body>
+</html>

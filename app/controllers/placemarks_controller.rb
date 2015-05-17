@@ -1,13 +1,5 @@
 class PlacemarksController < ApplicationController
 
-  def index
-    @placemarks = Placemark.all
-  end
-
-  def show
-    @placemark = Placemark.find(:id)
-  end
-
   def new
     @story = Story.find(params[:story_id])
     @placemark = Placemark.new
@@ -17,22 +9,35 @@ class PlacemarksController < ApplicationController
     @story = Story.find(params[:story_id])
     @placemark = @story.placemarks.new(placemark_params)
     if params[:commit] === "Add Next Placemark"
-      puts "\n\n\nadd next\n\n\n"
       if @placemark.save
-        redirect_to new_story_placemark_path
+        redirect_to new_story_placemark_path(@story)
       else
+        @placemark = @story.placemarks.new(placemark_params)
         render :new
       end
-
     elsif params[:commit] == "Finish Story"
       if @placemark.save
         redirect_to @story
       else
         render :new
       end
-
     end
+  end
 
+  def edit
+    @story = Story.find(params[:story_id])
+    @placemark = @story.placemarks.find(params[:id])
+  end
+
+  def update
+    @story = Story.find(params[:story_id])
+    @placemark = @story.placemarks.find(params[:id])
+    if @placemark.update(placemark_params)
+      # @next_placemark = @story.placemarks.new(placemark_params)
+      redirect_to edit_story_placemark_path(@story, @placemark.next)
+    else
+      render :edit
+    end
   end
 
   def destroy
@@ -44,7 +49,7 @@ class PlacemarksController < ApplicationController
 
   private
   def placemark_params
-    params.require(:placemark).permit(:name, :full_text, :lat, :lon, :image_data, :image_alt)
+    params.require(:placemark).permit(:name, :description, :lat, :lng, :image_data, :image_alt)
   end
 
 end

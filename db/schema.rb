@@ -11,33 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150508234538) do
+ActiveRecord::Schema.define(version: 20150508234521) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "images", force: :cascade do |t|
-    t.integer  "placemark_id"
-    t.binary   "data",         null: false
-    t.string   "alt",          null: false
-    t.datetime "deleted_at"
-  end
-
   create_table "placemarks", force: :cascade do |t|
     t.integer  "story_id"
-    t.string   "name",       null: false
-    t.text     "synopsis"
-    t.text     "full_text"
-    t.decimal  "lat",        null: false
-    t.decimal  "lon",        null: false
-    t.binary   "image_data", null: false
-    t.string   "image_alt",  null: false
+    t.string   "name",        null: false
+    t.text     "description"
+    t.decimal  "lat",         null: false
+    t.decimal  "lng",         null: false
+    t.binary   "image_data",  null: false
+    t.string   "image_alt",   null: false
     t.datetime "deleted_at"
   end
 
   create_table "stories", force: :cascade do |t|
-    t.string   "name",       null: false
-    t.string   "synopsis"
+    t.string   "name",        null: false
+    t.string   "description"
     t.datetime "deleted_at"
   end
 

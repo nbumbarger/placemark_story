@@ -5,6 +5,7 @@
   <% @story.placemarks.each do |placemark| %>
   <li><%= link_to placemark.name, edit_story_placemark_path(@story, placemark) %></li>
   <% end %>
+  <li class="current-placemark">Current Placemark</li>
  </ol>
 </div>
 </div>

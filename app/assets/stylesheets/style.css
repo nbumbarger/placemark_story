@@ -53,12 +53,14 @@ body {
 }
 
 p {
+  clear:left;
+  float:left;
   margin: 1rem 0 0 .25rem;
 }
 
 h2, footer {
   width: 85%;
-  max-width: 85rem;
+  max-width: 70rem;
   min-width: 64.75rem;
   clear:left;
   float:left;
@@ -131,11 +133,31 @@ header h1 .title-word2 {
   text-shadow: 0px 0px 5px rgba(0, 150, 150, 1);
 }
 
+/* ----- Welcome Styles ----- */
+.welcome p {
+  width: 80%;
+  max-width: 70rem;
+  min-width: 64.75rem;
+  margin: 0 0 1rem 0;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  line-height: 3rem;
+  color: #fff;
+  background-color: #a0e8ff;
+  text-shadow: 0 0 5px #000;
+}
+
 /* ----- Responsive Styles ----- */
 @media all and (max-width: 1050px) {
-  h2, footer {
-    width: 70%;
+  .welcome p, h2, footer {
+    /*width: 70%;*/
     min-width: 30.5rem;
+  }
+  .welcome p {
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 2.5rem;
   }
 }
 
@@ -143,8 +165,16 @@ header h1 .title-word2 {
   body {
     margin: 2rem auto 0 0;
   }
+  .welcome p {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
   h2 {
     font-size: 1rem;
+  }
+  h2, footer {
+    text-align: center;
   }
   .left-logo {
     display: none;
@@ -263,4 +293,92 @@ button:hover, input[type="submit"]:hover {
 
 textarea.new-story {
   margin-bottom: 0; 
+}
+
+.view-stories {
+  clear:left;
+  float:left;
+  border-style: none;
+  font-size: 2rem;
+  font-weight:600;
+}
+
+
+.story, .story a {
+  float: left;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  margin: 0 1.5rem 1rem 0;
+  font-size: 1rem;
+}
+
+.story {
+  width: 30.55rem;
+  margin: 0 1.5rem 1rem 0;
+  padding: 1rem 0 0 1rem;
+}
+
+.story a {
+  width:28rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+
+text-decoration: none;
+
+  display:block;
+  border: 1px solid #00a9d8;
+  padding: .75rem;
+  background-color: #a0e8ff;
+}
+
+.view-stories a:hover {
+  text-decoration:underline;
+  background-color: #21cbff;
+
+}
+.story p {
+  font-size: 1.1rem;
+  margin:0 0 1rem 0 ;
+  padding:0 0 0 0;
+  /*border: 1px solid #b2b2b2;*/
+  padding: .75rem;
+  padding-top: 0;
+  /*background-color: #f2f2f2;*/
+}
+
+.map-stories h3{
+  float:left;
+  width: 80%;
+  max-width: 70rem;
+  min-width: 64.75rem;
+  margin: 0 0 .25rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  line-height: 3rem;
+  color: #fff;
+  background-color: #a0e8ff;
+  text-shadow: 0 0 5px #000;
+}
+
+.map-stories p{
+  float:left;
+  width: 80%;
+  max-width: 70rem;
+  min-width: 64.75rem;
+  margin: 0 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+.map-stories a {
+  font-size:1.25rem;
+  float:left;
+  color:#000;
+  clear:left;
 }
