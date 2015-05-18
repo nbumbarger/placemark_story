@@ -16,6 +16,7 @@ class Story < ActiveRecord::Base
           description: placemark.description,
           image: placemark.image_data,
           image_alt: placemark.image_alt,
+          link: placemark.link,
           :'marker-color' => '#f00'
         }
       }

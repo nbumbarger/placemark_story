@@ -29,16 +29,16 @@
 }
 
 .icon-location:before {
-    content: "\e947";
-    color:rgb(242, 78, 79)
+  content: "\e947";
+  color: rgb(242, 78, 79)
 }
 
 .icon-search:before {
-  background: rgb(255, 255, 255);
+  content: "\e986";
   padding: 2px;
   border: 1px solid rgb(178, 178, 178);
   border-radius: 3px;
-  content: "\e986";
+  background: rgb(255, 255, 255);
 }
 
 /* ----- Content Styles ----- */
@@ -150,7 +150,6 @@ header h1 .title-word2 {
 
 /* ----- Welcome Styles ----- */
 .welcome p {
-  width: auto;
   margin: 0 0 1rem 0;
   font-size: 4rem;
   font-weight: 600;
@@ -162,17 +161,18 @@ header h1 .title-word2 {
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 675px) {
 
   .container {
     width:90%;
-  min-width:30.5rem
+    min-width:30.5rem
 }
 
 #logo{
   display:none;
 }
   .welcome p {
+     width: 32.5rem;
     font-size: 2rem;
     font-weight: 600;
     line-height: 2rem;

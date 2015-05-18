@@ -12,56 +12,78 @@
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' />
   <style>
     body { 
-      margin:0; 
-      padding:0;
+      margin: 0; 
+      padding: 0;
     }
     #map {
-      position:absolute; top:0; bottom:0; width:100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
     }
     #marker-list {
-      position:absolute;
-      top:0; right:0; width:225px;
-      bottom:0;
-      overflow-x:auto;
-      background-color:rgba(0, 0, 0, 0.5);
-      margin:0;
-      padding:5px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 225px;
+      margin: 0;
+      padding: 5px;
+      overflow-x: auto;
+      border-left: 1px solid rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.5);
     }
     #marker-list li {
       font-family: sans-serif;
-      color:#ffffff;
-      padding:5px;
-      padding-left:15px;
-      margin:0 0 0 0;
+      color: #ffffff;
+      padding: 5px;
+      padding-left: 15px;
       letter-spacing: .2rem;
-      font-size:1rem;
-      list-style-type:none;
+      font-size: 1rem;
+      list-style-type: none;
     }
     #marker-list li:hover {
-      background:rgb(0, 0, 0);;
+      background: rgb(0, 0, 0);
     }
-    img { 
-      width: 360px;
-      height: 222px;
+    .truncate{
+      width: 350px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: rgba(255, 255, 255, 0.5);
     }
     .leaflet-popup-content-wrapper {
-      background:rgba(0, 0, 0, 0.75);
-      color:#fff;
-      font-size:16px;
-      line-height:24px;
-      border-radius: :20px;
+      background: rgba(0, 0, 0, 0.65);
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
     }
-    .leaflet-popup-content-wrapper a {
-      color:rgba(255,255,255,0.5);
+    .leaflet-popup-content-wrapper h2 {
+      font-size:16px;
+    }
+    .leaflet-popup-content-wrapper img { 
+      width: 360px;
+      height: 222px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+    .leaflet-popup-content-wrapper p {
+      font-size: 14px;
+      margin: 6px 0 0 0;
+
+    }
+    .leaflet-popup-content-wrapper a { 
+      font-weight: normal;
+      font-size: 14px;
+      text-decoration: underline;
+      color: rgba(255, 255, 255, 0.5);
     }
     .leaflet-popup-tip-container {
-      width:30px;
-      height:15px;
+      width: 30px;
+      height: 15px;
     }
     .leaflet-popup-tip {
-      border-left:15px solid transparent;
-      border-right:15px solid transparent;
-      border-top:15px solid rgba(0, 0, 0, 0.75);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid rgba(0, 0, 0, 0.75);
     }
   </style>
 </head>
@@ -118,14 +140,20 @@
       var marker = e.layer;
       var feature = marker.feature;
       // Write popup HTML
-      var content =
-        '<h2>' + feature.properties.name + '</h2>'
-        if (feature.properties.image !== '') {
-
-          content = content + '<style>.leaflet-popup-content-wrapper{width:380px};</style>' +
-          '<img src="' + feature.properties.image + '" />'
-        };
-        content = content + feature.properties.description;
+      var content = ''
+      var name = feature.properties.name;
+      var description = feature.properties.description;
+      var image = feature.properties.image;
+      var link = feature.properties.link;
+      if (image !== '' || link !== '') {
+        content = content + '<style>.leaflet-popup-content-wrapper {width: 380px;}</style>'};
+      content = content + '<h2>'+name+'</h2>'
+      if (image !== '') {
+        content = content + '<img src="'+image+'" alt="'+feature.properties.image_alt+'" />'};
+      if (description !== '') {
+          content = content + '<p>'+description+'</p>'};
+      if (link !== '') {
+          content = content + '<div class="truncate"><a href="'+link+'">'+link+'</a></div>'};
         marker.bindPopup(content, {
           closeButton: false
         });
