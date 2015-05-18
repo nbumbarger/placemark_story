@@ -1,6 +1,8 @@
 class Placemark < ActiveRecord::Base
   belongs_to :story
-  validates :name, :lat, :lng, presence: true
+  validates_presence_of :name, :message => "You must enter a name for this placemark" 
+  validates_presence_of :lat, :message => "Use the interactive location selector to set latitude" 
+  validates_presence_of :lng, :message => "Use the interactive location selector to set longitude" 
   default_scope {order('story_order ASC')}
 
   def index

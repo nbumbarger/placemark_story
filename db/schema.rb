@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150508234521) do
     t.text     "description"
     t.text     "link"
     t.decimal  "lat",         null: false
-    t.decimal  "lng"
+    t.decimal  "lng",         null: false
     t.binary   "image_data"
     t.string   "image_alt"
     t.integer  "story_order"

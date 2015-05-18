@@ -1,9 +1,11 @@
-<h2>View Map Stories</h2>
+<h2>Viewing Map Story: <%= @story.name %></h2>
 <div class="map-stories">
-  <h3><%= @story.name %></h3>
+  <p><b>Description:</b></p>
   <p><%= @story.description %></p>
-  <span class="show-map"><%= link_to "Show Map", story_map_path(@story), :target => "_blank" %></span>
-  <span class="edit-settings"><%= link_to "Edit Settings", edit_story_path(@story) %></span>
-  <span class="edit-content"><%= link_to "Edit Content", edit_story_placemark_path(@story, @first_placemark) %></span>
-  <span class="delete"><%= link_to "Delete", story_path(@story), method: :delete %></span>
+  <%= link_to "Show Map", story_map_path(@story), :target=> "_blank", class: "show-map" %>
+  <ul>
+    <li><%= link_to "Edit Settings", edit_story_path(@story) %></li>
+    <li><%= link_to "Edit Content", edit_story_placemark_path(@story, @first_placemark) %></li>
+    <li><%= link_to "Delete", story_path(@story), method: :delete %></li>
+  </ul>
 </div>

@@ -1,3 +1,5 @@
+/* ----- Marker List Styles ----- */
+
 #marker-list {
   position:absolute;
   top:0; right:0; width:200px;
@@ -7,11 +9,13 @@
   margin:0;
   padding:5px;
 }
+
 #marker-list li {
   padding:5px;
   margin:0;
   list-style-type:none;
 }
+
 #marker-list li:hover {
   background:#eee;
 }

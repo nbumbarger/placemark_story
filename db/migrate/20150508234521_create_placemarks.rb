@@ -6,7 +6,7 @@ class CreatePlacemarks < ActiveRecord::Migration
       t.text :description
       t.text :link
       t.decimal :lat, :null=> false
-      t.decimal :lng
+      t.decimal :lng, :null=> false
       t.binary :image_data
       t.string :image_alt
       t.integer :story_order
