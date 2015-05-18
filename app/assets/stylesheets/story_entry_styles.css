@@ -1,6 +1,8 @@
 /* ----- Story Entry Styles ----- */
 
-.story-entry {}
+.story-entry {
+	clear: left;
+}
 
 .story-entry input, .story-entry textarea {
   width: 28.5rem;

@@ -50,31 +50,23 @@
 html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 12px;
+  margin-left: 1rem;
 }
 
-body {
-  display: table;
-  width: 90%;
-  clear: both;
+.container {
   margin: 2rem auto 0 auto;
-  padding: 0 0 0 3rem;
-}
-
-.right-content {
-  display: table-cell;
-  padding: .5rem 0 0 2.25rem;
+  width: 70%;
+  min-width:70rem;
 }
 
 p {
-  clear:left;
-  float:left;
+  clear: left;
+  float: left;
   margin: 1rem 0 0 .25rem;
 }
 
 h2, footer {
-  width: 85%;
-  max-width: 70rem;
-  min-width: 64.75rem;
+  width: 100%;
   clear:left;
   float:left;
   color: #fff;
@@ -83,6 +75,7 @@ h2, footer {
   border-radius: 5px;
   margin: 1rem 0 1rem 0;
   padding: .5rem 1rem .5rem 1rem;
+  box-shadow: 0px 0px 7px 2px #888888;
 }
 
 h2 {
@@ -115,20 +108,29 @@ footer a:hover {
 }
 
 /* ----- Logo/Header Styles ----- */
-.left-logo {
-  display: table-cell;
-  width: 100px;
-  height: 100%;
+
+#logo {
+  /*position:absolute;*/
+  display:inline-block;
+  margin: 0 0 0 .75rem;
+  width:75px;
+  height:85px;
   background-image: url("electric.png");
-  background-position: top right;
-  background-size: 100%;
+  background-position: top left;
+  background-size: 65px;
   background-repeat: no-repeat;
-  background-origin: content-box;
+}
+header {
+  /*text-align:center;*/
+
+  padding: 0;
+  margin:0;
 }
 
 header h1 {
+  float:left;
   font-size: 4.15rem;
-  margin: 0;
+  margin: 0 0 0 0rem;
 }
 
 header h1 .title-word1 {
@@ -148,9 +150,7 @@ header h1 .title-word2 {
 
 /* ----- Welcome Styles ----- */
 .welcome p {
-  width: 80%;
-  max-width: 70rem;
-  min-width: 64.75rem;
+  width: auto;
   margin: 0 0 1rem 0;
   font-size: 4rem;
   font-weight: 600;
@@ -161,23 +161,17 @@ header h1 .title-word2 {
   text-shadow: 0 0 5px #000;
 }
 
-/* ----- Responsive Styles ----- */
-@media all and (max-width: 1050px) {
-  .welcome p, h2, footer {
-    /*width: 70%;*/
-    min-width: 30.5rem;
-  }
-  .welcome p {
-    font-size: 2.75rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-  }
+
+@media all and (max-width: 600px) {
+
+  .container {
+    width:90%;
+  min-width:30.5rem
 }
 
-@media all and (max-width: 675px) {
-  body {
-    margin: 2rem auto 0 0;
-  }
+#logo{
+  display:none;
+}
   .welcome p {
     font-size: 2rem;
     font-weight: 600;
@@ -187,15 +181,16 @@ header h1 .title-word2 {
     font-size: 1rem;
   }
   h2, footer {
+    width: 30.5rem;
     text-align: center;
-  }
-  .left-logo {
-    display: none;
   }
 }
 
 /* ----- Nav Styles ----- */
 nav {
+  width:34rem;
+  float:left;
+  clear:left;
   padding: 0 0 1rem 0;
 }
 
@@ -241,6 +236,7 @@ input, textarea, button, input[type="submit"] {
   width: 30.55rem;
   margin: 0 1.5rem 1rem 0;
   padding: 0 1rem 0 1rem;
+  box-shadow: 0px 0px 7px #888888;
 }
 
 .widget h3 {
@@ -290,14 +286,22 @@ button:hover, input[type="submit"]:hover {
 .save-buttons {
   clear: left;
   float: left;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  padding: .75rem 0.75rem .75rem 0;
+  box-shadow: 0px 0px 7px #888888;
 }
 
 .save-buttons input[type="submit"] {
-  width: 15.55rem;
-  margin: 0 1.5rem 0 0;
+  width: 14.9rem;
+  margin: 0 0 0 1rem;
 }
 
 /* ----- New Story Styles ----- */
+ #story_name {
+  clear: left;
+}
+
  input[type="submit"].new-story {
   width: auto;
   clear: left;

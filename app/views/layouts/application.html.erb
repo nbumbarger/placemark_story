@@ -13,20 +13,21 @@
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' />
 </head>
 <body>
-<div class='left-logo'></div>
-<div class='right-content'>
+<div class='container'>
   <header>
     <h1>
       <span class='title-word1'>Placemark</span><span class='title-word2'>Story</span>
     </h1>
-  </header>
-  <nav>
+    <nav>
     <ul>
       <li><%= link_to 'About', root_path %></li>
       <li><%= link_to 'New Map Story', new_story_path %></li>
       <li><%= link_to 'View Map Stories', stories_path %></li>
     </ul>
   </nav>
+  <div id="logo"></div>
+  </header>
+
   <%= yield %>
   <footer>
     <span>
