@@ -1,15 +1,17 @@
 /* ----- Story Entry Styles ----- */
 
-.story-entry {
-	clear: left;
-}
+.story-entry {}
 
-.story-entry input {
-  width: 28.25rem;
+.story-entry input, .story-entry textarea {
+  width: 28.5rem;
+  margin: 0 0 .75rem 0;
 }
 
 .story-entry textarea {
-  width: 28.25rem;
-  height: 3.75rem;
-  margin-bottom: 1.5rem;
+  height: 2.3rem;
+}
+
+.story-entry .link{
+  height: 1.2rem;
+  margin: 0 0 1rem 0;
 }

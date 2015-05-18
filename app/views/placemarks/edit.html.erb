@@ -1,24 +1,35 @@
 <h2><%= @story.name %>: Editing Placemark: <%= @placemark.name %></h2>
-<div class="widget story-entry">
+<% if @placemark.errors.any? %>
+<ul>
+  <% @placemark.errors.full_messages.each do |err| %>
+  <li><%= err %></li>
+  <% end %>
+</ul>
+<% end %>
+<div class='widget story-entry'>
 <%= form_for [@story, @placemark] do |f| %>
   <h3>Story fragment</h3>
     <%= f.text_field :name,
-                     :placeholder=> "Required: Enter a title for this story fragment",
+                     :placeholder=> 'Required: Enter a title for this story fragment',
                      :autofocus=> true,
                      :autocomplete=> :off %>
     <%= f.text_area  :description,
-                     :placeholder=> "Optional: Enter a description for this story fragment",
+                     :placeholder=> 'Optional: Enter a description for this story fragment',
                      :autocomplete=> :off %>
+    <%= f.text_area  :link,
+                     :placeholder=> 'Optional: Include a hyperlink. Ex: <a href="url">Link</a>',
+                     :autocomplete=> :off,
+                     :class=> "link" %>                   
   </div>
-  <%= render "location_selector_widget" %>
-  <%= render "image_upload_widget" %>
-  <%= render "story_tree_widget_edit" %>
+  <%= render 'location_selector_widget' %>
+  <%= render 'image_upload_widget' %>
+  <%= render 'story_tree_widget_edit' %>
   <%= f.hidden_field :lat %>
   <%= f.hidden_field :lng %>
   <%= f.hidden_field :image_data %>
   <%= f.hidden_field :image_alt %>
-  <div class="save-buttons">
-    <%= f.submit "Save Placemark" %>
-    <%= f.submit "Finish Story" %>
+  <div class='save-buttons'>
+    <%= f.submit 'Save Placemark' %>
+    <%= f.submit 'Finish Story' %>
   </div>
 <% end %>

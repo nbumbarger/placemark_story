@@ -4,13 +4,13 @@
   clear: left;
 }
 
-.cropit-image-preview {
+.image-editor .cropit-image-preview {
   float: left;
   width: 18rem;
-  height: 11.5rem;
+  height: 10.125rem;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 1rem 0;
   background-color: #f2f2f2;
   background-size: cover;
   border: 1px solid #b2b2b2;
@@ -18,19 +18,19 @@
   cursor: move;
 }
 
-.image-controls {
+.image-editor .image-controls {
   float: left;
   margin: 0 0 0 1rem;
 }
 
-.select-image-button {
+.image-editor .select-image-button {
   float: none;
   display: block;
   width: 11rem;
   margin: 0 0 1rem 0;
 }  
 
-.cropit-image-zoom-input {
+.image-editor .cropit-image-zoom-input {
   width: 6.75rem;
   height: 1px;
   padding: 0;
@@ -38,7 +38,7 @@
   box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1);  
 }
 
-.cropit-image-zoom-input::-webkit-slider-thumb {
+.image-editor .cropit-image-zoom-input::-webkit-slider-thumb {
   -webkit-appearance: none !important;  
   width: 17px;
   height: 13px;
@@ -48,27 +48,27 @@
   background-color: #bff2ff;
 }
 
-.cropit-image-zoom-input::-webkit-slider-thumb:hover {
+.image-editor .cropit-image-zoom-input::-webkit-slider-thumb:hover {
   -webkit-appearance: none !important;  
   background-color: #00ffff;
 }
 
-.image-size-label {
+.image-editor .image-size-label {
   font-weight: 600;
 }
 
-.image-alt {
+.image-editor .image-alt {
   width: 9.25rem;
-  height: 3.5rem;
+  height: 2.5rem;
   padding: .75rem;
   margin: 1rem 0 0 0;
   resize: none;
 }
 
-input.cropit-image-input {
+.image-editor input.cropit-image-input {
   display: none;
 }
 
-.cropit-image-zoom-input[disabled] {
+.image-editor .cropit-image-zoom-input[disabled] {
   opacity: .2;
 }

@@ -25,7 +25,20 @@
 
 .icon-heart:before {
   content: "\e9da";
-  color:#ff0000;
+  color: rgb(255, 0, 0);
+}
+
+.icon-location:before {
+    content: "\e947";
+    color:rgb(242, 78, 79)
+}
+
+.icon-search:before {
+  background: rgb(255, 255, 255);
+  padding: 2px;
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 3px;
+  content: "\e986";
 }
 
 /* ----- Content Styles ----- */
@@ -220,7 +233,7 @@ input, textarea, button, input[type="submit"] {
   float: left;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
-  padding: .75rem 1rem .75rem 1rem;
+  padding: .75rem .75rem .75rem .75rem;
   font-size: 1rem;
 }
 
@@ -326,7 +339,6 @@ textarea.new-story {
   letter-spacing: .25rem;
   color: #fff;
   text-shadow: 0 0 5px #000;
-
 text-decoration: none;
 
   display:block;
@@ -350,7 +362,7 @@ text-decoration: none;
   /*background-color: #f2f2f2;*/
 }
 
-.map-stories h3{
+.map-stories h3 {
   float:left;
   width: 80%;
   max-width: 70rem;

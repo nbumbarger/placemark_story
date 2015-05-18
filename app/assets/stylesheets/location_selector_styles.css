@@ -1,23 +1,47 @@
 /* ----- Map Styles ----- */
 
-#map {
+.location-selector {
   float: left;
   width: 32.55rem;
-  height: 14.75rem;
-  border: 1px solid #b2b2b2;
-  border-radius: 5px;
-  margin: 0 2rem 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
-pre.ui-coordinates {
-  position:absolute;
-  bottom:10px;
-  right:10px;
-  padding:5px 10px;
-  background:rgba(0,0,0,0.5);
-  color:#fff;
-  font-size:11px;
-  line-height:18px;
-  border-radius:3px;
-  z-index:999;
+.location-selector #map {
+  float: left;
+  width: 100%;
+  height: 14.75rem;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px 5px 0 0;
+}
+
+.location-selector pre.ui-coordinates {
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+  padding: .4rem .9rem;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background: rgba(0,0,0,0.5);
+  font-size: .9rem;
+  line-height: 1.25rem;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.location-selector .caption {
+  float:left;
+  width: 100%;
+  padding: .5rem 0 .5rem 0;
+  margin: 0;
+  border: 1px solid #b2b2b2;
+  border-radius: 0 0 5px 5px;
+  border-top-style: none;
+  background: rgb(242, 242, 242);
+  color: rgb(85, 85, 85);
+  font-size: 1rem;
+  text-align:center; 
+}
+
+.location-selector .caption b {
+  font-weight: bold;
 }
