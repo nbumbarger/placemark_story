@@ -8,6 +8,7 @@ class CreatePlacemarks < ActiveRecord::Migration
       t.decimal :lng, :null=> false
       t.binary :image_data
       t.string :image_alt
+      t.integer :story_order
       t.datetime :deleted_at
     end
   end

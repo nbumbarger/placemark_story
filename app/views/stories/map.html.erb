@@ -20,7 +20,7 @@
     }
     #marker-list {
       position:absolute;
-      top:0; right:0; width:200px;
+      top:0; right:0; width:225px;
       bottom:0;
       overflow-x:auto;
       background-color:rgba(0, 0, 0, 0.5);
@@ -61,7 +61,7 @@
     .leaflet-popup-tip {
       border-left:15px solid transparent;
       border-right:15px solid transparent;
-      border-top:15px solid rgba(0, 0, 0, 0.75);;
+      border-top:15px solid rgba(0, 0, 0, 0.75);
     }
   </style>
 </head>
@@ -89,12 +89,13 @@
     $.ajax({
       type: 'GET',
       dataType: 'json',
-      url: "<%= story_path(@story) %>",
+      url: '<%= story_path(@story) %>',
       success: function (geojson) { 
         // Load response GeoJSON into feature layer
         featureLayer.setGeoJSON(geojson);
-        // Fit map to bounding coordinates of features
-        map.fitBounds(featureLayer.getBounds());
+        // Fit map to bounding coordinates of features, then zoom out a bit
+        map.fitBounds(featureLayer.getBounds())
+        // map.setZoom(map.getZoom() - 1)
         // Table of Contents must be built as features are loaded
         buildTableOfContents();
       }
@@ -105,6 +106,9 @@
   function addPanOnClick() {
     featureLayer.on('click', function(e) {
       map.setView(e.layer.getLatLng())
+      // Todo: add logic to only offset the map center when
+      // the popup content is too large to fit in screen
+      map.panBy([110, -75])
     })
   };
 
@@ -135,7 +139,10 @@
       var item = markerList.appendChild(document.createElement('li'));
       item.innerHTML = layer.toGeoJSON().properties.name;
       item.onclick = function() {
-        map.setView(layer.getLatLng(), 14);
+        map.setView(layer.getLatLng());
+        // Todo: add logic to only offset the map center when
+        // the popup content is too large to fit in screen
+        map.panBy([110, -75])
         layer.openPopup();
       };
     });

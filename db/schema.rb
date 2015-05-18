@@ -22,14 +22,15 @@ ActiveRecord::Schema.define(version: 20150508234521) do
     t.text     "description"
     t.decimal  "lat",         null: false
     t.decimal  "lng",         null: false
-    t.binary   "image_data",  null: false
-    t.string   "image_alt",   null: false
+    t.binary   "image_data"
+    t.string   "image_alt"
+    t.integer  "story_order"
     t.datetime "deleted_at"
   end
 
   create_table "stories", force: :cascade do |t|
     t.string   "name",        null: false
-    t.string   "description"
+    t.text     "description"
     t.datetime "deleted_at"
   end
 

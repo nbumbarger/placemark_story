@@ -1,0 +1,18 @@
+<div class="widget story-tree">
+<h3>Story tree navigator</h3>
+<div class="story-list">
+ <ol>
+ <% if @placemark.all_prev.count > 0 %>
+   <% @placemark.all_prev.each do |placemark| %>
+     <li><%= link_to placemark.name, edit_story_placemark_path(@story, placemark) %></li>
+   <% end %>
+  <% end %>
+  <li class="current-placemark"><%= @placemark.name %></li>
+  <% if @placemark.all_next.count > 0 %>
+    <% @placemark.all_next.each do |placemark| %>
+      <li><%= link_to placemark.name, edit_story_placemark_path(@story, placemark) %></li>
+   <% end %>
+ <% end %>
+ </ol>
+</div>
+</div>

@@ -2,11 +2,11 @@
 
 .story-tree {
   clear: none;
-  height: 20rem;
+  height: 19rem;
 }
 
 .story-list {
-  height: 11.25rem;
+  height: 11rem;
   padding:1rem;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
@@ -58,6 +58,6 @@ ol>li.current-placemark {
   box-shadow: inset 0px 0px 5px 1px rgba(0, 150, 0, 1); 
 }
 
-  ol > li.current-placemark:before {
+ol > li.current-placemark:before {
   content: none;
 }
