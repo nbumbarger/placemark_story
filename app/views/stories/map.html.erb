@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <title><%= @story.name %></title>
-  <meta name='description' content='Shows in Search Engine Results'>
+  <meta name='description' content='Made With Placemark Story: the easiest way to create and share    interactive map stories'>
   <meta name='keywords' content='Key, Words, For, Search, Engines'>
   <meta name='author' content='Nick Bumbarger'>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -12,6 +12,7 @@
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' />
   <style>
     body { 
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
       margin: 0; 
       padding: 0;
     }
@@ -35,7 +36,7 @@
     }
     #marker-list li {
       font-family: sans-serif;
-      color: #ffffff;
+      color: rgb(255, 255, 255);
       padding: 5px;
       padding-left: 15px;
       letter-spacing: .2rem;

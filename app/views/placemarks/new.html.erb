@@ -1,7 +1,7 @@
 <h2><%= @story.name %>: New Placemark</h2>
 <% if @placemark.errors.any? %>
   <div id="error_explanation">
-    <h3><%= pluralize(@placemark.errors.count, "error") %> prohibited this article from being saved:</h2>
+    <h3><%= pluralize(@placemark.errors.count, "error") %> prevented this placemark from being saved:</h2>
     <ul>
     <% @placemark.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>

@@ -2,8 +2,8 @@
 <div class="map-stories">
   <p><b>Description:</b></p>
   <p><%= @story.description %></p>
-  <%= link_to "Show Map", story_map_path(@story), :target=> "_blank", class: "show-map" %>
   <ul>
+    <li><%= link_to "Show Map", story_map_path(@story), :target=> "_blank" %></li>
     <li><%= link_to "Edit Settings", edit_story_path(@story) %></li>
     <li><%= link_to "Edit Content", edit_story_placemark_path(@story, @first_placemark) %></li>
     <li><%= link_to "Delete", story_path(@story), method: :delete %></li>
