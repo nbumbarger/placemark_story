@@ -26,6 +26,7 @@
 .icon-heart:before {
   content: "\e9da";
   color: rgb(255, 0, 0);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 .icon-location:before {
@@ -70,7 +71,7 @@ header #logo {
   margin: 0 0 0 .75rem;
   background-image: url("electric.png");
   background-position: top left;
-  background-size: 65px;
+  background-size: 5.4rem;
   background-repeat: no-repeat;
 }
 
@@ -114,10 +115,6 @@ footer {
   letter-spacing: .15rem;
   text-align: right;
   text-transform: lowercase;
-}
-
-footer .icon-heart:before {
-  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 footer a {
@@ -227,18 +224,20 @@ button:hover, input[type="submit"]:hover {
   border-color: rgb(90, 90, 90);
 }
 
-.save-buttons {
+/* ----- Welcome Page Style ----- */
+.welcome = {}
+
+.welcome p {
   float: left;
   clear: left;
-  padding: .75rem 0.75rem .75rem 0;
-  border: 1px solid rgb(178, 178, 178);
-  border-radius: 5px;
-  box-shadow: 0px 0px 7px rgb(136, 136, 136);
-}
-
-.save-buttons input[type="submit"] {
-  width: 14.9rem;
-  margin: 0 0 0 1rem;
+  margin: 0 0 1rem 0;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  line-height: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(160, 232, 255);
+  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 /* ----- Responsive Style (for master layout and welcome page) ----- */
@@ -265,30 +264,19 @@ button:hover, input[type="submit"]:hover {
   }
 }
 
-/* ----- Welcome Page Style ----- */
-.welcome p {
-  float: left;
-  clear: left;
-  margin: 0 0 1rem 0;
-  font-size: 4rem;
-  font-weight: 600;
-  letter-spacing: .25rem;
-  line-height: 3rem;
-  color: rgb(255, 255, 255);
-  background-color: rgb(160, 232, 255);
-  text-shadow: 0 0 5px rgb(0, 0, 0);
-}
-
 /* ----- New Story Page Style ----- */
- #story_name {
+#new_story = {}
+
+#new_story  #story_name {
   width: 30.55rem;
   clear: left;
 }
-#story_description {
+
+#new_story #story_description {
   margin: .5rem 1.5rem 0 0;
 }
 
-input[type="submit"].new-story {
+#new_story input[type="submit"] {
   width: 15rem;
   clear: left;
   margin: .5rem 0 0 0;
@@ -335,11 +323,11 @@ input[type="submit"].new-story {
 .map-stories {}
 
 .map-stories p {
-  float:left;
+  float: left;
   margin: 0 0 0 .75rem;
   font-size: 1.5rem;
   font-weight: 600;
-  text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+  text-shadow: 0px 0px 5px rgb(150, 150, 150);
 }
 
 .map-stories ul {
@@ -371,6 +359,21 @@ input[type="submit"].new-story {
 
 .map-stories li a:hover {
   text-decoration: underline;
+}
+
+/* ----- Extra Placemark New/Edit Styles ----- */
+.save-buttons {
+  float: left;
+  clear: left;
+  padding: .75rem 0.75rem .75rem 0;
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgb(136, 136, 136);
+}
+
+.save-buttons input[type="submit"] {
+  width: 14.9rem;
+  margin: 0 0 0 1rem;
 }
 
 /* ----- Validation Error Styles ----- */

@@ -1,19 +1,19 @@
 /* ----- Story Entry Styles ----- */
 
-.story-entry {
+.placemark-entry {
 	clear: left;
 }
 
-.story-entry input, .story-entry textarea {
+.placemark-entry input, .placemark-entry textarea {
   width: 28.5rem;
   margin: 0 0 .75rem 0;
 }
 
-.story-entry textarea {
+.placemark-entry textarea {
   height: 2.3rem;
 }
 
-.story-entry .link{
+.placemark-entry .link{
   height: 1.2rem;
   margin: 0 0 1rem 0;
 }
