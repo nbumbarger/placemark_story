@@ -42,7 +42,7 @@ class PlacemarksController < ApplicationController
         render :edit
       end
     elsif params[:commit] == "Finish Story"
-      if @placemark.save
+      if @placemark.update
         redirect_to @story
       else
         render :edit
