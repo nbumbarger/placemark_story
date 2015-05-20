@@ -170,7 +170,7 @@ nav li a:hover {
 }
 
 /* ----- General Input Form Style ----- */
-.widget, .widget h3,
+.widget, .widget h3, a.a-button,
 input, textarea, button, input[type="submit"] {
   float: left;
   padding: .75rem;
@@ -209,16 +209,17 @@ textarea {
   resize: none;
 }
 
-button, input[type="submit"] {
+button, input[type="submit"], a.a-button {
   margin: .5rem 0 .5rem 0;
   color: rgb(85, 85, 85);
   background-color: rgb(242, 242, 242);
   text-align: center;
   letter-spacing: .1rem;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover, input[type="submit"]:hover, a.a-button {
   color: rgb(0, 0, 0);
   background-color: rgb(216, 216, 216);
   border-color: rgb(90, 90, 90);
@@ -297,7 +298,6 @@ button:hover, input[type="submit"]:hover {
 .view-stories .story a {
   width: 28.75rem;
   float: left;
-  margin: 0 0 .75rem 0;
   padding: .75rem;
   font-weight: bold;
   color: rgb(0, 0, 0);;
@@ -305,6 +305,7 @@ button:hover, input[type="submit"]:hover {
   border: .1rem solid rgb(0, 169, 216);
   border-radius: 5px;
   text-decoration: none;
+  box-shadow: 0 0 7px 1px rgb(136, 136, 136);
 }
 
 .view-stories .story a:hover {
@@ -314,8 +315,19 @@ button:hover, input[type="submit"]:hover {
 }
 
 .view-stories .story p {
+  float: left;
+  width: 28.75rem;
+  min-height: 1.1rem;
   font-size: 1rem;
-  margin: 0 0 0 .25rem ;
+  margin: 1rem 0 0 0;
+  padding: .75rem;
+  background: rgb(230, 230, 230);
+  border: .1rem solid rgb(178, 178, 178);
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgb(136, 136, 136);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ----- Story View Page Style ----- */
@@ -375,54 +387,6 @@ button:hover, input[type="submit"]:hover {
   cursor: default;
 }
 
-.map-stories .no-placemarks-notice {
-  width: 100%;
-  float: left;
-  clear: right;
-  margin: 0 0 1.25rem 0;
-  padding: 1rem;
-  background-color: rgb(255, 255, 200);
-  border: .1rem solid rgb(150, 150, 0);
-  border-radius: 5px;
-  box-shadow: 0px 0px 7px rgb(100, 100, 0);
-}
-
-.map-stories .no-placemarks-notice h3 {
-  padding: 0 0 .25rem 0;
-  color: rgb(200, 0, 0);
-  font-size: 1.5rem;
-}
-
-.map-stories .no-placemarks-notice p {
-  width: auto;
-  margin: 0;
-  font-size: 1.1rem;
-  text-shadow: none;
-}
-
-.map-stories a.a-button {
-  width:14.9rem;
-  float: left;
-  clear: left;
-  margin: 1rem 0 0 0;
-  padding: .75rem 0 .75rem 0;
-  border: .1rem solid rgb(150, 150, 0);
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 150);
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: .1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: 0px 0px 7px rgb(100, 100, 0)
-}
-
-.map-stories a.a-button:hover {
-  background-color: rgb(200, 200, 100);
-  border-color: rgb(75, 75, 0);
-}
-
 /* ----- Additional Placemark New/Edit Style ----- */
 .save-buttons {
   float: left;
@@ -438,34 +402,64 @@ button:hover, input[type="submit"]:hover {
   margin: 0 0 0 1rem;
 }
 
-/* ----- Validation Error Styles ----- */
-#error_explanation {
+/* ----- Alert Styles ----- */
+.alert {
   width: 100%;
   float: left;
+  clear: right;
   display: inline-block;
-  margin: 0 0 .75rem 0;
-  padding: .75rem 0 1.25rem 1rem;
-  background-color: rgb(255, 229, 229);
-  border: .1rem solid rgb(175, 0, 0);
+  margin: 0 0 1.25rem 0;
+  padding: .75rem 1rem 1rem 1rem;
+  border: .1rem solid;
   border-radius: 5px;
+}
+
+.alert.error {
+  background: rgb(255, 229, 229);
+  border-color: rgb(175, 0, 0);
   box-shadow: 0px 0px 7px 1px rgb(255, 0, 0);
 }
 
-#error_explanation h3 {
-  padding: 0 0 .25rem 0;
+.alert.warning {
+  background: rgb(255, 255, 200);
+  border-color: rgb(150, 150, 0);
+  box-shadow: 0px 0px 7px rgb(100, 100, 0);
+}
+
+.alert p {
+  /*what is setting the default p width away from auto?*/
+  width: auto;
+  margin: 0 0 0 .25rem;
+  font-size: 1.1rem;
+}
+
+.alert h3 {
   color: rgb(175, 0, 0);
   font-size: 1.5rem;
 }
 
-#error_explanation li {
+.alert li {
   margin: 0 0 0 2rem;
   font-size: 1.1rem;
 }
 
 .field_with_errors {
   display: table;
-  padding: .1rem;
-  background-color: rgb(175, 0, 0);
-  box-shadow: 0px 0px 7px 1px rgb(255, 0, 0);
+  border: .1rem solid rgb(175, 0, 0);
+  box-shadow: 0px 0px 7px 2px rgb(255, 0, 0);
 }
+
+.alert.warning a.a-button {
+  width:14.9rem;
+  float: left;
+  clear: left;
+  margin: 1rem 0 0 0.25rem;
+  border-color: rgb(150, 150, 0);
+  background-color: rgb(255, 255, 150);
+  box-shadow: 0px 0px 7px rgb(100, 100, 0)
+}
+
+.alert.warning a.a-button:hover {
+  background-color: rgb(200, 200, 100);
+  border-color: rgb(75, 75, 0);
 }

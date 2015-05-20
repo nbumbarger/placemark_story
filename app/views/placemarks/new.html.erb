@@ -1,13 +1,16 @@
 <h2><%= @story.name %>: New Placemark</h2>
 <% if @placemark.errors.any? %>
-  <div id="error_explanation">
-    <h3><%= pluralize(@placemark.errors.count, "error") %> prevented this placemark from being saved:</h3>
+  <div class='alert error'>
+    <h3><%= pluralize(@placemark.errors.count, 'error') %> prevented this placemark from being saved:</h3>
     <ul>
     <% @placemark.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
     </ul>
   </div>
+  <% if @placemark.errors[:lat].any? || @placemark.errors[:lng].any?%>
+    <% @location_selector_status = 'field_with_errors' %>
+  <% end %>
 <% end %>
 <div class='widget placemark-entry'>
 <%= form_for [@story, @placemark] do |f| %>
