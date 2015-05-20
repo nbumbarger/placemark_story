@@ -6,11 +6,11 @@
 
 .placemark-entry input, .placemark-entry textarea {
   width: 28.5rem;
-  margin: 0 0 .75rem 0;
 }
 
 .placemark-entry textarea {
   height: 2.3rem;
+  margin: .75rem 0 .75rem 0;
 }
 
 .placemark-entry .link{

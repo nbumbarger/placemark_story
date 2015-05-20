@@ -1,6 +1,6 @@
 class Story < ActiveRecord::Base
   has_many :placemarks
-  validates :name, presence: true
+  validates_presence_of :name, :message => "You must enter a name for this story" 
 
   def generate_GeoJSON
     @geojson = Array.new

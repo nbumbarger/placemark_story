@@ -1,9 +1,9 @@
 <h2>View Map Stories</h2>
-<div class="view-stories">
+<div class='view-stories'>
   <% @stories.each do |story| %>
-    <div class="story">
+    <div class='story'>
       <%= link_to story.name, story_path(story) %>
-      <p>Description: <%= story.description %></p>
+      <p><strong>Description:</strong> <%= story.description %></p>
     </div>
   <% end %>
 </div>

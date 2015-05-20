@@ -37,7 +37,7 @@
 .icon-search:before {
   content: "\e986";
   padding: 2px;
-  border: 1px solid rgb(178, 178, 178);
+  border: .1rem solid rgb(178, 178, 178);
   border-radius: 3px;
   background: rgb(255, 255, 255);
 }
@@ -104,7 +104,7 @@ footer, h2 {
   padding: .5rem 1rem .5rem 1rem;
   color: rgb(255, 255, 255);
   background-color: rgb(25, 117, 229);
-  border: 1px solid rgb(1, 39, 102);
+  border: .1rem solid rgb(1, 39, 102);
   border-radius: 5px;
   box-shadow: 0px 0px 7px 2px rgb(136, 136, 136);
 }
@@ -175,7 +175,7 @@ input, textarea, button, input[type="submit"] {
   float: left;
   padding: .75rem;
   font-size: 1rem;
-  border: 1px solid rgb(178, 178, 178);
+  border: .1rem solid rgb(178, 178, 178);
   border-radius: 5px;
 }
 
@@ -192,12 +192,12 @@ input, textarea, button, input[type="submit"] {
   padding: .75rem;
   font-size: 1rem;
   background-color: rgb(170, 235, 255);
-  border: 1px solid rgb(0, 169, 216);
+  border: .1rem solid rgb(0, 169, 216);
 }
 
 input:focus, textarea:focus,
 button:focus, input[type="submit"]:focus {
-  border: 1px solid rgb(51, 195, 240);
+  border: .1rem solid rgb(51, 195, 240);
   outline: 0;
 }
 
@@ -264,19 +264,18 @@ button:hover, input[type="submit"]:hover {
   }
 }
 
-/* ----- New Story Page Style ----- */
-#new_story = {}
+/* ----- New/Edit Story Page Style ----- */
+.new_story, .edit_story = {}
 
-#new_story  #story_name {
+.new_story #story_name, .edit_story #story_name {
   width: 30.55rem;
   clear: left;
 }
-
-#new_story #story_description {
+.new_story #story_description, .edit_story #story_description {
   margin: .5rem 1.5rem 0 0;
 }
 
-#new_story input[type="submit"] {
+.new_story input[type="submit"], .edit_story input[type="submit"] {
   width: 15rem;
   clear: left;
   margin: .5rem 0 0 0;
@@ -290,7 +289,7 @@ button:hover, input[type="submit"]:hover {
   width: 30.55rem;
   margin: 0 1.5rem 1rem 0;
   padding: 1rem 1rem 1rem 1rem;
-  border: 1px solid rgb(178, 178, 178);
+  border: .1rem solid rgb(178, 178, 178);
   border-radius: 5px;
   box-shadow: 0px 0px 7px rgb(136, 136, 136);
 }
@@ -303,7 +302,7 @@ button:hover, input[type="submit"]:hover {
   font-weight: bold;
   color: rgb(0, 0, 0);;
   background-color: rgb(170, 235, 255);
-  border: 1px solid rgb(0, 169, 216);
+  border: .1rem solid rgb(0, 169, 216);
   border-radius: 5px;
   text-decoration: none;
 }
@@ -322,7 +321,15 @@ button:hover, input[type="submit"]:hover {
 /* ----- Story View Page Style ----- */
 .map-stories {}
 
-.map-stories p {
+.map-stories p{
+  width: 60%;
+  float: left;
+  clear:left;
+  margin: 0 0 0 .75rem;
+  font-size: 1.1rem;
+}
+
+.map-stories h4 {
   float: left;
   margin: 0 0 0 .75rem;
   font-size: 1.5rem;
@@ -333,7 +340,7 @@ button:hover, input[type="submit"]:hover {
 .map-stories ul {
   float: left;
   clear: left;
-  margin: .75rem 0 .75rem .65rem;
+  margin: 1rem 0 .75rem .65rem;
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 400;
@@ -361,12 +368,67 @@ button:hover, input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-/* ----- Extra Placemark New/Edit Styles ----- */
+.map-stories li a.disabled {
+  color: rgb(160, 160, 160);
+  text-decoration: line-through;;
+  pointer-events: none;
+  cursor: default;
+}
+
+.map-stories .no-placemarks-notice {
+  width: 100%;
+  float: left;
+  clear: right;
+  margin: 0 0 1.25rem 0;
+  padding: 1rem;
+  background-color: rgb(255, 255, 200);
+  border: .1rem solid rgb(150, 150, 0);
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgb(100, 100, 0);
+}
+
+.map-stories .no-placemarks-notice h3 {
+  padding: 0 0 .25rem 0;
+  color: rgb(200, 0, 0);
+  font-size: 1.5rem;
+}
+
+.map-stories .no-placemarks-notice p {
+  width: auto;
+  margin: 0;
+  font-size: 1.1rem;
+  text-shadow: none;
+}
+
+.map-stories a.a-button {
+  width:14.9rem;
+  float: left;
+  clear: left;
+  margin: 1rem 0 0 0;
+  padding: .75rem 0 .75rem 0;
+  border: .1rem solid rgb(150, 150, 0);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 150);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 7px rgb(100, 100, 0)
+}
+
+.map-stories a.a-button:hover {
+  background-color: rgb(200, 200, 100);
+  border-color: rgb(75, 75, 0);
+}
+
+/* ----- Additional Placemark New/Edit Style ----- */
 .save-buttons {
   float: left;
   clear: left;
   padding: .75rem 0.75rem .75rem 0;
-  border: 1px solid rgb(178, 178, 178);
+  border: .1rem solid rgb(178, 178, 178);
   border-radius: 5px;
   box-shadow: 0px 0px 7px rgb(136, 136, 136);
 }
@@ -384,9 +446,9 @@ button:hover, input[type="submit"]:hover {
   margin: 0 0 .75rem 0;
   padding: .75rem 0 1.25rem 1rem;
   background-color: rgb(255, 229, 229);
-  border: 1px solid rgb(175, 0, 0);
+  border: .1rem solid rgb(175, 0, 0);
   border-radius: 5px;
-  box-shadow: 0px 0px 7px rgb(255, 0, 0);
+  box-shadow: 0px 0px 7px 1px rgb(255, 0, 0);
 }
 
 #error_explanation h3 {
@@ -402,6 +464,8 @@ button:hover, input[type="submit"]:hover {
 
 .field_with_errors {
   display: table;
-  padding: 2px;
+  padding: .1rem;
   background-color: rgb(175, 0, 0);
+  box-shadow: 0px 0px 7px 1px rgb(255, 0, 0);
+}
 }

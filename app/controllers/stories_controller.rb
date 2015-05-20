@@ -7,7 +7,10 @@ class StoriesController < ApplicationController
   def show
     @story = Story.find(params[:id])
     @placemarks = @story.placemarks.all
-    @first_placemark = @placemarks.first
+    if @placemarks.count == 0
+      @no_placemarks = true
+      @placemarks_link_class = 'disabled'
+    end
     respond_to do |format|
       format.html { render :show }
       format.json { render json: @story.generate_GeoJSON }
