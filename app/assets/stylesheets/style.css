@@ -334,15 +334,17 @@ button:hover, input[type="submit"]:hover, a.a-button {
 .map-stories {}
 
 .map-stories p{
-  width: 60%;
+  width: 70%;
+  min-width: 30.5rem;
   float: left;
-  clear:left;
+  clear: both;
   margin: 0 0 0 .75rem;
   font-size: 1.1rem;
 }
 
 .map-stories h4 {
   float: left;
+  clear: both;
   margin: 0 0 0 .75rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -356,7 +358,7 @@ button:hover, input[type="submit"]:hover, a.a-button {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: .11rem;
+  letter-spacing: .095rem;
   list-style-type: none;
   text-transform: uppercase;
   text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
@@ -371,7 +373,7 @@ button:hover, input[type="submit"]:hover, a.a-button {
 }
 
 .map-stories li a {
-  margin: 0 .15rem 0 0.15rem;
+  margin: 0 .1rem 0 0.1rem;
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -424,6 +426,12 @@ button:hover, input[type="submit"]:hover, a.a-button {
   background: rgb(255, 255, 200);
   border-color: rgb(150, 150, 0);
   box-shadow: 0px 0px 7px rgb(100, 100, 0);
+}
+
+@media all and (max-width: 675px) {
+  .alert {
+    width: 30.5rem;
+  }
 }
 
 .alert p {
