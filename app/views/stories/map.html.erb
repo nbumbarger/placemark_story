@@ -93,7 +93,7 @@
   <script>
   L.mapbox.accessToken = "<%= Rails.application.secrets.mapbox_token %>";
   // Initialize map frame with default zoom behavior disabled
-  var map = L.mapbox.map("map", "mapbox.streets", { doubleClickZoom: false })
+  var map = L.mapbox.map("map", "mapbox.streets", {doubleClickZoom: false})
     // Add custom zoom behavior (pan to center of double-click event)
     .on('dblclick', function(e) {
       map.setView(e.latlng, map.getZoom() + 1)
@@ -103,7 +103,7 @@
 
   // Build the map and table of contents
   loadFeatures()
-  addPanOnClick()
+  addZoomOnClick()
   addPopups()
 
   // Load features from Rails GeoJSON server
@@ -111,25 +111,24 @@
     $.ajax({
       type: 'GET',
       dataType: 'json',
-      url: '<%= story_path(@story) %>',
-      success: function (geojson) { 
-        // Load response GeoJSON into feature layer
-        featureLayer.setGeoJSON(geojson);
-        // Fit map to bounding coordinates of features, then zoom out a bit
-        map.fitBounds(featureLayer.getBounds())
-        // map.setZoom(map.getZoom() - 1)
-        // Table of Contents must be built as features are loaded
-        buildTableOfContents();
-      }
+      url: '<%= story_path(@story) %>'})
+    .done(function (geojson) { 
+      // Load response GeoJSON into feature layer
+      featureLayer.setGeoJSON(geojson);
+      // Fit map to bounding coordinates of features, then zoom out a bit
+      map.fitBounds(featureLayer.getBounds())
+      // Todo: may want to add logic to zoom out one step, if the fitted view is extremely tight around the placemarks
+      // map.setZoom(map.getZoom() - 1)
+      // Build Table of Contents as features are loaded
+      buildTableOfContents();
     });
   };
 
   // Add a listening event to each feature, to pan when clicked
-  function addPanOnClick() {
+  function addZoomOnClick() {
     featureLayer.on('click', function(e) {
       map.setView(e.layer.getLatLng(), map.getZoom() + 1)
-      // Todo: add logic to only offset the map center when
-      // the popup content is too large to fit in screen
+      // Todo: add logic to offset the map center when the popup content is too large to fit in screen
       // map.panBy([110, -75])
     })
   };
@@ -168,9 +167,8 @@
       item.innerHTML = layer.toGeoJSON().properties.name;
       item.onclick = function() {
         map.setView(layer.getLatLng());
-        // Todo: add logic to only offset the map center when
-        // the popup content is too large to fit in screen
-        map.panBy([110, -75])
+        // Todo: add logic to only offset the map center when the popup content is too large to fit in screen
+        // map.panBy([110, -75])
         layer.openPopup();
       };
     });
