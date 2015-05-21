@@ -2,7 +2,7 @@
 <div class='map-stories'>
   <%= render 'no_placemarks_notice' if @no_placemarks %>
   <h4>Description:</h4>
-  <p><%= @story.description %> sdsfds fdsfdsff dsfdsfdsf fdsfsdfdsf fdsfdsfs dsfdsfs fdssfdsfs fdsfdsfdsf fdsfdsf fdsfdsfds fdsfdsfds fdsfdsff fsdfdsfds fdsfsdf fdsfdsf</p>
+  <p><%= @story.description %></p>
   <ul>
     <li><%= link_to 'Show Map', story_map_path(@story), :target=> '_blank', class: @placemarks_link_class %></li>
     <li><%= link_to 'Edit Basics', edit_story_path(@story) %></li>

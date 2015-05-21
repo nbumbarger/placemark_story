@@ -391,6 +391,7 @@ button:hover, input[type="submit"]:hover, a.a-button {
 
 /* ----- Additional Placemark New/Edit Style ----- */
 .save-buttons {
+  width: 31.95rem;
   float: left;
   clear: left;
   padding: .75rem 0.75rem .75rem 0;
@@ -400,7 +401,7 @@ button:hover, input[type="submit"]:hover, a.a-button {
 }
 
 .save-buttons input[type="submit"] {
-  width: 14.9rem;
+  width: 14.75rem;
   margin: 0 0 0 1rem;
 }
 
