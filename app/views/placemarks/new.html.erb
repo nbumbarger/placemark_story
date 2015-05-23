@@ -1,4 +1,4 @@
-<h2><%= @story.name %>: New Placemark</h2>
+<h2> New Placemark: <%= @story.name %></h2>
 <% if @placemark.errors.any? %>
   <div class='alert error'>
     <h3><%= pluralize(@placemark.errors.count, 'error') %> prevented this placemark from being saved:</h3>
@@ -16,20 +16,49 @@
 <%= form_for [@story, @placemark] do |f| %>
   <h3>Story fragment</h3>
     <%= f.text_field :name,
-                     :placeholder=> 'Required: Enter a title for this story fragment',
-                     :autofocus=> true,
-                     :autocomplete=> :off %>
+                     placeholder: 'Required: Enter a title for this story fragment',
+                     autofocus: true,
+                     autocomplete: :off %>
     <%= f.text_area  :description,
-                     :placeholder=> 'Optional: Enter a description for this story fragment',
-                     :autocomplete=> :off %>
+                     placeholder: 'Optional: Enter a description for this story fragment',
+                     autocomplete: :off %>
     <%= f.text_area  :link,
-                     :placeholder=> 'Optional: Add a hyperlink to include with this placemark',
-                     :autocomplete=> :off,
-                     :class=> "link" %>       
+                     placeholder: 'Optional: Add a hyperlink to include with this placemark',
+                     autocomplete: :off,
+                     class: 'link' %>                   
   </div>
-  <%= render 'location_selector_widget' %>
-  <%= render 'image_upload_widget' %>
-  <%= render 'story_tree_widget_new' %>
+  <div class='location-selector <%= @location_selector_status %>'>
+    <div id='map'>
+      <pre id='coordinates' class='ui-coordinates'></pre>
+    </div>
+    <div class='caption'>
+      <b>Required:</b> Drag <span class='icon-location'></span> to set location. Zoom to starting location using <span class='icon-search'></span>
+    </div>
+  </div>
+  <div class='widget image-editor'>
+    <h3>Optional: Upload image</h3>
+    <div class='cropit-image-preview'></div>
+    <div class='image-controls'>
+      <button class='select-image-button' type='button'>Select Image</button>
+      <input type='range' class='cropit-image-zoom-input'>
+      <div class='image-size-label'>Zoom</div>
+      <textarea class='image-alt' placeholder='Enter image alt text' autocomplete='off' type='text' name='alt_text' id='alt_text'></textarea>
+    </div>
+    <input type='file' class='cropit-image-input'>
+  </div>
+  <div class='widget story-tree'>
+    <h3>Story tree navigator</h3>
+    <div class='story-list'>
+      <ol>
+      <% @story.placemarks.each do |placemark| %>
+       <% if placemark.id %>
+        <li><%= link_to placemark.name, edit_story_placemark_path(@story, placemark), data: {no_turbolink: true} %></li>
+        <% end %>
+       <% end %>
+        <li class='current-placemark'>Current Placemark</li>
+      </ol>
+    </div>
+  </div>
   <%= f.hidden_field :lat %>
   <%= f.hidden_field :lng %>
   <%= f.hidden_field :image_data %>
@@ -39,3 +68,9 @@
     <%= f.submit 'Finish Story' %>
   </div>
 <% end %>
+<script>
+  $('.story-list').scrollTop($('.story-list')[0].scrollHeight);
+  L.mapbox.accessToken = '<%= Rails.application.secrets.mapbox_token %>';
+  initLocationSelector();
+  initImageUploader();
+</script>

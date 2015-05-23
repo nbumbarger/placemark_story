@@ -1,6 +1,6 @@
 <% if @story.errors.any? %>
-  <div class="alert error">
-    <h3><%= pluralize(@story.errors.count, "error") %> prevented this story from being saved:</h3>
+  <div class='alert error'>
+    <h3><%= pluralize(@story.errors.count, 'error') %> prevented this story from being saved:</h3>
     <ul>
     <% @story.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
@@ -10,12 +10,12 @@
 <% end %>
 <%= form_for @story do |f| %>
   <%= f.text_field :name,
-                   :placeholder=> 'Enter new story name',
-                   :autofocus=> true,
-                   :autocomplete=> :off %>
+                   placeholder: 'Enter new story name',
+                   autofocus: true,
+                   autocomplete: :off %>
   <%= f.text_area  :description,
-                   :placeholder=> 'Enter a brief synopsis',
-                   :autocomplete=> :off,
-                   :class=> 'new-story'%>
-  <%= f.submit :class=> 'new-story' %>
+                   placeholder: 'Enter a brief synopsis',
+                   autocomplete: :off,
+                   class: 'new-story'%>
+  <%= f.submit class: 'new-story' %>
 <% end %>

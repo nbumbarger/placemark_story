@@ -13,5 +13,6 @@
 //= require jquery2
 //= require jquery_ujs
 //= require turbolinks
-
-//= require_tree .
+//= require jquery.cropit.min
+//= require image_uploader
+//= require location_selector

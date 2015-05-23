@@ -8,18 +8,14 @@ class PlacemarksController < ApplicationController
   def create
     @story = Story.find(params[:story_id])
     @placemark = @story.placemarks.new(placemark_params)
-    if params[:commit] === "Save Placemark"
-      if @placemark.save
+    if @placemark.save
+      if params[:commit] === "Save Placemark"
         redirect_to new_story_placemark_path(@story)
       else
-        render :new
-      end
-    elsif params[:commit] == "Finish Story"
-      if @placemark.save
         redirect_to @story
-      else
-        render :new
       end
+    else
+      render :new
     end
   end
 
@@ -31,24 +27,19 @@ class PlacemarksController < ApplicationController
   def update
     @story = Story.find(params[:story_id])
     @placemark = @story.placemarks.find(params[:id])
-    if params[:commit] === "Save Placemark"
-      if @placemark.update(placemark_params)
+    if @placemark.update(placemark_params)
+      if params[:commit] === "Save Placemark"
         if @placemark.next
           redirect_to edit_story_placemark_path(@story, @placemark.next)
         else
-          redirect_to @story
+          redirect_to new_story_placemark_path(@story)
         end
       else
-        render :edit
-      end
-    elsif params[:commit] == "Finish Story"
-      if @placemark.update
         redirect_to @story
-      else
-        render :edit
       end
+    else
+      render :edit
     end
-
   end
 
   def destroy
