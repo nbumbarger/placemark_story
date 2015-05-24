@@ -1,17 +1,19 @@
-/* ----- Map Styles ----- */
-
+/*---location selector styles -*/
 .location-selector {
+  width: 47%;
+  min-width: 31.55rem;
   float: left;
-  width: 32.55rem;
-  margin: 0 0 1rem 0;
-  box-shadow: 0px 0px 7px #888888;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0 0 1rem 1rem;
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgb(160, 160, 160);
 }
 
 .location-selector #map {
-  float: left;
-  width: 100%;
   height: 14.75rem;
-  border: 1px solid #b2b2b2;
   border-radius: 5px 5px 0 0;
 }
 
@@ -20,27 +22,22 @@
   bottom: .5rem;
   right: .5rem;
   padding: .4rem .9rem;
-  border-radius: 3px;
-  color: rgb(255, 255, 255);
-  background: rgba(0,0,0,0.5);
   font-size: .9rem;
   line-height: 1.25rem;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
   overflow: hidden;
   z-index: 999;
 }
 
 .location-selector .caption {
-  float:left;
   width: 100%;
-  padding: .5rem 0 .5rem 0;
-  margin: 0;
-  border: 1px solid #b2b2b2;
-  border-radius: 0 0 5px 5px;
-  border-top-style: none;
+  padding: .5rem 0;
   background: rgb(220, 220, 220);
   color: rgb(85, 85, 85);
-  font-size: 1rem;
-  text-align:center; 
+  border-radius: 0 0 5px 5px;
+  text-align: center; 
 }
 
 .location-selector .caption b {

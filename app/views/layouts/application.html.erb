@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <title>Placemark Story</title>
-  <meta name='description' content='Placemark Story: the easiest way to create and share    interactive map stories'>
+  <meta name='description' content='Placemark Story: the easiest way to create and share interactive map stories'>
   <meta name='keywords' content='Key, Words, For, Search, Engines'>
   <meta name='author' content='Nick Bumbarger'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': true %>
@@ -13,26 +13,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id='container'>
   <header>
     <h1>
       <span class='title-word1'>Placemark</span><span class='title-word2'>Story</span>
     </h1>
     <nav>
-    <ul>
-      <li><%= link_to 'About', root_path %></li>
-      <li><%= link_to 'New Map Story', new_story_path %></li>
-      <li><%= link_to 'View Map Stories', stories_path %></li>
-    </ul>
-  </nav>
-  <div id='logo'></div>
+      <ul>
+        <li><%= link_to 'About', root_path %></li>
+        <li><%= link_to 'New Map Story', new_story_path %></li>
+        <li><%= link_to 'View Map Stories', stories_path %></li>
+      </ul>
+    </nav>
+    <div id='logo'></div>
   </header>
-  <%= yield %>
+  <section>
+  <%= yield %> 
+  </section>
   <footer>
     <span>
       Handcrafted with <span class='icon-heart'></span> by <a href='https://www.linkedin.com/pub/nicholas-bumbarger/b5/396/42b'>Nick Bumbarger</a>
     </span>
   </footer>
-</div>
 </body>
 </html>

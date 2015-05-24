@@ -13,5 +13,9 @@
 
 *= require normalize-rails
 *= require_self
-*= require_tree .
+*= require styles
+*= require location_selector_styles
+*= require image_uploader_styles
+*= require story_tree_styles
+*= require alert_styles
  */

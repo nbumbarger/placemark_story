@@ -1,0 +1,410 @@
+/*-icon styles ----------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:url('/assets/icomoon.eot');
+  src:url('/assets/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/assets/icomoon.woff') format('woff'),
+    url('/assets/icomoon.ttf') format('truetype'),
+    url('/assets/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e9da";
+  color: rgb(255, 0, 0);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.icon-location:before {
+  content: "\e947";
+  color: rgb(242, 78, 79)
+}
+
+.icon-search:before {
+  content: "\e986";
+  padding: 2px;
+  border: .1rem solid rgb(178, 178, 178);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+}
+
+/*-global layout styles -------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  /* Virtually every style in this project is sized relative to this style*/
+  font-size: 12px;
+}
+
+header, section, footer {
+  width: 80%;
+  min-width: 67.5rem;
+  margin: 1rem auto 0 auto;
+  overflow: auto;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  font-size: 4.15rem;
+}
+
+header h1 .title-word1 {
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
+  text-shadow: 0px 0px 5px rgb(150, 150, 150);
+}
+
+header h1 .title-word2 {
+  margin-right: .25rem;
+  font-weight: 100;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgb(0, 150, 150);
+}
+
+header #logo {
+  width: 6rem;
+  height: 7.25rem;
+  display: inline-block;
+  background: url("electric.png") top left/5.4rem no-repeat;
+}
+
+nav {
+  float: left;
+  clear: left;
+}
+
+nav ul, .map-story ul {
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: .14rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgb(150, 150, 150);
+}
+
+nav li, .map-story li {
+  display: inline;
+}
+
+nav li + li::before,
+.map-story li + li::before {
+  content: " | ";
+}
+
+nav li a, .map-story li a {
+  margin: 0 .25rem 0 0.25rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav li a:hover, .map-story li a:hover {
+  text-decoration: underline;
+}
+
+section h2, footer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  color: rgb(255, 255, 255);
+  background: rgb(25, 117, 229);
+  border: 1px solid rgb(1, 39, 102);
+  border-radius: 5px;
+  box-shadow: 0 0 7px 2px rgb(136, 136, 136);
+}
+
+section h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+
+footer {
+  clear: both;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: .15rem;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none
+}
+
+footer a:hover {
+  text-decoration: underline
+}
+
+/*-general styles -------------------*/
+/*---input/form styles --------------*/
+input, button, textarea, a.a-button {
+  display: block;
+  clear: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: .75rem;
+  font-size: 1rem;
+  border: .1rem solid rgb(178, 178, 178);
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus{
+  border: .1rem solid rgb(51, 195, 240);
+  outline: 0;
+}
+
+input[type="submit"], button, a.a-button {
+  color: rgb(85, 85, 85);
+  background: rgb(242, 242, 242);
+  text-align: center;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+input[type="submit"]:hover, button:hover, a.a-button:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(216, 216, 216);
+  border-color: rgb(90, 90, 90);
+}
+
+/*-welcome page styles --------------*/
+ p.welcome{
+  margin: 1rem;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  line-height: 3rem;
+  color: rgb(255, 255, 255);
+  background: rgb(160, 232, 255);
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+/*-edit story page styles -----------*/
+.story-entry {
+  float: left;
+  margin-left: 1rem;
+}
+
+.story-entry input, .story-entry textarea,
+.story-entry input[type='submit'] {
+  width: 49%;
+  min-width: 31rem;
+}
+
+.story-entry textarea {
+  height: 10rem;
+  margin: 1rem 0 1rem 0;
+  resize: none;
+}
+
+/*-edit placemark page styles -------*/
+/*---common styles -*/
+.widget, .widget h3 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.widget {
+  width: 49%;
+  min-width: 31.55rem;
+  float: left;
+  margin: 0 .5rem 1rem 1rem;
+  padding: 1rem;
+  border-color: rgb(178, 178, 178);
+  box-shadow: 0px 0px 7px rgb(136, 136, 136);
+}
+
+.widget h3 {
+  margin-bottom: 1rem;
+  padding: .75rem;
+  font-weight: 600;
+  background: rgb(170, 235, 255);
+  border-color: rgb(0, 169, 216);
+}
+
+/*---placemark entry widget -*/
+.placemark-entry input {
+  width: 100%;
+}
+
+.placemark-entry textarea {
+  width: 100%;
+  height: 4rem;
+  margin: .75rem 0;
+  resize: none;
+}
+
+/*---location selector styles -*/
+
+/*---image uploader styles -*/
+
+/*---story tree styles -*/
+
+/*---save buttons -*/
+.save-buttons input[type="submit"] {
+  width: 48%;
+  float: left;
+  clear: none;
+}
+
+.save-buttons input[type="submit"]:nth-of-type(2) {
+  float: right;
+  margin-left: 1rem;
+}
+
+/*-story index page styles ----------*/
+.story-index .story {
+  width: 47%;
+}
+
+.story-index .story a {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: .75rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);;
+  background: rgb(170, 235, 255);
+  border: 1px solid rgb(0, 169, 216);
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 7px 1px rgb(136, 136, 136);
+}
+
+.story-index .story a:hover {
+  background: rgb(89, 216, 255);
+  border-color: rgb(0, 125, 160);
+  text-decoration: underline;
+}
+
+.story-index .story-description {
+  height: 3.8rem;
+  width: 100%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: 1rem;
+  padding: .5rem .75rem .5rem .75rem;
+  line-height: 1.5rem;
+  background: rgb(230, 230, 230);
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 5px;
+  overflow:hidden;
+  box-shadow: inset 0 0 5px rgb(136, 136, 136);
+}
+
+.story-index .story-description:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  height: 1.75rem;
+  background: linear-gradient(to right, rgba(230, 230, 230, 0), rgba(230, 230, 230, 1) 75%);
+  margin: 0 .25rem .25rem 0;
+}
+
+/*-story view page styles -----------*/
+.map-story p, .map-story h4 {
+  width: 70%;
+  min-width: 31.55rem;
+  float: left;
+  clear: both;
+  margin: 0 0 0 .75rem;
+}
+
+.map-story p {
+  font-size: 1.1rem;
+}
+
+.map-story h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 5px rgb(150, 150, 150);
+}
+
+.map-story ul {
+  float: left;
+  margin: 1rem 0 .75rem .65rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .095rem;
+}
+
+.map-story li a {
+  margin: 0 .1rem 0 0.1rem;
+}
+
+.map-story li a.disabled {
+  color: rgb(160, 160, 160);
+  text-decoration: line-through;;
+  pointer-events: none;
+  cursor: default;
+}
+
+/*-responsive styles ----------------*/
+@media all and (max-width: 550px) {
+  header #logo {
+    display: none;
+  }
+  header, footer, section {
+    width: 34rem;
+    min-width: 31.55rem;
+  }
+  section h2, footer {
+    text-align: center;
+  }
+  section h2 {
+    font-size: 1rem;
+  }
+  .welcome p {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}

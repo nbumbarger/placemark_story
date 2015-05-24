@@ -8,7 +8,7 @@
     </ul>
   </div>
 <% end %>
-<%= form_for @story do |f| %>
+<%= form_for @story, html: {class: "story-entry"} do |f| %>
   <%= f.text_field :name,
                    placeholder: 'Enter new story name',
                    autofocus: true,

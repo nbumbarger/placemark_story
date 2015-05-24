@@ -1,68 +1,66 @@
-/* ----- Image Uploader Styles ----- */
-
-.image-editor {
-  clear: left;
-}
-
+/*---image uploader styles -*/
 .image-editor .cropit-image-preview {
-  float: left;
   width: 18rem;
   height: 10.125rem;
-  border: 1px solid #b2b2b2;
+  display: table-cell;
+  border: 1px solid rgb(178, 178, 178);
   border-radius: 5px;
-  margin: 0 0 1rem 0;
-  background-color: #f2f2f2;
+  background: rgb(242, 242, 242);
   background-size: cover;
-  border: 1px solid #b2b2b2;
-  border-radius: 5px;
   cursor: move;
 }
 
+.image-editor .image-widget-container {
+  width: 100%;
+  display: table;
+}
+
 .image-editor .image-controls {
-  float: left;
-  margin: 0 0 0 1rem;
+  margin-left: 0.25rem;
+  display: table-cell;
+  float: right;
 }
 
 .image-editor .select-image-button {
-  float: none;
-  display: block;
-  width: 11rem;
-  margin: 0 0 1rem 0;
-}  
+  width: 95%;
+  float: right;
+  margin-bottom: 1.5rem
+}
+
+.image-editor .image-size-label {
+  float: left;
+  font-weight: 600;
+  margin: -.6rem .75rem .75rem 1.5rem;
+}
 
 .image-editor .cropit-image-zoom-input {
-  width: 6.75rem;
+  width: 55%;
   height: 1px;
+  float: right;
+  margin-right: .5rem;
   padding: 0;
-  margin: .5rem 0.75rem 0 0.25rem;
-  box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1);  
+  box-shadow: inset 0 0 1px 1px rgb(0, 150, 150);  
 }
 
 .image-editor .cropit-image-zoom-input::-webkit-slider-thumb {
   -webkit-appearance: none !important;  
-  width: 17px;
-  height: 13px;
-  border-radius: 4px;
-  border: 1px solid #00a9d8;
-  box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1);
-  background-color: #bff2ff;
+  width: 1.5rem;
+  height: 1rem;
+  background: rgb(191, 242, 255);
+  border: 1px solid rgb(0, 169, 216);
+  border-radius: 3px;
+  box-shadow: inset 0 0 1px 1px rgb(0, 150, 150);
 }
 
 .image-editor .cropit-image-zoom-input::-webkit-slider-thumb:hover {
   -webkit-appearance: none !important;  
-  background-color: #00ffff;
-}
-
-.image-editor .image-size-label {
-  font-weight: 600;
+  background: rgb(0, 255, 255);
 }
 
 .image-editor .image-alt {
-  width: 9.25rem;
-  height: 2.5rem;
-  padding: .75rem;
-  margin: 1rem 0 0 0;
-  resize: none;
+  width: 95%;
+  height: 4.4rem;
+  float: right;
 }
 
 .image-editor input.cropit-image-input {

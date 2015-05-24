@@ -14,7 +14,7 @@
 <% end %>
 <div class='widget placemark-entry'>
 <%= form_for [@story, @placemark] do |f| %>
-  <h3>Story fragment</h3>
+  <h3>Enter story fragment text</h3>
     <%= f.text_field :name,
                      placeholder: 'Required: Enter a title for this story fragment',
                      autofocus: true,
@@ -22,7 +22,7 @@
     <%= f.text_area  :description,
                      placeholder: 'Optional: Enter a description for this story fragment',
                      autocomplete: :off %>
-    <%= f.text_area  :link,
+    <%= f.text_field :link,
                      placeholder: 'Optional: Add a hyperlink to include with this placemark',
                      autocomplete: :off,
                      class: 'link' %>                   
@@ -32,19 +32,21 @@
       <pre id='coordinates' class='ui-coordinates'></pre>
     </div>
     <div class='caption'>
-      <b>Required:</b> Drag <span class='icon-location'></span> to set location. Zoom to starting location using <span class='icon-search'></span>
+      <b>Required:</b> Drag <span class='icon-location'></span> to set location. Zoom to start location using <span class='icon-search'></span>
     </div>
   </div>
   <div class='widget image-editor'>
-    <h3>Optional: Upload image</h3>
-    <div class='cropit-image-preview'></div>
-    <div class='image-controls'>
-      <button class='select-image-button' type='button'>Select Image</button>
-      <input type='range' class='cropit-image-zoom-input'>
-      <div class='image-size-label'>Zoom</div>
-      <textarea class='image-alt' placeholder='Enter image alt text' autocomplete='off' type='text' name='alt_text' id='alt_text'></textarea>
+    <h3>Optional: Upload and crop image</h3>
+      <div class="image-widget-container">
+      <div class='cropit-image-preview'></div>
+      <div class='image-controls'>
+       <button class='select-image-button' type='button'>Select Image</button>
+       <input type='range' class='cropit-image-zoom-input'>
+       <div class='image-size-label'>Zoom</div>
+        <textarea class='image-alt' placeholder='Enter image alt text' autocomplete='off' type='text' name='alt_text' id='alt_text'></textarea>
+      </div>
+      <input type='file' class='cropit-image-input'>
     </div>
-    <input type='file' class='cropit-image-input'>
   </div>
   <div class='widget story-tree'>
     <h3>Story tree navigator</h3>
@@ -60,12 +62,11 @@
       </ol>
     </div>
   </div>
-  <p><%= params[:action] %></p>
   <%= f.hidden_field :lat %>
   <%= f.hidden_field :lng %>
   <%= f.hidden_field :image_data %>
   <%= f.hidden_field :image_alt %>
-  <div class='save-buttons'>
+  <div class='widget save-buttons'>
     <%= f.submit 'Save Placemark' %>
     <%= f.submit 'Finish Story' %>
   </div>

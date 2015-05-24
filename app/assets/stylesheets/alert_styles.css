@@ -1,0 +1,66 @@
+/*-alert styles ---------------------*/
+.alert {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 98%;
+  float: left;
+  clear: right;
+  margin: 0 0 1.25rem .75rem;
+  padding: .75rem 1rem 1rem 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.alert.error {
+  background: rgb(255, 229, 229);
+  border-color: rgb(175, 0, 0);
+  box-shadow: 0px 0px 7px 1px rgb(255, 0, 0);
+}
+
+.alert.warning {
+  background: rgb(255, 255, 200);
+  border-color: rgb(150, 150, 0);
+  box-shadow: 0px 0px 7px rgb(100, 100, 0);
+}
+
+@media all and (max-width: 550px) {
+  .alert {
+    width: 31.55rem;
+  }
+}
+
+.alert p {
+  width: auto;
+  margin-left: .25rem;
+  font-size: 1.1rem;
+}
+
+.alert h3 {
+  color: rgb(175, 0, 0);
+  font-size: 1.5rem;
+}
+
+.alert li {
+  margin-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.field_with_errors {
+  border: 1px solid rgb(175, 0, 0);
+  box-shadow: 0px 0px 7px 2px rgb(255, 0, 0);
+}
+
+.alert.warning a.a-button {
+  float: left;
+  clear: left;
+  margin: 1rem 0 0 0.25rem;
+  border-color: rgb(150, 150, 0);
+  background: rgb(255, 255, 150);
+  box-shadow: 0px 0px 7px rgb(100, 100, 0)
+}
+
+.alert.warning a.a-button:hover {
+  background: rgb(200, 200, 100);
+  border-color: rgb(75, 75, 0);
+}

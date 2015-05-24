@@ -1,12 +1,14 @@
-/* ----- Story Tree Styles ----- */
-
-.story-tree {}
+/*---story tree styles -*/
+.story-tree {
+  width: 47%;
+  min-width: 31.55rem;
+  margin: 0 0 1rem 1rem;
+}
 
 .story-tree .story-list {
   height: 8.1rem;
-  margin: 0 0 1rem 0;
-  padding:1rem;
-  border: 1px solid #b2b2b2;
+  padding: 1rem;
+  border: 1px solid rgb(178, 178, 178);
   border-radius: 5px;
   overflow: auto;
 }
@@ -23,18 +25,18 @@
 
 .story-tree ol a, .story-tree ol>li.current-placemark {
   display: block;
-  margin:0 0 0 2.5rem;
-  padding: 5px 8px 5px 8px;
+  margin: 0 0 0 2.5rem;
+  padding: .4rem .6rem .4rem .6rem;
   border-radius: 5px;
+  color: rgb(85, 85, 85);
+  background: rgb(242, 242, 242);
   letter-spacing: .05rem;
-  text-decoration:none;
-  color: #555;
-  background-color: #f2f2f2;
+  text-decoration: none;
 }
 
 .story-tree ol a:hover {
-  color: #000;
-  background-color: #d8d8d8;
+  color: rgb(0, 0, 0);
+  background: rgb(216, 216, 216);
   text-decoration: underline;
 }
 
@@ -44,7 +46,7 @@
   float: left;
   padding: .4rem .9rem .5rem .9rem;
   border-radius: 5px;
-  background-color: #e2f8ff;
+  background: rgb(226, 248, 255);
   font-weight: bold;
   text-align: center;
   box-shadow: inset 0px 0px 1px 1px rgba(0, 150, 150, 1); 
@@ -52,7 +54,7 @@
 
 .story-tree ol>li.current-placemark {
   margin: 0;
-  background-color: #fff;
+  background: rgb(255, 255, 255);
   box-shadow: inset 0px 0px 5px 1px rgba(0, 150, 0, 1); 
 }
 
