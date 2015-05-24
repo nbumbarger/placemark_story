@@ -274,12 +274,6 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   resize: none;
 }
 
-/*---location selector styles -*/
-
-/*---image uploader styles -*/
-
-/*---story tree styles -*/
-
 /*---save buttons -*/
 .save-buttons input[type="submit"] {
   width: 48%;
