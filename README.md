@@ -10,7 +10,7 @@ This application facilitates the effortless creation of placemark/ content-ballo
 -   Are you a foodie who wants to talk about the best cheesesteak places in Philadelphia?
 -   Are you a journalist who wants to include a spatial-timeline of the robbery you reported on, to add even more excitement to your latest online article?
 
-**Add spatial context to your story with Placemark Story!**
+####Add spatial context to your story with Placemark Story!
 
 ##What's next?
 Improved customization options for maps (basemap selection, data presentation options), as well as implementation of the gallery feature.
