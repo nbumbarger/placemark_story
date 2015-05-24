@@ -9,14 +9,14 @@ This application facilitates the effortless creation of placemark/ content-ballo
 -   Are you a student who wants to present information and pictures about ancient Greek monuments for your school report?
 -   Are you a foodie who wants to talk about the best cheesesteak places in Philadelphia?
 -   Are you a journalist who wants to include a spatial-timeline of the robbery you reported on, to add even more excitement to your latest online article?
-###Add spatial context to your story with Placemark Story!
+**Add spatial context to your story with Placemark Story!**
 
 ##What's next?
 Improved customization options for maps (basemap selection, data presentation options), as well as implementation of the gallery feature.
 
 ##How can I help?
 Get involved in the project by cloning the repository, adding your changes and submitting a pull request. Or start your own branch! Placemark story is a Ruby on Rails project and require some familiarity with [JavaScript](http://www.w3schools.com/js/), [Ruby](https://www.ruby-lang.org/en/documentation/), and the [Rails](http://rubyonrails.org/download/) framework to understand.
-###Installation:
+####Installation:
 ```sh
 -   git clone git@github.com:nbumbarger/placemark_story.git #clone project
 -   cd placemark_story #move to project directory
