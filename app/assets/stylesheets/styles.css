@@ -188,6 +188,10 @@ input:focus, textarea:focus{
   outline: 0;
 }
 
+button:focus, input[type="submit"]:focus {
+  outline: 0;
+}
+
 input[type="submit"], button, a.a-button {
   color: rgb(85, 85, 85);
   background: rgb(242, 242, 242);
@@ -217,14 +221,15 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
 
 /*-edit story page styles -----------*/
 .story-entry {
+  width: 50%;
+  min-width: 31.55rem;
   float: left;
   margin-left: 1rem;
 }
 
 .story-entry input, .story-entry textarea,
 .story-entry input[type='submit'] {
-  width: 49%;
-  min-width: 31rem;
+  width: 100%;
 }
 
 .story-entry textarea {
