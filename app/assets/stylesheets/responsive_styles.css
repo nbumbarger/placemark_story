@@ -18,4 +18,10 @@
     font-weight: 600;
     line-height: 2rem;
   }
+  .map-story {
+    width: 31.55rem;
+  }
+  .map-story p, .widget.map-story #map-url {
+    width: 28rem;
+  }
 }
