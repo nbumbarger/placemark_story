@@ -26,6 +26,3 @@ Get involved in the project by cloning the repository, adding your changes and s
 -   rake db:seed #(to load example data)
 ```
 **Happy coding!**
-
-##Credits
-This project was started by Nick Bumbarger and is powered by [Mapbox](https://www.mapbox.com/). Canvas-based image cropping functionality leverages https://github.com/scottcheng/cropit.
