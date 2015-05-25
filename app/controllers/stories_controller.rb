@@ -1,11 +1,12 @@
 class StoriesController < ApplicationController
+helper_method :current_or_guest_user
 
   def index
-    @stories = Story.all
+    @stories = current_or_guest_user.stories.all
   end
 
   def show
-    @story = Story.find(params[:id])
+    @story = current_or_guest_user.stories.find(params[:id])
     @placemarks = @story.placemarks.all
     if @placemarks.none?
       @no_placemarks = true
@@ -18,11 +19,11 @@ class StoriesController < ApplicationController
   end
 
   def new
-    @story = Story.new
+    @story = current_or_guest_user.stories.new
   end
 
   def create
-    @story = Story.new(story_params)
+    @story = current_or_guest_user.stories.new(story_params)
       if @story.save
         @placemark = @story.placemarks.new
         redirect_to new_story_placemark_path(@story)
@@ -32,11 +33,11 @@ class StoriesController < ApplicationController
   end
 
   def edit
-    @story = Story.find(params[:id])
+    @story = current_or_guest_user.stories.find(params[:id])
   end
 
   def update
-    @story = Story.find(params[:id])
+    @story = current_or_guest_user.stories.find(params[:id])
     if @story.update(story_params)
       redirect_to @story
     else
@@ -45,13 +46,13 @@ class StoriesController < ApplicationController
   end
 
   def destroy
-    @story = Story.find(params[:id])
+    @story = current_or_guest_user.stories.find(params[:id])
     @story.destroy
     redirect_to stories_path
   end
 
   def map
-    @story = Story.find(params[:story_id])
+    @story = current_or_guest_user.stories.find(params[:story_id])
     render :layout => false
   end
 

@@ -1,0 +1,55 @@
+/*-authentication styles ------------*/
+.field, .actions {
+  width: 40%;
+  min-width: 31.55rem;
+  float: left;
+  clear: left;
+  margin: 0 0 .5rem 1rem;
+}
+
+.field input, .actions input {
+  width: 100%;
+}
+
+.shared-links, .cancel-account {
+  float: left;
+  clear: left;
+  margin: 1rem 0 .25rem 1.25rem;
+}
+
+.shared-links a {
+  font-size: 1.25rem;
+  color: rgb(0, 97, 255);
+  text-decoration: none;
+}
+
+.shared-links a:hover {
+  text-decoration: underline;
+}
+
+.inline-field {
+  clear: left;
+  margin: 0 0 .5rem 1rem
+}
+
+.inline-field input,
+.inline-field label {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.cancel-account h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cancel-account input {
+  margin-top: .25rem;
+}
+
+.email-label {
+  font-weight:600;
+  display: inline-block;
+  margin-bottom: .25rem;
+}

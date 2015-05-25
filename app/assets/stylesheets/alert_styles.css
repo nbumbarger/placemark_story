@@ -1,66 +1,147 @@
-/*-alert styles ---------------------*/
-.alert {
+/*-warning styles -------------------*/
+.alert, #error_explanation {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   width: 98%;
   float: left;
   clear: right;
-  margin: 0 0 1.25rem .75rem;
+  margin: 0 0 1.25rem 1rem;
   padding: .75rem 1rem 1rem 1rem;
   border: 1px solid;
   border-radius: 5px;
 }
 
-.alert.error {
+.alert.red-alert, #error_explanation {
   background: rgb(255, 229, 229);
   border-color: rgb(175, 0, 0);
-  box-shadow: 0px 0px 7px 1px rgb(255, 0, 0);
 }
 
-.alert.warning {
+.alert.yellow-alert {
   background: rgb(255, 255, 200);
   border-color: rgb(150, 150, 0);
-  box-shadow: 0px 0px 7px rgb(100, 100, 0);
 }
 
-@media all and (max-width: 550px) {
-  .alert {
-    width: 31.55rem;
-  }
+.alert.green-alert {
+  background: rgb(175, 237, 175);
+  border-color: rgb(0, 175, 0);
 }
 
-.alert p {
-  width: auto;
+.alert.blue-alert {
+  width: 97%;
+  background: rgb(170, 235, 255);
+  border-color: rgb(0, 169, 216);
+}
+
+.alert.blue-alert.new-blue-alert {
+  width: 50%;
+  margin: 0 0 0 1rem;
+  background: rgb(170, 235, 255);
+  border-color: rgb(0, 169, 216);
+}
+
+.login-alert {
+  clear: both;
+  margin: .5rem 0 .25rem .75rem;
+  padding: .75rem .75rem;
+}
+
+.alert p, #error_explanation p {
+  width: 100%;
   margin-left: .25rem;
   font-size: 1.1rem;
 }
 
-.alert h3 {
+.alert h3, #error_explanation h2 {
   color: rgb(175, 0, 0);
   font-size: 1.5rem;
 }
 
-.alert li {
+#error_explanation h2 {
+  margin-bottom: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  text-shadow: none;
+}
+
+.alert li, #error_explanation li {
   margin-left: 2rem;
   font-size: 1.1rem;
 }
 
 .field_with_errors {
-  border: 1px solid rgb(175, 0, 0);
-  box-shadow: 0px 0px 7px 2px rgb(255, 0, 0);
+  border: 3px solid rgb(200, 0, 0);
 }
 
-.alert.warning a.a-button {
+/*---alert buttons -*/
+.alert a.a-button {
+  min-width: 14rem;
   float: left;
-  clear: left;
-  margin: 1rem 0 0 0.25rem;
-  border-color: rgb(150, 150, 0);
-  background: rgb(255, 255, 150);
-  box-shadow: 0px 0px 7px rgb(100, 100, 0)
+  clear: none;
+  color: rgb(0, 0, 0);
+  margin: .75rem 0 0 0.25rem;
 }
 
-.alert.warning a.a-button:hover {
+.alert a.a-button:nth-of-type(2) {
+  margin-left: 1rem;
+}
+
+.alert.yellow-alert a.a-button {
+  background: rgb(255, 255, 150);
+  border-color: rgb(150, 150, 0);
+}
+
+.alert.yellow-alert a.a-button:hover {
   background: rgb(200, 200, 100);
   border-color: rgb(75, 75, 0);
+}
+
+.alert.blue-alert a.a-button {
+  background: rgb(220, 255, 255);
+  border-color: rgb(0, 169, 216);
+}
+
+.alert.blue-alert a.a-button:hover {
+  background: rgb(197, 224, 226);
+  border-color: rgb(14, 132, 132);
+}
+
+/*-extra login warning controls -*/
+.alert.blue-alert #map-url {
+  height: 2.25rem;
+  width: 99%;
+  margin: .5rem 1rem 0 0;
+  background: rgb(220, 255, 255);
+  border: 1px solid rgb(0, 169, 216);
+}
+
+.alert.blue-alert #map-url:focus {
+  outline: 0;
+}
+
+.alert.blue-alert #map-url::selection {
+  background: rgb(170, 235, 255);
+}
+
+/*-responsive styles ----------------*/
+@media all and (max-width: 550px) {
+  .alert {
+    width: 31.55rem;
+    min-width: 31.55rem;
+  }
+  .alert p {
+    min-width: 30rem;
+  }
+  .alert.blue-alert #map-url {
+    width: 29rem;
+  }
+  .alert.blue-alert {
+    width: 31.55rem;
+  }
 }

@@ -1,12 +1,13 @@
 class PlacemarksController < ApplicationController
+helper_method :current_or_guest_user
 
   def new
-    @story = Story.find(params[:story_id])
+    @story = current_or_guest_user.stories.find(params[:story_id])
     @placemark = Placemark.new()
   end
 
   def create
-    @story = Story.find(params[:story_id])
+    @story = current_or_guest_user.stories.find(params[:story_id])
     @placemark = @story.placemarks.new(placemark_params)
     if @placemark.save
       if params[:commit] === "Save Placemark"
@@ -20,12 +21,12 @@ class PlacemarksController < ApplicationController
   end
 
   def edit
-    @story = Story.find(params[:story_id])
+    @story = current_or_guest_user.stories.find(params[:story_id])
     @placemark = @story.placemarks.find(params[:id])
   end
 
   def update
-    @story = Story.find(params[:story_id])
+    @story = current_or_guest_user.stories.find(params[:story_id])
     @placemark = @story.placemarks.find(params[:id])
     if @placemark.update(placemark_params)
       if params[:commit] === "Save Placemark"
@@ -43,7 +44,7 @@ class PlacemarksController < ApplicationController
   end
 
   def destroy
-    @story = Story.find(params[:story_id])
+    @story = current_or_guest_user.stories.find(params[:story_id])
     @placemark = @story.placemarks.find(params[:id])
     @placemark.destroy
     redirect_to @story

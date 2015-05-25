@@ -1,0 +1,11 @@
+<div class='alert blue-alert'>
+  <h3>Guest user notice:</h3>
+  <p>
+    As a guest user, you may return to this map at any time within the next 7 days by accessing the URL listed below. However, to permanently save maps to your personal gallery, you must login with an account.
+  </p>
+  <p>
+    <input type='text' id='map-url' value='<%= request.original_url %>' onMouseup='this.select()'></input>
+  </p>
+    <%= link_to 'Login', new_user_session_path, class: 'a-button'  %>
+    <%= link_to 'Sign up', new_user_registration_path, class: 'a-button'  %>
+</div>

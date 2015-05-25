@@ -1,11 +1,16 @@
 <h2>View Map Stories</h2>
 <div class='story-index'>
+<%= render 'indexpage_login_notice' unless current_user.present? %>
   <% @stories.each do |story| %>
     <div class='widget story'>
+    <% unless current_user.present? %>
+      <div class="disabled-overlay"></div>
+    <% end %>
       <%= link_to story.name, story_path(story) %>
       <div class='story-description'>
         <p><%= story.description %></p>
       </div>
     </div>
   <% end %>
+</div>
 </div>

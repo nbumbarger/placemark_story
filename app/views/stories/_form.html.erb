@@ -1,5 +1,5 @@
 <% if @story.errors.any? %>
-  <div class='alert error'>
+  <div class='alert red-alert'>
     <h3><%= pluralize(@story.errors.count, 'error') %> prevented this story from being saved:</h3>
     <ul>
     <% @story.errors.full_messages.each do |msg| %>

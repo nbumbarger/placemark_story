@@ -90,7 +90,7 @@ header #logo {
   width: 6rem;
   height: 7.25rem;
   display: inline-block;
-  background: url("electric.png") top left/5.4rem no-repeat;
+  background: url("electric-logo.png") top left/5.4rem no-repeat;
 }
 
 nav {
@@ -175,7 +175,7 @@ input, button, textarea, a.a-button {
   -webkit-box-sizing: border-box;
   padding: .75rem;
   font-size: 1rem;
-  border: .1rem solid rgb(178, 178, 178);
+  border: 1px solid rgb(178, 178, 178);
   border-radius: 5px;
 }
 
@@ -184,7 +184,7 @@ textarea {
 }
 
 input:focus, textarea:focus{
-  border: .1rem solid rgb(51, 195, 240);
+  border: 1px solid rgb(51, 195, 240);
   outline: 0;
 }
 
@@ -221,7 +221,7 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
 
 /*-edit story page styles -----------*/
 .story-entry {
-  width: 50%;
+  width: 40%;
   min-width: 31.55rem;
   float: left;
   margin-left: 1rem;
@@ -232,9 +232,13 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   width: 100%;
 }
 
+.story-entry input[type='submit'] {
+  margin-bottom: 1rem;
+}
+
 .story-entry textarea {
   height: 10rem;
-  margin: 1rem 0 1rem 0;
+  margin: .75rem 0 .75rem 0;
   resize: none;
 }
 
@@ -292,8 +296,17 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
 }
 
 /*-story index page styles ----------*/
+.story-index {
+  width: 100%;
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+
 .story-index .story {
-  width: 47%;
+  width: 48%;
+  margin-right:0;
+  position: relative;
 }
 
 .story-index .story a {
@@ -309,7 +322,6 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   border: 1px solid rgb(0, 169, 216);
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: 0 0 7px 1px rgb(136, 136, 136);
 }
 
 .story-index .story a:hover {
@@ -348,6 +360,18 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   margin: 0 .25rem .25rem 0;
 }
 
+.story-index .disabled-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:black;
+    background: rgb(150, 150, 150) url("disabled-stripes.png");
+    opacity: 0.35;
+    z-index: 10;
+}
+
 /*-story view page styles -----------*/
 .map-story p, .map-story h4 {
   width: 70%;
@@ -384,26 +408,4 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   text-decoration: line-through;;
   pointer-events: none;
   cursor: default;
-}
-
-/*-responsive styles ----------------*/
-@media all and (max-width: 550px) {
-  header #logo {
-    display: none;
-  }
-  header, footer, section {
-    width: 34rem;
-    min-width: 31.55rem;
-  }
-  section h2, footer {
-    text-align: center;
-  }
-  section h2 {
-    font-size: 1rem;
-  }
-  .welcome p {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2rem;
-  }
 }

@@ -1,0 +1,21 @@
+/*-responsive styles ----------------*/
+@media all and (max-width: 550px) {
+  header #logo {
+    display: none;
+  }
+  header, footer, section {
+    width: 34rem;
+    min-width: 31.55rem;
+  }
+  section h2, footer {
+    text-align: center;
+  }
+  section h2 {
+    font-size: 1rem;
+  }
+  .welcome p {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}

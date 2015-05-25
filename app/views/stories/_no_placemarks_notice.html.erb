@@ -1,5 +1,7 @@
-<div class='alert warning'>
-    <h3>This story has no placemarks.</h3>
-    <p>You started creating this story, but haven't added any placemarks yet. Click the button below to begin adding placemarks.</p>
-    <%= link_to 'Add Placemarks', new_story_placemark_path(@story), data: {no_turbolink: true}, class: 'a-button' %>
-  </div>
+<div class='alert yellow-alert'>
+  <h3>This story has no placemarks.</h3>
+  <p>
+    You started creating this story, but haven't added any placemarks yet. Click the button below to begin adding placemarks.
+  </p>
+  <%= link_to 'Add Placemarks', new_story_placemark_path(@story), data: {no_turbolink: true}, class: 'a-button' %>
+</div>

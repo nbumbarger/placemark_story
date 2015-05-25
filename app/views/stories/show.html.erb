@@ -10,3 +10,4 @@
     <li><%= link_to 'Delete', story_path(@story), method: :delete %></li>
   </ul>
 </div>
+<%= render 'showpage_login_notice' unless current_user.present? %>
