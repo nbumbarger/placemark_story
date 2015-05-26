@@ -1,6 +1,6 @@
 # Placemark Story
-http://placemark-story.herokuapp.com/
 ## What it is
+http://placemark-story.herokuapp.com/
 This application facilitates the effortless creation of placemark/ content-balloon style informational slippy maps. Creating a shareable map is as simple as defining a series of event locations through the interactive, geocoding-enabled map display, and giving them additional attributes as desired (detailed descriptions, images, and hyperlinks are supported). Placemark Story leverages the [Mapbox.js API](https://www.mapbox.com/mapbox.js/api/v2.1.9/) to transform your story into an interactive map, and stores it ready-to-share in your own personalized gallery.
 
 ##Who is it for?
