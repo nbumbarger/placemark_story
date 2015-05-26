@@ -8,6 +8,9 @@ helper_method :current_or_guest_user
   def show
     @story = current_or_guest_user.stories.find(params[:id])
     @placemarks = @story.placemarks.all
+    
+    # I would probably put this type of code in a helper, since 
+    # it's explicitly view-related.
     if @placemarks.none?
       @no_placemarks = true
       @placemarks_link_class = 'disabled'

@@ -10,6 +10,7 @@
   <%= csrf_meta_tags %>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+  <!-- you should move this into a CSS file and use stylesheet_include_tag -->
   <style>
     body { 
       font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;;
@@ -86,6 +87,7 @@
 <body>
 <div id='map'></div>
 <ul id='marker-list'></ul>
+  <!-- Similarly, I'd move this into a JS file and use a JS include tag -->
   <script>
   L.mapbox.accessToken = '<%= Rails.application.secrets.mapbox_token %>';
   // Initialize map frame with default zoom behavior disabled
