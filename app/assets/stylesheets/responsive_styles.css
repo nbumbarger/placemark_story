@@ -3,7 +3,7 @@
   header #logo {
     display: none;
   }
-  footer, section {
+  header, footer, section {
     width: 34rem;
     min-width: 31.55rem;
   }
