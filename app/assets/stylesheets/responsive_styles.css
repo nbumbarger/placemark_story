@@ -13,7 +13,7 @@
   section h2 {
     font-size: 1rem;
   }
-  .welcome p {
+  p.welcome {
     font-size: 2rem;
     font-weight: 600;
     line-height: 2rem;
