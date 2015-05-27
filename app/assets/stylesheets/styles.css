@@ -64,6 +64,7 @@ header, section, footer {
 header {
   margin-top: 2rem;
   overflow: hidden;
+  background:red;
 }
 
 header h1 {
