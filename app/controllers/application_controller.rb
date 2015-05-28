@@ -35,6 +35,7 @@ class ApplicationController < ActionController::Base
   def logging_in
     guest_stories = guest_user.stories.all
     guest_stories.each do |story|
+      # you could use story.update(user_id: current_user.id) to save a line here
       story.user_id = current_user.id
       story.save!
     end

@@ -21,3 +21,7 @@
 *= require responsive_styles
 *= require alert_styles
  */
+
+
+/* Very clean CSS overall. Since your CSS is starting to get pretty complex though,
+I'd consider SASS to help you simplify parts of it (using nesting, vars, etc) */

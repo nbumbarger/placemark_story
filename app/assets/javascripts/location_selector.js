@@ -2,6 +2,8 @@
 // placemark entry view to find geocoded addresses, visually represent 
 // coordinates, set coordinates interactively, and reload saved location data.
 
+// Fantastic job here. The code is very well written, named, commented, and organized.
+// Try as I might, I don't have any suggestions for improvement here.
 function initLocationSelector() {
 
   // Define map control, adding it to map div.

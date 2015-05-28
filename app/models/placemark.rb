@@ -10,10 +10,12 @@ class Placemark < ActiveRecord::Base
   end
 
   def all_next
+    # should this be filtering on story_order instead of ID?
     story.placemarks.where('id > ?', id)
   end
 
   def all_prev
+    # same as all_next re: story_order
     story.placemarks.where('id < ?', id)
   end
 
