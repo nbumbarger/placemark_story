@@ -438,7 +438,14 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   float: left;
   clear: both;
   color: rgb(0, 0, 0);
+  background: rgb(255, 200, 255);
+  border-color: rgb(100, 0, 100);
   margin: 0 0 0 0.75rem;
+}
+
+.map-story a.a-button:hover {
+  background: rgb(205, 150, 205);
+  border-color: rgb(75, 0, 75);
 }
 
 .map-story a.a-button.disabled {
