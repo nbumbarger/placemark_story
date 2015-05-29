@@ -29,6 +29,10 @@
   text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
+.icon-github:before {
+  content: "\eab1";
+}
+
 .icon-location:before {
   content: "\e947";
   color: rgb(242, 78, 79)
@@ -127,6 +131,21 @@ nav li a:hover, .map-story li a:hover {
   text-decoration: underline;
 }
 
+.login-input {
+  float:left;
+  clear:left;
+  margin: .5rem 0 0 .25rem;
+}
+
+.login-input a {
+  color: rgb(0, 60, 190);
+  text-decoration: none;
+}
+
+.login-input a:hover {
+  text-decoration: underline;
+}
+
 section h2, footer {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -152,34 +171,37 @@ footer {
   clear: both;
   font-size: 1rem;
   font-weight: 200;
-  letter-spacing: .15rem;
-  text-align: right;
-  text-transform: lowercase;
+  letter-spacing: .1rem;
 }
 
 footer a {
   color: rgb(255, 255, 255);
-  text-decoration: none
-}
-
-footer a:hover {
-  text-decoration: underline
-}
-
-.login-input {
-  float:left;
-  clear:left;
-  margin: .5rem 0 0 .25rem;
-}
-
-.login-input a {
-  color: rgb(0, 60, 190);
+  border-bottom: 1px solid transparent;
   text-decoration: none;
 }
 
-.login-input a:hover {
-  text-decoration: underline;
+footer a:hover {
+  border-bottom-color: rgb(255, 255, 255);
 }
+
+footer .credits {
+  float: right;
+}
+
+footer a.mapbox-logo {
+  height: 16px;
+  width: 56px;
+  display: inline-block;
+  background: url('mapbox-logo.svg') no-repeat left top/contain;
+  text-indent: -9999px;
+  margin: 0 -4px 0 -4px;
+  border-bottom: 1px solid transparent;
+}
+
+footer a.mapbox-logo:hover {
+  border-bottom-color: rgb(255, 255, 255);
+}
+
 /*-general styles -------------------*/
 /*---input/form styles --------------*/
 input, button, textarea, a.a-button {
@@ -376,15 +398,15 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
 }
 
 .story-index .disabled-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background:black;
-    background: rgb(150, 150, 150) url("disabled-stripes.png");
-    opacity: 0.35;
-    z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:black;
+  background: rgb(150, 150, 150) url("disabled-stripes.png");
+  opacity: 0.35;
+  z-index: 10;
 }
 
 /*-story view page styles -----------*/

@@ -26,11 +26,11 @@
     <div class='login-input'>
     <% if user_signed_in? %>
       Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link' %> |
-      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'navbar-link'  %>
+      <%= link_to 'Edit profile', edit_user_registration_path %> |
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     <% else %>
-      <%= link_to 'Sign up', new_user_registration_path, class: 'navbar-link'  %> |
-      <%= link_to 'Login', new_user_session_path, class: 'navbar-link'  %>
+      <%= link_to 'Sign up', new_user_registration_path %> |
+      <%= link_to 'Login', new_user_session_path %>
     <% end %>
     </div>
     <div id='logo'></div>
@@ -38,14 +38,25 @@
   <section>
   <%= yield %> 
   <% if notice %>
-    <div class='alert green-alert login-alert'><p><%= notice %></p></div>
+    <div class='alert green-alert login-alert'>
+      <p>
+        <%= notice %>
+      </p>
+    </div>
   <% end %>
   <% if alert %>
-    <div class='alert red-alert login-alert'><p><%= alert %></p></div>
+    <div class='alert red-alert login-alert'>
+      <p>
+        <%= alert %>
+      </p>
+    </div>
   <% end %>
   </section>
   <footer>
-    <span>
+    <span class='contribue'>
+      Powered by <%= link_to 'Mapbox', 'https://www.mapbox.com/', class: 'mapbox-logo' %>. <%= link_to '<span class="icon-github"></span> Read more and contribute'.html_safe, 'https://github.com/nbumbarger/placemark_story' %>  
+    </span>
+    <span class='credits'>
       Made with <span class='icon-heart'></span> by <%= link_to 'Nick Bumbarger', 'https://www.linkedin.com/pub/nicholas-bumbarger/b5/396/42b' %> 
     </span>
   </footer>

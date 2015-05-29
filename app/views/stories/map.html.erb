@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <title><%= @story.name %></title>
-  <meta name='description' content='Made With Placemark Story: The easiest way to create and share interactive map stories'>
+  <meta name='description' content='<%= @story.description %>- Made With Placemark Story: The easiest way to create and share interactive map stories.'>
   <meta name='author' content='Nick Bumbarger'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
