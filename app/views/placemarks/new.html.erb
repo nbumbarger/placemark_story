@@ -72,7 +72,6 @@
 <% end %>
 <script>
   $('.story-list').scrollTop($('.story-list')[0].scrollHeight);
-  L.mapbox.accessToken = '<%= Rails.application.secrets.mapbox_token %>';
-  initLocationSelector();
+  initLocationSelector('<%= Rails.application.secrets.mapbox_token %>');
   initImageUploader();
 </script>

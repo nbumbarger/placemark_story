@@ -72,7 +72,6 @@
   </div>
 <% end %>
 <script>
-  L.mapbox.accessToken = '<%= Rails.application.secrets.mapbox_token %>';
-  initLocationSelector();
+  initLocationSelector('<%= Rails.application.secrets.mapbox_token %>');
   initImageUploader();
 </script>

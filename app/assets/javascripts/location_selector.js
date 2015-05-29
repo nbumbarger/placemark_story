@@ -2,8 +2,9 @@
 // placemark entry view to find geocoded addresses, visually represent 
 // coordinates, set coordinates interactively, and reload saved location data.
 
-function initLocationSelector() {
+function initLocationSelector(mapboxToken) {
 
+  L.mapbox.accessToken = mapboxToken;
   // Define map control, adding it to map div.
   var map = L.mapbox.map('map', 'mapbox.streets');
 
