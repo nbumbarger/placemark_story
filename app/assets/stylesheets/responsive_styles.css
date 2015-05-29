@@ -25,3 +25,30 @@
     width: 28rem;
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  header #logo {
+    display: none;
+  }
+  header, footer, section {
+    width: 34rem;
+    min-width: 31.55rem;
+  }
+  section h2, footer {
+    text-align: center;
+  }
+  section h2 {
+    font-size: 1rem;
+  }
+  p.welcome {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  .map-story {
+    width: 31.55rem;
+  }
+  .map-story p, .widget.map-story #map-url {
+    width: 28rem;
+  }
+}

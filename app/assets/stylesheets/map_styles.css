@@ -4,12 +4,14 @@ body.map-view {
   margin: 0; 
   padding: 0;
 }
+
 .map-view #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
 }
+
 .map-view #marker-list {
   position: absolute;
   top: 0;
@@ -20,6 +22,7 @@ body.map-view {
   padding: 5px;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .map-view #marker-list li {
   padding: 5px 5px 5px 15px;
   color: rgb(255, 255, 255);
@@ -27,9 +30,11 @@ body.map-view {
   letter-spacing: 3px;
   list-style-type: none;
 }
+
 .map-view #marker-list li:hover {
   background: rgb(0, 0, 0);
 }
+
 .map-view .map-view .truncate{
   width: 350px;
   white-space: nowrap;
@@ -37,33 +42,40 @@ body.map-view {
   text-overflow: ellipsis;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .map-view .leaflet-popup-content-wrapper {
   background: rgba(0, 0, 0, 0.65);
   color: rgb(255, 255, 255);
   border-radius: 5px;
 }
+
 .map-view .leaflet-popup-content-wrapper h2 {
   font-size:16px;
 }
+
 .map-view .leaflet-popup-content-wrapper img { 
   width: 360px;
   height: 222px;
 }
+
 .map-view .leaflet-popup-content-wrapper p {
   font-size: 14px;
   margin: 6px 0 0 0;
 
 }
+
 .map-view .leaflet-popup-content-wrapper a { 
   font-size: 14px;
   font-weight: normal;
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .map-view .leaflet-popup-tip-container {
   width: 30px;
   height: 15px;
 }
+
 .map-view .leaflet-popup-tip {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
