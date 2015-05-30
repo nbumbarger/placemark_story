@@ -34,10 +34,7 @@ class ApplicationController < ActionController::Base
   # transfers record ownership from guest to new user.
   def logging_in
     guest_stories = guest_user.stories.all
-    guest_stories.each do |story|
-      story.user_id = current_user.id
-      story.save!
-    end
+    guest_stories.each { |story| story.update(user_id: current_user.id) }
   end
 
   def create_guest_user

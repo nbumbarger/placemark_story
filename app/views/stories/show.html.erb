@@ -1,4 +1,5 @@
 <h2>View Map Story: <%= @story.name %></h2>
+<% setPlacemarkViewStatus %>
 <%= render 'no_placemarks_notice' if @no_placemarks %>
 <div class='widget map-story'>
   <h4>Description:</h4>

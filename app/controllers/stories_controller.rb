@@ -8,10 +8,6 @@ helper_method :current_or_guest_user
   def show
     @story = current_or_guest_user.stories.find(params[:id])
     @placemarks = @story.placemarks.all
-    if @placemarks.none?
-      @no_placemarks = true
-      @placemarks_link_class = 'disabled'
-    end
     respond_to do |format|
       format.html {render :show}
       format.json {render json: @story.generate_GeoJSON}
