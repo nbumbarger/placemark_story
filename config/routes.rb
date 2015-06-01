@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     resources :placemarks do
     end
   end
+	get 'sitemap.xml', :to => 'sitemap#index', :defaults => {:format => 'xml'}
 end
