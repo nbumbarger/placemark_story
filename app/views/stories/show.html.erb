@@ -5,11 +5,11 @@
   <h4>Description:</h4>
   <p><%= @story.description %></p>
   <input type='text' id='map-url' value='<%= request.original_url %>' onMouseup='this.select()'></input>
-  <%= link_to 'Show Map', story_map_path(@story), target: '_blank', class: ['a-button', @placemarks_link_class] %>
+  <%= link_to 'Show Map', story_map_path(@story), target: '_blank', class: ['a-button', @placemarks_link_class,] %>
   <ul>
-    <li><%= link_to 'Edit Basics', edit_story_path(@story) %></li>
-    <li><%= link_to 'Edit Placemarks', @no_placemarks? new_story_placemark_path(@story) : edit_story_placemark_path(@story, @placemarks.first), data: {no_turbolink: true}, class: @placemarks_link_class %></li>
-    <li><%= link_to 'Delete', story_path(@story), method: :delete %></li>
+    <li><%= link_to 'Edit Basics', edit_story_path(@story), class: @placemarks_owner_class %></li>
+    <li><%= link_to 'Edit Placemarks', @no_placemarks? new_story_placemark_path(@story) : edit_story_placemark_path(@story, @placemarks.first), data: {no_turbolink: true}, class: [@placemarks_link_class, @placemarks_owner_class] %></li>
+    <li><%= link_to 'Delete', story_path(@story), class: @placemarks_owner_class, method: :delete %></li>
   </ul>
 </div>
 <%= render 'showpage_login_notice' unless current_user.present? %>

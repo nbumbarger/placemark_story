@@ -6,7 +6,7 @@ helper_method :current_or_guest_user
   end
 
   def show
-    @story = current_or_guest_user.stories.find(params[:id])
+    @story = Story.find(params[:id])
     @placemarks = @story.placemarks.all
     respond_to do |format|
       format.html {render :show}

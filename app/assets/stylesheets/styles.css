@@ -491,7 +491,8 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   margin: 0 .1rem 0 0.1rem;
 }
 
-.map-story li a.disabled {
+.map-story li a.disabled,
+.map-story li a.not-owner {
   color: rgb(160, 160, 160);
   text-decoration: line-through;;
   pointer-events: none;
