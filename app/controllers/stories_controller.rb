@@ -48,7 +48,7 @@ helper_method :current_or_guest_user
   end
 
   def map
-    @story = current_or_guest_user.stories.find(params[:story_id])
+    @story = Story.find(params[:story_id])
     render :layout => false
   end
 
