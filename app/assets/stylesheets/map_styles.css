@@ -35,18 +35,19 @@ body.map-view {
   background: rgb(0, 0, 0);
 }
 
-.map-view .map-view .truncate{
-  width: 350px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .map-view .leaflet-popup-content-wrapper {
   background: rgba(0, 0, 0, 0.65);
   color: rgb(255, 255, 255);
   border-radius: 5px;
+}
+
+.map-view .leaflet-popup-content-wrapper .truncate{
+  width: 360px;
+  margin-top: 6px;
+  color: rgb(0, 216, 255);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .map-view .leaflet-popup-content-wrapper h2 {
@@ -59,16 +60,21 @@ body.map-view {
 }
 
 .map-view .leaflet-popup-content-wrapper p {
-  font-size: 14px;
+  width: 360px;
   margin: 6px 0 0 0;
-
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .map-view .leaflet-popup-content-wrapper a { 
   font-size: 14px;
-  font-weight: normal;
+  color: rgb(0, 216, 255);
+  text-decoration: none;
+}
+
+.map-view .leaflet-popup-content-wrapper a:hover { 
+  color:rgb(0, 216, 255);
   text-decoration: underline;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .map-view .leaflet-popup-tip-container {
