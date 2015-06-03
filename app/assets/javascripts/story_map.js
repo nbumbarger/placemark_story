@@ -56,8 +56,6 @@ function initStoryMap(mapboxToken, placemarkJSON) {
       var description = feature.properties.description;
       var image = feature.properties.image;
       var link = feature.properties.link;
-      if (image !== '' || link !== '') {
-        content = content + '<style>.leaflet-popup-content-wrapper {width: 380px;}</style>'};
       content = content + '<h2>'+name+'</h2>'
       if (image !== '') {
         content = content + '<img src="'+image+'" alt="'+feature.properties.image_alt+'" />'};
