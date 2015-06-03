@@ -39,7 +39,7 @@ function initStoryMap(mapboxToken, placemarkJSON) {
   // Add a listening event to each feature, to pan when clicked
   function addZoomOnClick() {
     featureLayer.on('click', function(e) {
-      map.setView(e.layer.getLatLng(), map.getZoom() + 1);
+      map.setView(e.layer.getLatLng())//, map.getZoom() + 1);
       // Todo: add logic to offset the map center when the popup content is too large to fit in screen
       // map.panBy([110, -75])
     })
