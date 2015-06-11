@@ -5,3 +5,4 @@
 //= require image_uploader
 //= require location_selector
 //= require story_map
+//= require exif
