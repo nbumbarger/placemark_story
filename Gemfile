@@ -5,12 +5,10 @@ gem 'pg'             # PostgreSQL database
 gem 'turbolinks'     # Replace page requests with injection of <body> element
 gem 'devise'         # User authentication helper
 gem 'jbuilder'       # Domain Specific Language for writing JSON structures
+gem 'sass-rails'     # Sass precompiler/ CSS compressor
+gem 'uglifier'       # JavaScript compressor
+gem 'coffee-rails'   # CoffeeScript precompiler; more Ruby-like JS
 
-group :assets do
-  gem 'sass-rails'     # Sass precompiler/ CSS compressor
-  gem 'uglifier'       # JavaScript compressor
-  gem 'coffee-rails'   # CoffeeScript precompiler; more Ruby-like JS
-end
 group :basic_debug do
   gem 'spring'         # Keep app running and updated while running tasks
   gem 'pry-rails'      # Use pry as rails console
