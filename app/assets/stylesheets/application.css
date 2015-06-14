@@ -1,7 +1,7 @@
 /*
-*= require normalize-rails
-*= require_self
-*= require styles
+*= require normalize
+*= require mapbox
+*= require general_styles
 *= require location_selector_styles
 *= require image_uploader_styles
 *= require story_tree_styles
