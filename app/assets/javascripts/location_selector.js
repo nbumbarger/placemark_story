@@ -5,8 +5,9 @@
 function initLocationSelector(mapboxToken) {
 
   L.mapbox.accessToken = mapboxToken;
-  // Define map control, adding it to map div.
-  var map = L.mapbox.map('map', 'mapbox.streets');
+  // Define map control centered on DC, add it to map div.
+  var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([38.895, -77.036], 5);
 
   // Define geocoder control
   var gc = L.mapbox.geocoderControl('mapbox.places',
@@ -19,7 +20,7 @@ function initLocationSelector(mapboxToken) {
     .addTo(map)
     
   // Define draggable marker
-  var marker = L.marker([0, 0],
+  var marker = L.marker([38.895, -77.036],
     { icon: L.mapbox.marker.icon({'marker-color': '#f86767'}),
       draggable: true })
     // Add event listener to record marker position on form when marker is moved
