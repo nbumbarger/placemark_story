@@ -7,5 +7,6 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.paths << Emoji.images_path
 
 # Precompile additional assets.
-Rails.application.config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif *.svg *.eot *.ttf *.woff]
+Rails.application.config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/ 
 Rails.application.config.assets.precompile += %w[html5shiv.js html5shiv-printshiv.js]
