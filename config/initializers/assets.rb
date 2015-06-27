@@ -8,9 +8,5 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 Rails.application.config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
-# Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/ 
-# Rails.application.config.assets.precompile += %w[html5shiv.js html5shiv-printshiv.js]
-
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')  
+Rails.application.config.assets.precompile += %w[html5shiv.js html5shiv-printshiv.js]
 Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
-
