@@ -3,13 +3,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1' # Ruby on Rails version 4.2.1
 gem 'pg'             # PostgreSQL database
 gem 'turbolinks'     # Replace page requests with injection of <body> element
+gem 'rails_12factor', group: :production # Necessary for Heroku deployment
 gem 'devise'         # User authentication helper
 gem 'jbuilder'       # Domain Specific Language for writing JSON structures
 gem 'sass-rails'     # Sass precompiler/ CSS compressor
 gem 'uglifier'       # JavaScript compressor
 gem 'coffee-rails'   # CoffeeScript precompiler; more Ruby-like JS
-
-gem 'rails_12factor', group: :production # Necessary for Heroku deployment
 
 
 group :development do     # Check multiple code quality indicators
