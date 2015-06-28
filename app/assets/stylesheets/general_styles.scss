@@ -95,7 +95,7 @@ header #logo {
   width: 6rem;
   height: 7.25rem;
   display: inline-block;
-  background: url("electric-logo.png") top left/5.4rem no-repeat;
+  background: image-url("electric-logo.png") top left/5.4rem no-repeat;
 }
 
 nav {
@@ -192,7 +192,7 @@ footer a.mapbox-logo {
   height: 16px;
   width: 56px;
   display: inline-block;
-  background: url('mapbox-logo.svg') no-repeat left top/contain;
+  background: image-url('mapbox-logo.svg') no-repeat left top/contain;
   text-indent: -9999px;
   margin: 0 -4px 0 -4px;
   border-bottom: 1px solid transparent;
