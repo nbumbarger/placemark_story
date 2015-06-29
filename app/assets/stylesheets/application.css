@@ -1,6 +1,7 @@
 /*
 *= require normalize
 *= require mapbox
+*= require L.Control.Locate.mapbox
 *= require general_styles
 *= require location_selector_styles
 *= require image_uploader_styles

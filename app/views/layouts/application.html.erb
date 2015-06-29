@@ -5,10 +5,13 @@
   <title>Placemark Story</title>
   <meta name='description' content='Placemark Story: the easiest way to create and share interactive map stories'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
+  <!-- todo: integrate FA -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!--[if lt IE 9]]>
     <%= javascript_include_tag 'html5shiv', 'data-turbolinks-track'=> true %>
+    <%= stylesheet_link_tag 'L.Control.Locate.ie', 'data-turbolinks-track'=> true %>
   <![endif]-->
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
   <%= csrf_meta_tags %>
 </head>
 <body>

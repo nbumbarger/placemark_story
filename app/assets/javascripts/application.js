@@ -6,3 +6,4 @@
 //= require main
 //= require story_map
 //= require mapbox
+//= require L.Control.Locate
