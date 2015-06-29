@@ -1,11 +1,15 @@
 /*-responsive styles ----------------*/
 @media all and (max-width: 550px) {
+
   header #logo {
     display: none;
   }
   header, footer, section {
     width: 34rem;
     min-width: 31.55rem;
+  }
+  .login-input {
+    margin: 0 .5rem;
   }
   section h2, footer {
     text-align: center;
@@ -18,9 +22,9 @@
     display: block;
   }
   p.welcome {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 1.75rem;
   }
   .map-story {
     width: 31.55rem;

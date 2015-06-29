@@ -38,6 +38,14 @@
   color: rgb(242, 78, 79)
 }
 
+.icon-current-location:before {
+  content: "\e947";
+  padding: 2px;
+  border: .1rem solid rgb(178, 178, 178);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+}
+
 .icon-search:before {
   content: "\e986";
   padding: 2px;
@@ -61,17 +69,18 @@ html {
 header, section, footer {
   width: 90%;
   min-width: 67.5rem;
-  margin: 1rem auto 0 auto;
+  margin: .5rem auto 0 auto;
   overflow: auto;
 }
 
 header {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   overflow: hidden;
 }
 
 header h1 {
   float: left;
+  clear: left;
   margin: 0;
   font-size: 4.15rem;
 }
@@ -109,7 +118,7 @@ nav ul, .map-story ul {
   letter-spacing: .14rem;
   list-style-type: none;
   text-transform: uppercase;
-  text-shadow: 0px 0px 5px rgb(150, 150, 150);
+  /*text-shadow: 0px 0px 5px rgb(150, 150, 150);*/
 }
 
 nav li, .map-story li {
@@ -132,9 +141,8 @@ nav li a:hover, .map-story li a:hover {
 }
 
 .login-input {
-  float:left;
-  clear:left;
-  margin: .5rem 0 0 .25rem;
+  float: right;
+  margin: 2.5rem .2rem 0 0;
 }
 
 .login-input a {
@@ -161,10 +169,10 @@ section h2, footer {
 
 section h2 {
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: .2rem;
   text-transform: uppercase;
-  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+  /*text-shadow: 0px 0px 3px rgb(255, 255, 255);*/
 }
 
 footer {
@@ -248,12 +256,12 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
  p.welcome{
   margin: 1rem;
   font-size: 4rem;
-  font-weight: 600;
-  letter-spacing: .25rem;
+  font-weight: 800;
+  letter-spacing: .05rem;
   line-height: 3rem;
   color: rgb(255, 255, 255);
-  background: rgb(160, 232, 255);
-  text-shadow: 0 0 5px rgb(0, 0, 0);
+  background: rgb(152, 176, 183);
+  text-shadow: 0 0 1px rgb(0, 0, 0);
 }
 
 /*-edit story page styles -----------*/
@@ -427,7 +435,7 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
 .map-story h4 {
   font-size: 1.5rem;
   font-weight: 600;
-  text-shadow: 0px 0px 5px rgb(150, 150, 150);
+  /*text-shadow: 0px 0px 5px rgb(150, 150, 150);*/
 }
 
 .map-story p {
