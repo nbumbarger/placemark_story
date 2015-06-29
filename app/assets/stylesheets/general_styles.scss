@@ -404,7 +404,7 @@ input[type="submit"]:hover, button:hover, a.a-button:hover {
   top: 0;
   left: 0;
   background:black;
-  background: rgb(150, 150, 150) url("disabled-stripes.png");
+  background: rgb(150, 150, 150) image-url("disabled-stripes.png");
   opacity: 0.35;
   z-index: 10;
 }
