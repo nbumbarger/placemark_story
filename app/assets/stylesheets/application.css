@@ -1,5 +1,6 @@
 /*
 *= require normalize
+*= require icon_font_styles
 *= require mapbox
 *= require L.Control.Locate.mapbox
 *= require general_styles
@@ -10,4 +11,4 @@
 *= require responsive_styles
 *= require alert_styles
 *= require map_styles
- */
+*/

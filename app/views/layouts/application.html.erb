@@ -7,8 +7,6 @@
   <%= render 'layouts/favicon' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
-  <!-- todo: integrate FA -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!--[if lt IE 9]]>
     <%= javascript_include_tag 'html5shiv', 'data-turbolinks-track'=> true %>
     <%= stylesheet_link_tag 'L.Control.Locate.ie', 'data-turbolinks-track'=> true %>
@@ -58,10 +56,10 @@
   </section>
   <footer>
     <span class='contribue'>
-      Powered by <%= link_to 'Mapbox', 'https://www.mapbox.com/', class: 'mapbox-logo' %>. <%= link_to '<span class="icon-github"></span> Read more and contribute'.html_safe, 'https://github.com/nbumbarger/placemark_story' %>
+      Powered by <%= link_to 'Mapbox', 'https://www.mapbox.com/', class: 'mapbox-logo' %>. <%= link_to '<i class="fa icon-github"></i> Read more and contribute'.html_safe, 'https://github.com/nbumbarger/placemark_story' %>
     </span>
     <span class='credits'>
-      Made with <span class='icon-heart'></span> by <%= link_to 'Nick Bumbarger', 'http://www.nickbumbarger.com' %>
+      Made with <i class='fa icon-heart'></i> by <%= link_to 'Nick Bumbarger', 'http://www.nickbumbarger.com' %>
     </span>
   </footer>
 </body>
