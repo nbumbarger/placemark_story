@@ -5,10 +5,8 @@ gem 'pg'             # PostgreSQL database
 gem 'turbolinks'     # Replace page requests with injection of <body> element
 gem 'rails_12factor', group: :production # Necessary for Heroku deployment
 gem 'devise'         # User authentication helper
-gem 'jbuilder'       # Domain Specific Language for writing JSON structures
 gem 'sass-rails'     # Sass precompiler/ CSS compressor
 gem 'uglifier'       # JavaScript compressor
-gem 'coffee-rails'   # CoffeeScript precompiler; more Ruby-like JS
 
 group :development do
   # Basic debugging

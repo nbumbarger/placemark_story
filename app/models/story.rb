@@ -1,7 +1,7 @@
 class Story < ActiveRecord::Base
   belongs_to :user
   has_many :placemarks, :dependent => :destroy
-  validates_presence_of :name, :message => "You must enter a name for this story" 
+  validates_presence_of :name, :message => "You must enter a name for this story"
 
   def generate_GeoJSON
     @geojson = Array.new
