@@ -18,7 +18,7 @@ group :development do
   # Performance analysis
   gem 'rack-mini-profiler'   # Time application response
   gem 'bullet'               # Analyze database interactions (N+1 query)
-  # Quality_analysis
+  # Quality analysis
   gem "rubycritic"           # Multiple quality metrics at a glance
   gem 'rails_best_practices' # Check for indicators of poor design
   gem 'rubocop'              # Check for style guideline compliance

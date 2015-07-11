@@ -3,7 +3,7 @@
 //= require turbolinks
 //= require jquery.cropit
 //= require exif
-//= require main
-//= require story_map
 //= require mapbox
 //= require L.Control.Locate
+//= require main
+//= require story_map

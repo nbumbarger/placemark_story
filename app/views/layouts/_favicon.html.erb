@@ -1,0 +1,12 @@
+<% %w(16 32 96 192 194).each do |size| %>
+  <%= favicon_link_tag 'favicon-#{size}x#{size}.png', rel: 'icon', type: 'image/png', sizes: '#{size}x#{size}' %>
+<% end %>
+<% %w(57 60 72 76 114 120 144 152 180 192).each do |size| %>
+  <%= favicon_link_tag 'apple-touch-icon-#{size}x#{size}.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '#{size}x#{size}' %>
+<% end %>
+<link rel='manifest' href='/manifest.json'>
+<meta name='apple-mobile-web-app-title' content='Placemark Story'>
+<meta name='application-name' content='Placemark Story'>
+<meta name='msapplication-TileColor' content='#00aba9'>
+<meta name='msapplication-TileImage' content='/mstile-144x144.png'>
+<meta name='theme-color' content='#ffffff'>
