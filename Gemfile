@@ -1,12 +1,14 @@
+ruby '2.2.0'
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.1' # Ruby on Rails version 4.2.1
+gem 'rails'          # Ruby on Rails
 gem 'pg'             # PostgreSQL database
 gem 'turbolinks'     # Replace page requests with injection of <body> element
 gem 'rails_12factor', group: :production # Necessary for Heroku deployment
 gem 'devise'         # User authentication helper
 gem 'sass-rails'     # Sass precompiler/ CSS compressor
 gem 'uglifier'       # JavaScript compressor
+gem 'puma'           # Web server
 
 group :development do
   # Basic debugging
